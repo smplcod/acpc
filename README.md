@@ -1,17 +1,32 @@
-# React + Vite
+# ACP+Charts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ACP+Charts is an admin dashboard that visualizes application metrics with interactive charts. Administrators can monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
 
-Currently, two official plugins are available:
+## Features
+- React + Vite foundation for an admin panel
+- Fast hot module replacement for developer experience
+- Sample counter demonstrating state management
+- Planned interactive charts for analytics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
+```bash
+npm install
+npm run dev
+```
+The app runs at http://localhost:5173.
 
-## Expanding the ESLint configuration
+### Linting
+```bash
+npm run lint
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Build and preview
+```bash
+npm run build
+npm run preview
+```
 
-
-ACP+Charts Проект должен быть на: ReactJS(нельзя TypeScript, можно только JavaScript). Использовать Vite.
-
-Упорядочить этот файл!
+## Project structure
+- `src/` — application source code.
+- `public/` — static assets.
+- `dist/` — production build (created after `npm run build`).
