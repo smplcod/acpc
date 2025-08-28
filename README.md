@@ -1,7 +1,7 @@
 # ACP+Charts now
-Current version: 0.0.0
+Current version:
 
-ACP+Charts provides a basic React + Vite admin scaffold. Users can log in with a demo token, access a protected admin dashboard with a users table stub, and view all public routes via a dynamic `/sitemap` page.
+ACP+Charts is an upcoming admin dashboard. At the moment the repository holds only a minimal React + Vite scaffold with no real functionality.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
@@ -16,9 +16,9 @@ _Only this section of the readme can be maintained using Russian language_
   - [ ] 1.5 Утилита `storage.js` для sync с `localStorage` (load/save/reset)
 
 2. Авторизация
-  - [x] 2.1 Простейшая форма логина (`/login`)
-  - [x] 2.2 Проверка по мок-данным (по email/паролю или токену-заглушке)
-  - [x] 2.3 Перенаправление на админку после логина
+  - [ ] 2.1 Простейшая форма логина (`/login`)
+  - [ ] 2.2 Проверка по мок-данным (по email/паролю или токену-заглушке)
+  - [ ] 2.3 Перенаправление на админку после логина
   - [ ] 2.4 Guard-компонент `<RequireAuth>` и контекст `AuthContext`
   - [ ] 2.5 Роли: `admin`, `manager`, `viewer` (ограничение действий в UI)
 
@@ -51,11 +51,14 @@ _Only this section of the readme can be maintained using Russian language_
 
 6. Удобства
   - [ ] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
-  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент. В компоненте распложить 
+  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
+  - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
+    - [ ] 6.2.2 На главной странице самой нижней строкой выводить "ACPC и версию проекта". Внести в readme правило чтобы данная версия была актуальной.
+
 
 7. Recommendations from bot
   - [ ] 7.1 Структура: `src/{app,pages,components,features,data,utils}`
-  - [x] 7.2 Роутинг `react-router-dom` с базовым `Layout`
+  - [ ] 7.2 Роутинг `react-router-dom` с базовым `Layout`
   - [ ] 7.3 ErrorBoundary и Suspense для ленивых страниц
   - [ ] 7.4 Состояние: локальный state + Context для auth
   - [ ] 7.5 ESLint + Prettier, скрипты `lint`/`format`
@@ -68,8 +71,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [ ] 7.12 Документация: README — запуск, деплой, структура
   - [ ] 7.13 Производительность: мемоизация таблицы/графиков
   - [ ] 7.14 Темы: light/dark через CSS variables
-  - [x] 7.15 Динамическая страница `/sitemap` со списком маршрутов
-  - 7.16 Принципы
+  - 7.15 Принципы
     - Асинхронность
     - Try-catch
 
@@ -90,15 +92,16 @@ _Only this section of the readme can be maintained using Russian language_
 9. Place components and their state close to where they’re used; permit only one level of props drilling (parent→child); if data is needed deeper or across branches, use Context or Redux Toolkit.
 10. After completing a task, suggest the next task to complete (don't add this to readme).
 11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
+12. If there is no indication what language the page should be in, use English.
  
 # Project details
 
 ## Constraints
 - JavaScript only (no TypeScript).
 - No remote databases and no custom backend.
-- Demo data must come from local sources (in-memory, JSON, or localStorage)
-- Redux Toolkit for state management
+- Demo data must come from local sources (in-memory, JSON, or localStorage).
 
 ## Tech and infrastructure
 - React + Vite (fast HMR).
 - Railway is our hosting.
+- - Redux Toolkit for state management.
