@@ -56,8 +56,7 @@
         "en": "Separated user and admin menus",
         "ru": "Разделены меню пользователя и админа"
       }
-    }
-    ,
+    },
     {
       "id": "2025-08-28T21:43:30+00:00-feat-ui",
       "timestamp": "2025-08-28T21:43:30+00:00",
@@ -68,16 +67,27 @@
         "en": "Added collapsible user sidebar",
         "ru": "Добавлен сворачиваемый сайдбар пользователя"
       }
+    },
+    {
+      "id": "2025-08-28T21:56:43+00:00-feat-ui",
+      "timestamp": "2025-08-28T21:56:43+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Darkened sidebar background and fixed icon order",
+        "ru": "Утемнён фон сайдбара и закреплён порядок иконок"
+      }
     }
   ],
   "daily": {
     "2025-08-28": {
-      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar",
-      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар"
+      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar; darkened sidebar and stabilized icons",
+      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; darkened sidebar icons",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; затемнён иконки в сайдбаре"
   }
 }
