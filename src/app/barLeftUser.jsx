@@ -59,6 +59,7 @@ export default function BarLeftUser() {
           <Link to="/admin">/admin</Link>
           <Link to="/admin/charts">/admin/charts</Link>
           <Link to="/release-notes">/release-notes</Link>
+          <Link to="/ui-login-forms">/ui-login-forms</Link>
         </nav>
       )}
     </aside>
