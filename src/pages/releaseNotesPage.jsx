@@ -22,7 +22,6 @@ export default function ReleaseNotesPage() {
               <div key={item.id}>
                 <h3>{item.timestamp.slice(11, 16)}</h3>
                 <p>{item.description.en}</p>
-                <p>{item.description.ru}</p>
               </div>
             ))}
         </div>

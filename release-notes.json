@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "generated": "2025-08-28T09:35:54+00:00",
+  "generated": "2025-08-28T20:28:48+00:00",
   "changes": [
     {
       "id": "2025-08-28T09:35:00+00:00-docs-docs",
@@ -9,7 +9,7 @@
       "type": "docs",
       "scope": "docs",
       "description": {
-        "en": "Document release notes rules",
+        "en": "Documented release notes rules",
         "ru": "Добавлены правила ведения release notes"
       }
     },
@@ -20,19 +20,41 @@
       "type": "feat",
       "scope": "ui",
       "description": {
-        "en": "Add release notes page",
+        "en": "Added release notes page",
         "ru": "Добавлена страница release notes"
+      }
+    },
+    {
+      "id": "2025-08-28T20:28:40+00:00-docs-docs",
+      "timestamp": "2025-08-28T20:28:40+00:00",
+      "version": "0.0.0",
+      "type": "docs",
+      "scope": "docs",
+      "description": {
+        "en": "Clarified past tense style for release notes",
+        "ru": "Уточнён стиль release notes в прошедшем времени"
+      }
+    },
+    {
+      "id": "2025-08-28T20:28:42+00:00-feat-ui",
+      "timestamp": "2025-08-28T20:28:42+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Limited release notes page to English",
+        "ru": "Страница release notes отображает только английский текст"
       }
     }
   ],
   "daily": {
     "2025-08-28": {
-      "en": "Release notes page and rules added",
-      "ru": "Добавлена страница release notes и правила ведения"
+      "en": "Release notes page shows English only; rules and style clarified",
+      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль"
     }
   },
   "ultrashort": {
-    "en": "Release notes page online",
-    "ru": "Появилась страница release notes"
+    "en": "Release notes English-only",
+    "ru": "Release notes только на английском"
   }
 }
