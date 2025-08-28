@@ -1,7 +1,7 @@
 # ACP+Charts now
-Current version:
+Current version: 0.0.0
 
-ACP+Charts is an upcoming admin dashboard. At the moment the repository holds only a minimal React + Vite scaffold with no real functionality.
+ACP+Charts currently includes basic routing with home, login, admin, and sitemap pages. Users can sign in with a placeholder token, explore a stub dashboard and users list inside the admin area, and view all public routes via the sitemap. A logout button clears the token and returns to the login screen.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
@@ -16,9 +16,9 @@ _Only this section of the readme can be maintained using Russian language_
   - [ ] 1.5 Утилита `storage.js` для sync с `localStorage` (load/save/reset)
 
 2. Авторизация
-  - [ ] 2.1 Простейшая форма логина (`/login`)
+  - [x] 2.1 Простейшая форма логина (`/login`)
   - [ ] 2.2 Проверка по мок-данным (по email/паролю или токену-заглушке)
-  - [ ] 2.3 Перенаправление на админку после логина
+  - [x] 2.3 Перенаправление на админку после логина
   - [ ] 2.4 Guard-компонент `<RequireAuth>` и контекст `AuthContext`
   - [ ] 2.5 Роли: `admin`, `manager`, `viewer` (ограничение действий в UI)
 
@@ -58,7 +58,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 7. Recommendations from bot
   - [ ] 7.1 Структура: `src/{app,pages,components,features,data,utils}`
-  - [ ] 7.2 Роутинг `react-router-dom` с базовым `Layout`
+  - [x] 7.2 Роутинг `react-router-dom` с базовым `Layout`
   - [ ] 7.3 ErrorBoundary и Suspense для ленивых страниц
   - [ ] 7.4 Состояние: локальный state + Context для auth
   - [ ] 7.5 ESLint + Prettier, скрипты `lint`/`format`
