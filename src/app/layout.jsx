@@ -1,12 +1,13 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
+import BarLeftUser from './barLeftUser.jsx'
+import BarLeftAdmin from './barLeftAdmin.jsx'
 
 export default function Layout() {
+  const location = useLocation()
+  const isAdminRoute = location.pathname.startsWith('/admin')
   return (
     <>
-      <nav>
-        <Link to="/">Main</Link> | <Link to="/admin">Admin</Link> |{' '}
-        <Link to="/admin/charts">Admin Charts</Link>
-      </nav>
+      {isAdminRoute ? <BarLeftAdmin /> : <BarLeftUser />}
       <Outlet />
     </>
   )
