@@ -1,10 +1,13 @@
-# Now
+# ACP+Charts now
+Current version:
+
 ACP+Charts is an upcoming admin dashboard. At the moment the repository holds only a minimal React + Vite scaffold with no real functionality.
 
-# ACP+Charts
+# ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
 
 # Features ToDo
+_Only this section of the readme can be maintained using Russian language_
 1. Mock-данные
   - [ ] 1.1 Узнать, что такое мок-данные
   - [ ] 1.2 Создать мок-данные (пользователи, роли, активность)
@@ -46,22 +49,26 @@ ACP+Charts will grow into an admin dashboard that visualizes application metrics
   - [ ] 5.4 Переключение типа графика
   - [ ] 5.5 Вставить 1–2 графика на ACP
 
-6. Recommendations from bot
-  - [ ] 6.1 Структура: `src/{app,pages,components,features,data,utils}`
-  - [ ] 6.2 Роутинг `react-router-dom` с базовым `Layout`
-  - [ ] 6.3 ErrorBoundary и Suspense для ленивых страниц
-  - [ ] 6.4 Состояние: локальный state + Context для auth
-  - [ ] 6.5 ESLint + Prettier, скрипты `lint`/`format`
-  - [ ] 6.6 NPM-скрипты: `dev`, `build`, `preview`
-  - [ ] 6.7 Скрипт `seed` для сброса/наполнения `localStorage`
-  - [ ] 6.8 Railway: `NIXPACKS`/build команда, preview env
-  - [ ] 6.9 GitHub Actions: `lint + build` на PR
-  - [ ] 6.10 Доступность: `aria-*`, видимые focus-обводки
-  - [ ] 6.11 Тесты: Vitest + React Testing Library для auth и таблицы
-  - [ ] 6.12 Документация: README — запуск, деплой, структура
-  - [ ] 6.13 Производительность: мемоизация таблицы/графиков
-  - [ ] 6.14 Темы: light/dark через CSS variables
-  - 6.15 Принципы
+6. Удобства
+  - [ ] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
+  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент. В компоненте распложить 
+
+7. Recommendations from bot
+  - [ ] 7.1 Структура: `src/{app,pages,components,features,data,utils}`
+  - [ ] 7.2 Роутинг `react-router-dom` с базовым `Layout`
+  - [ ] 7.3 ErrorBoundary и Suspense для ленивых страниц
+  - [ ] 7.4 Состояние: локальный state + Context для auth
+  - [ ] 7.5 ESLint + Prettier, скрипты `lint`/`format`
+  - [ ] 7.6 NPM-скрипты: `dev`, `build`, `preview`
+  - [ ] 7.7 Скрипт `seed` для сброса/наполнения `localStorage`
+  - [ ] 7.8 Railway: `NIXPACKS`/build команда, preview env
+  - [ ] 7.9 GitHub Actions: `lint + build` на PR
+  - [ ] 7.10 Доступность: `aria-*`, видимые focus-обводки
+  - [ ] 7.11 Тесты: Vitest + React Testing Library для auth и таблицы
+  - [ ] 7.12 Документация: README — запуск, деплой, структура
+  - [ ] 7.13 Производительность: мемоизация таблицы/графиков
+  - [ ] 7.14 Темы: light/dark через CSS variables
+  - 7.15 Принципы
     - Асинхронность
     - Try-catch
 
@@ -79,13 +86,17 @@ ACP+Charts will grow into an admin dashboard that visualizes application metrics
 8. Maintain the "Принципы" subsection under "Recommendations from bot":
    - List each principle as a bullet item.
    - Nest sub-tasks with checkboxes under the relevant principle when a specific implementation is required.
-
+9. Place components and their state close to where they’re used; permit only one level of props drilling (parent→child); if data is needed deeper or across branches, use Context or Redux Toolkit.
+10. After completing a task, suggest the next task to complete (don't add this to readme).
+11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
+ 
 # Project details
 
 ## Constraints
 - JavaScript only (no TypeScript).
 - No remote databases and no custom backend.
 - Demo data must come from local sources (in-memory, JSON, or localStorage)
+- Redux Toolkit for state management
 
 ## Tech and infrastructure
 - React + Vite (fast HMR).
