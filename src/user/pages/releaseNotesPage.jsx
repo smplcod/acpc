@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import releaseNotes from '../../release-notes.json'
+import releaseNotes from '../../../release-notes.json'
 
 export default function ReleaseNotesPage() {
   const title = 'Release Notes Page | ACPC'
