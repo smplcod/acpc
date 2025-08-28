@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "generated": "2025-08-28T21:43:48+00:00",
+  "generated": "2025-08-28T22:08:00+00:00",
   "changes": [
     {
       "id": "2025-08-28T09:35:00+00:00-docs-docs",
@@ -78,16 +78,27 @@
         "en": "Darkened sidebar background and fixed icon order",
         "ru": "Утемнён фон сайдбара и закреплён порядок иконок"
       }
+    },
+    {
+      "id": "2025-08-28T22:08:00+00:00-feat-ui",
+      "timestamp": "2025-08-28T22:08:00+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Implemented dark mode with consistent palette",
+        "ru": "Реализован тёмный режим с согласованной палитрой"
+      }
     }
   ],
   "daily": {
     "2025-08-28": {
-      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar; darkened sidebar and stabilized icons",
-      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки"
+      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar; darkened sidebar and stabilized icons; implemented dark mode",
+      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки; реализован тёмный режим"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; darkened sidebar icons",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; затемнён иконки в сайдбаре"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим"
   }
 }

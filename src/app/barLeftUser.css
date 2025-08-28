@@ -6,11 +6,19 @@
   overflow-x: hidden;
   width: 250px;
   transition: width 0.3s ease;
-  scrollbar-width: none;
-  background-color: #f0f0f0;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-right: 1px solid var(--color-border);
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
 }
 .sidebar-left::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+}
+.sidebar-left::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar-thumb);
+}
+.sidebar-left::-webkit-scrollbar-track {
+  background-color: var(--color-scrollbar-track);
 }
 .sidebar-left.collapsed {
   width: 32px;
@@ -29,15 +37,17 @@
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: var(--color-text);
 }
 .icon-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-hover);
 }
 .sidebar-content {
   display: flex;
   flex-direction: column;
   gap: 4px;
   padding: 4px;
+  color: var(--color-text);
 }
 .sidebar-left.collapsed .sidebar-content {
   display: none;

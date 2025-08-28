@@ -43,7 +43,11 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
 
 9. Документация
-  - [x] 9.1 Перечислить все используемые библиотеки в readme.
+ - [x] 9.1 Перечислить все используемые библиотеки в readme.
+
+10. Тёмная тема
+ - [x] 10.1 Распознавать prefers-color-scheme для автоматического переключения темы.
+ - [x] 10.2 Применить тёмную палитру для сайдбара и интерфейса.
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
