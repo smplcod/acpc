@@ -1,8 +1,8 @@
 # Now
-ACP+Charts is a future admin dashboard. Currently, the repository contains only a bare React + Vite stub without any functionality.
+ACP+Charts is an upcoming admin dashboard. At the moment the repository holds only a minimal React + Vite scaffold with no real functionality.
 
-# Will be finaly
-ACP+Charts will become an admin dashboard that visualizes application metrics with interactive charts. Administrators can monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
+# ACP+Charts
+ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
 
 # Features ToDo
 1. Mock-данные
@@ -72,9 +72,9 @@ ACP+Charts will become an admin dashboard that visualizes application metrics wi
 4. Add new tasks for any user-requested changes.
 5. Mark completed sub-tasks with a checked box; leave incomplete ones unchecked.
 6. Keep "Features ToDo" up to date whenever task statuses change.
-7. Поддерживай актуальными разделы "Now" и "ACP+Charts"
+7. Keep the "Now" and "ACP+Charts" sections up to date.
 
-# Will be finaly
+# Project details
 
 ## Constraints
 - JavaScript only (no TypeScript).
