@@ -1,0 +1,38 @@
+{
+  "version": "0.0.0",
+  "generated": "2025-08-28T09:35:54+00:00",
+  "changes": [
+    {
+      "id": "2025-08-28T09:35:00+00:00-docs-docs",
+      "timestamp": "2025-08-28T09:35:00+00:00",
+      "version": "0.0.0",
+      "type": "docs",
+      "scope": "docs",
+      "description": {
+        "en": "Document release notes rules",
+        "ru": "Добавлены правила ведения release notes"
+      }
+    },
+    {
+      "id": "2025-08-28T09:35:30+00:00-feat-ui",
+      "timestamp": "2025-08-28T09:35:30+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Add release notes page",
+        "ru": "Добавлена страница release notes"
+      }
+    }
+  ],
+  "daily": {
+    "2025-08-28": {
+      "en": "Release notes page and rules added",
+      "ru": "Добавлена страница release notes и правила ведения"
+    }
+  },
+  "ultrashort": {
+    "en": "Release notes page online",
+    "ru": "Появилась страница release notes"
+  }
+}

@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, and an admin charts screen. Pages live under `src/pages` and a shared layout under `src/app`.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, an admin charts screen, and a release notes page. Pages live under `src/pages` and a shared layout under `src/app`.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -26,8 +26,9 @@ _Only this section of the readme can be maintained using Russian language_
   - [ ] 3.2.2 Создать страницу /admin/dev/charts/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
 
 6. Удобства
-  - [ ] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
+  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
   - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
+  - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
 
 
@@ -54,6 +55,7 @@ _Only this section of the readme can be maintained using Russian language_
 10. After completing a task, suggest the next task to complete (don't add this to readme).
 11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
 12. If there is no indication what language the page should be in, use English.
+13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`.
  
 # Project details
 
@@ -65,3 +67,8 @@ _Only this section of the readme can be maintained using Russian language_
 ## Tech and infrastructure
 - React + Vite (fast HMR).
 - Railway is our hosting.
+
+## Release notes
+- File `release-notes.json` follows [release-notes-howto.md](release-notes-howto.md).
+- Each user-facing change must append a bilingual entry with ISO 8601 timestamp.
+- Keep entries sorted chronologically and update daily summaries and the ultrashort digest.
