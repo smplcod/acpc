@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, a UI login forms gallery, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate admin menu. Pages live under `src/pages` and a shared layout under `src/app`.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, a UI login forms gallery, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate admin menu. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -53,6 +53,9 @@ _Only this section of the readme can be maintained using Russian language_
 11. UI каталог
  - [x] 11.1 Создать страницу /ui-login-forms с 10 вариантами форм авторизации.
 
+12. Code organization
+ - [x] 12.1 Разделить код на /src/user и /src/admin с отдельными app и pages.
+
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
 2. Maintain a hierarchical task list with consistent numbering.
@@ -71,6 +74,7 @@ _Only this section of the readme can be maintained using Russian language_
 11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
 12. If there is no indication what language the page should be in, use English.
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`.
+14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
  
 # Project details
 
@@ -104,6 +108,10 @@ _Only this section of the readme can be maintained using Russian language_
 - eslint-plugin-react-refresh 0.4.20
 - globals 16.3.0
 - vite 7.1.2
+
+## Code duplication log
+- `src/user/app/layout.jsx` duplicated in `src/admin/app/layout.jsx`
+- `src/user/app/layout.css` duplicated in `src/admin/app/layout.css`
 
 ## Release notes
 - File `release-notes.json` follows [release-notes-howto.md](release-notes-howto.md).
