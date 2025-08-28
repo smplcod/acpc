@@ -51,7 +51,10 @@ _Only this section of the readme can be maintained using Russian language_
 
 6. Удобства
   - [ ] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
-  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент. В компоненте распложить 
+  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
+  - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
+    - [ ] 6.2.2 На главной странице самой нижней строкой выводить "ACPC и версию проекта". Внести в readme правило чтобы данная версия была актуальной.
+
 
 7. Recommendations from bot
   - [ ] 7.1 Структура: `src/{app,pages,components,features,data,utils}`
@@ -74,7 +77,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 
 # Bot instructions
-1. Always start by reading this file and "Features ToDo" here.
+1. Always start by reading this file and "Features ToDo" here. Не нужно делать ничего из "Features ToDo", если не было прямого указания.
 2. Maintain a hierarchical task list with consistent numbering.
    - Checkboxes are only for sub-tasks (not for top-level tasks).
    - Top-level tasks must be numbered without checkboxes.
@@ -89,15 +92,16 @@ _Only this section of the readme can be maintained using Russian language_
 9. Place components and their state close to where they’re used; permit only one level of props drilling (parent→child); if data is needed deeper or across branches, use Context or Redux Toolkit.
 10. After completing a task, suggest the next task to complete (don't add this to readme).
 11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
+12. If there is no indication what language the page should be in, use English.
  
 # Project details
 
 ## Constraints
 - JavaScript only (no TypeScript).
 - No remote databases and no custom backend.
-- Demo data must come from local sources (in-memory, JSON, or localStorage)
-- Redux Toolkit for state management
+- Demo data must come from local sources (in-memory, JSON, or localStorage).
 
 ## Tech and infrastructure
 - React + Vite (fast HMR).
 - Railway is our hosting.
+- - Redux Toolkit for state management.
