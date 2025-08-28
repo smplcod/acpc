@@ -1,6 +1,11 @@
+import { useEffect } from 'react'
 import releaseNotes from '../../release-notes.json'
 
 export default function ReleaseNotesPage() {
+  const title = 'Release Notes Page | ACPC'
+  useEffect(() => {
+    document.title = title
+  }, [title])
   const changes = [...releaseNotes.changes].sort(
     (a, b) => new Date(b.timestamp) - new Date(a.timestamp),
   )
@@ -13,6 +18,7 @@ export default function ReleaseNotesPage() {
   const dates = Object.keys(groups).sort((a, b) => new Date(b) - new Date(a))
   return (
     <div>
+      <h1>{title}</h1>
       {dates.map(date => (
         <div key={date}>
           <h2>{date}</h2>

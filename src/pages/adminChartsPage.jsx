@@ -1,3 +1,9 @@
+import { useEffect } from 'react'
+
 export default function AdminChartsPage() {
-  return <h1>Admin Charts Page</h1>
+  const title = 'Admin Charts Page | ACPC'
+  useEffect(() => {
+    document.title = title
+  }, [title])
+  return <h1>{title}</h1>
 }
