@@ -40,6 +40,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
   - [x] 8.2 Создать компонент barLeftAdmin (пустой).
   - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
+  - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
