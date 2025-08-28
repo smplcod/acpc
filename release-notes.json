@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "generated": "2025-08-28T20:57:46+00:00",
+  "generated": "2025-08-28T21:43:48+00:00",
   "changes": [
     {
       "id": "2025-08-28T09:35:00+00:00-docs-docs",
@@ -57,15 +57,27 @@
         "ru": "Разделены меню пользователя и админа"
       }
     }
+    ,
+    {
+      "id": "2025-08-28T21:43:30+00:00-feat-ui",
+      "timestamp": "2025-08-28T21:43:30+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Added collapsible user sidebar",
+        "ru": "Добавлен сворачиваемый сайдбар пользователя"
+      }
+    }
   ],
   "daily": {
     "2025-08-28": {
-      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus",
-      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа"
+      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar",
+      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus",
-    "ru": "Release notes только на английском; разделены меню"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар"
   }
 }

@@ -1,0 +1,43 @@
+.sidebar-left {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 250px;
+  transition: width 0.3s ease;
+  scrollbar-width: none;
+}
+.sidebar-left::-webkit-scrollbar {
+  display: none;
+}
+.sidebar-left.collapsed {
+  width: 20px;
+  padding: 0;
+}
+.sidebar-header {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4px;
+}
+.icon-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+}
+.sidebar-left.collapsed .sidebar-content {
+  display: none;
+}
