@@ -29,14 +29,14 @@ ACP+Charts will become an admin dashboard that visualizes application metrics wi
 
 # Bot instructions
 
-1. Always start by reading this file and Features ToDo here.
+1. Always start by reading this file and "Features ToDo" here.
 2. Maintain a hierarchical task list with consistent numbering.
    - Checkboxes are only for sub-tasks (not for top-level tasks).
    - Top-level tasks must be numbered without checkboxes.
 3. Always add nested sub-tasks under “Recommendations from Codex” when future steps are discovered during work.
 4. Add new tasks for any user-requested changes.
 5. Mark completed sub-tasks with a checked box; leave incomplete ones unchecked.
-6. Keep TODO.md up to date whenever task statuses change.
+6. Keep "Features ToDo" up to date whenever task statuses change.
 
 ## Constraints
 - JavaScript only (no TypeScript).
