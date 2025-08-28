@@ -61,6 +61,9 @@ ACP+Charts will grow into an admin dashboard that visualizes application metrics
   - [ ] 6.12 Документация: README — запуск, деплой, структура
   - [ ] 6.13 Производительность: мемоизация таблицы/графиков
   - [ ] 6.14 Темы: light/dark через CSS variables
+  - 6.15 Принципы
+    - Асинхронность
+    - Try-catch
 
 
 # Bot instructions
@@ -73,6 +76,9 @@ ACP+Charts will grow into an admin dashboard that visualizes application metrics
 5. Mark completed sub-tasks with a checked box; leave incomplete ones unchecked.
 6. Keep "Features ToDo" up to date whenever task statuses change.
 7. Keep the "Now" and "ACP+Charts" sections up to date.
+8. Maintain the "Принципы" subsection under "Recommendations from bot":
+   - List each principle as a bullet item.
+   - Nest sub-tasks with checkboxes under the relevant principle when a specific implementation is required.
 
 # Project details
 
