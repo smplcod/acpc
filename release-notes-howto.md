@@ -71,7 +71,7 @@
 
 ## Messaging Conventions
 - Keep descriptions under 80 characters.
-- Use imperative mood and avoid filler words.
+- Use past tense and avoid filler words.
 - Bilingual fields must be direct equivalents.
 - Good: `{"en":"Fix login redirect","ru":"Исправлен редирект входа"}`
 - Bad: `{"en":"Some fixes","ru":"Разные правки"}`
