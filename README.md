@@ -74,6 +74,7 @@ _Only this section of the readme can be maintained using Russian language_
 - JavaScript only (no TypeScript).
 - No remote databases and no custom backend.
 - Demo data must come from local sources (in-memory, JSON, or localStorage).
+- Every page uses a single `<h1>` mirrored in the document title; non-home pages append " | ACPC".
 
 ## Tech and infrastructure
 - React + Vite (fast HMR).

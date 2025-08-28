@@ -1,3 +1,9 @@
+import { useEffect } from 'react'
+
 export default function AdminPage() {
-  return <h1>Admin Page</h1>
+  const title = 'Admin Page | ACPC'
+  useEffect(() => {
+    document.title = title
+  }, [title])
+  return <h1>{title}</h1>
 }
