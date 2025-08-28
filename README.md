@@ -37,10 +37,13 @@ _Only this section of the readme can be maintained using Russian language_
     - Асинхронность
     - Try-catch
 8. Меню
-  - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
+ - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
   - [x] 8.2 Создать компонент barLeftAdmin (пустой).
   - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
   - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
+
+9. Документация
+  - [x] 9.1 Перечислить все используемые библиотеки в readme.
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
@@ -71,6 +74,27 @@ _Only this section of the readme can be maintained using Russian language_
 ## Tech and infrastructure
 - React + Vite (fast HMR).
 - Railway is our hosting.
+
+## Libraries
+
+**Dependencies**
+
+- react 19.1.1
+- react-dom 19.1.1
+- react-feather 2.0.10
+- react-router-dom 7.8.2
+
+**Dev dependencies**
+
+- @eslint/js 9.33.0
+- @types/react 19.1.10
+- @types/react-dom 19.1.7
+- @vitejs/plugin-react 5.0.0
+- eslint 9.33.0
+- eslint-plugin-react-hooks 5.2.0
+- eslint-plugin-react-refresh 0.4.20
+- globals 16.3.0
+- vite 7.1.2
 
 ## Release notes
 - File `release-notes.json` follows [release-notes-howto.md](release-notes-howto.md).
