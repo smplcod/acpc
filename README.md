@@ -26,7 +26,6 @@ ACP+Charts will become an admin dashboard that visualizes application metrics wi
   - [ ] 5.4 Возможность менять тип графика (bar, line и т.п.)
 - 6. Recommendations from bot
 
-
 # Bot instructions
 
 1. Always start by reading this file and "Features ToDo" here.
