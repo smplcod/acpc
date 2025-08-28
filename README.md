@@ -1,10 +1,10 @@
 # ACP+Charts now
-Current version:
+Current version: 0.0.0
 
-ACP+Charts is an upcoming admin dashboard. At the moment the repository holds only a minimal React + Vite scaffold with no real functionality.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, and an admin charts screen. Pages live under `src/pages` and a shared layout under `src/app`.
 
 # ACP+Charts сomming soon
-ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes a small counter demo while chart components are under active development.
+ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
 
 # Features ToDo
 _Only this section of the readme can be maintained using Russian language_
@@ -58,7 +58,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 7. Recommendations from bot
   - [ ] 7.1 Структура: `src/{app,pages,components,features,data,utils}`
-  - [ ] 7.2 Роутинг `react-router-dom` с базовым `Layout`
+  - [x] 7.2 Роутинг `react-router-dom` с базовым `Layout`
   - [ ] 7.3 ErrorBoundary и Suspense для ленивых страниц
   - [ ] 7.4 Состояние: локальный state + Context для auth
   - [ ] 7.5 ESLint + Prettier, скрипты `lint`/`format`
