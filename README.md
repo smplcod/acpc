@@ -7,26 +7,14 @@ ACP+Charts is an admin dashboard that visualizes application metrics with intera
 - Fast hot module replacement for developer experience
 - Sample counter demonstrating state management
 - Planned interactive charts for analytics
+- Railway as hosting
+- we are using only JavaScript without TypeScript
 
-## Setup
-```bash
-npm install
-npm run dev
-```
-The app runs at http://localhost:5173.
-
-### Linting
-```bash
-npm run lint
-```
-
-### Build and preview
-```bash
-npm run build
-npm run preview
-```
 
 ## Project structure
 - `src/` — application source code.
 - `public/` — static assets.
 - `dist/` — production build (created after `npm run build`).
+
+## Bots instructions
+- You should see TODO.md to think what to do next or to talking with user. You should add new points (you must use checkboxses and numbers) todo. You must change checkbox statuses if it done or not done.
