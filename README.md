@@ -77,7 +77,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 
 # Bot instructions
-1. Always start by reading this file and "Features ToDo" here. Не нужно делать ничего из "Features ToDo", если не было прямого указания.
+1. Always start by reading this file and "Features ToDo" here.
 2. Maintain a hierarchical task list with consistent numbering.
    - Checkboxes are only for sub-tasks (not for top-level tasks).
    - Top-level tasks must be numbered without checkboxes.
