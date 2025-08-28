@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import './uiLoginFormsPage.css'
+import './adminUiPage.css'
 
-export default function UiLoginFormsPage() {
-  const title = 'Login form variants | ACPC'
+export default function AdminUiPage() {
+  const title = 'UI | ACPC'
   useEffect(() => {
     document.title = title
   }, [title])
@@ -11,10 +11,11 @@ export default function UiLoginFormsPage() {
 
   return (
     <div>
-      <h1>Login form variants</h1>
+      <h1>UI</h1>
+      <h2>Login form variants</h2>
       {variants.map((num, idx) => (
         <div key={num}>
-          <h2>{num}</h2>
+          <h3>{num}</h3>
           <form className={`login-form variant-${num}`}>
             <input type="text" placeholder="Login" />
             <input type="password" placeholder="Password" />

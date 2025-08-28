@@ -6,9 +6,9 @@ import UserLayout from './user/app/layout.jsx'
 import AdminLayout from './admin/app/layout.jsx'
 import MainPage from './user/pages/mainPage.jsx'
 import ReleaseNotesPage from './user/pages/releaseNotesPage.jsx'
-import UiLoginFormsPage from './user/pages/uiLoginFormsPage.jsx'
 import AdminPage from './admin/pages/adminPage.jsx'
 import AdminChartsPage from './admin/pages/adminChartsPage.jsx'
+import AdminUiPage from './admin/pages/adminUiPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,6 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <MainPage /> },
       { path: 'release-notes', element: <ReleaseNotesPage /> },
-      { path: 'ui-login-forms', element: <UiLoginFormsPage /> },
     ],
   },
   {
@@ -26,6 +25,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <AdminPage /> },
       { path: 'charts', element: <AdminChartsPage /> },
+      { path: 'ui', element: <AdminUiPage /> },
     ],
   },
 ])

@@ -57,6 +57,7 @@ export default function BarLeftAdmin() {
         <nav className="sidebar-content">
           <Link to="/admin">/admin</Link>
           <Link to="/admin/charts">/admin/charts</Link>
+          <Link to="/admin/ui">/admin/ui</Link>
         </nav>
       )}
     </aside>
