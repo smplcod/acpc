@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Pages live under `src/pages` and a shared layout under `src/app`.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Pages live under `src/pages` and a shared layout under `src/app`. Non-admin pages display a user menu, while admin pages use a separate admin menu.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -26,7 +26,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [ ] 3.2.2 Создать страницу /admin/dev/charts/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
 
 6. Удобства
-  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
+ - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
   - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
   - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
@@ -36,7 +36,10 @@ _Only this section of the readme can be maintained using Russian language_
   - 7.15 Принципы
     - Асинхронность
     - Try-catch
-
+8. Меню
+  - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
+  - [x] 8.2 Создать компонент barLeftAdmin (пустой).
+  - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.

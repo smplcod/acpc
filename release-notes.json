@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "generated": "2025-08-28T20:28:48+00:00",
+  "generated": "2025-08-28T20:57:46+00:00",
   "changes": [
     {
       "id": "2025-08-28T09:35:00+00:00-docs-docs",
@@ -45,16 +45,27 @@
         "en": "Limited release notes page to English",
         "ru": "Страница release notes отображает только английский текст"
       }
+    },
+    {
+      "id": "2025-08-28T20:57:30+00:00-feat-ui",
+      "timestamp": "2025-08-28T20:57:30+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Separated user and admin menus",
+        "ru": "Разделены меню пользователя и админа"
+      }
     }
   ],
   "daily": {
     "2025-08-28": {
-      "en": "Release notes page shows English only; rules and style clarified",
-      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль"
+      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus",
+      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only",
-    "ru": "Release notes только на английском"
+    "en": "Release notes English-only; split user/admin menus",
+    "ru": "Release notes только на английском; разделены меню"
   }
 }
