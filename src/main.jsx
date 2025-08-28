@@ -6,6 +6,7 @@ import Layout from './app/layout.jsx'
 import MainPage from './pages/mainPage.jsx'
 import AdminPage from './pages/adminPage.jsx'
 import AdminChartsPage from './pages/adminChartsPage.jsx'
+import ReleaseNotesPage from './pages/releaseNotesPage.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { index: true, element: <MainPage /> },
       { path: 'admin', element: <AdminPage /> },
       { path: 'admin/charts', element: <AdminChartsPage /> },
+      { path: 'release-notes', element: <ReleaseNotesPage /> },
     ],
   },
 ])
