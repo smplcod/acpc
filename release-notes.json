@@ -100,6 +100,17 @@
         "en": "Unified page titles with headings",
         "ru": "Унифицированы тайтлы со страницами"
       }
+    },
+    {
+      "id": "2025-08-29T00:30:00+00:00-fix-ui",
+      "timestamp": "2025-08-29T00:30:00+00:00",
+      "version": "0.0.0",
+      "type": "fix",
+      "scope": "ui",
+      "description": {
+        "en": "Fixed release notes layout showing content",
+        "ru": "Исправлено отображение release notes"
+      }
     }
   ],
   "daily": {
@@ -108,12 +119,12 @@
       "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки; реализован тёмный режим"
     },
     "2025-08-29": {
-      "en": "Aligned page titles with headings",
-      "ru": "Синхронизированы тайтлы с заголовками"
+      "en": "Aligned page titles with headings; fixed release notes layout",
+      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes"
   }
 }

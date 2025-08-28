@@ -35,13 +35,17 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   color: var(--color-text);
   background-color: var(--color-bg);
   scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
