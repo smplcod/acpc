@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Pages live under `src/pages` and a shared layout under `src/app`. Non-admin pages display a user menu, while admin pages use a separate admin menu.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate admin menu. Pages live under `src/pages` and a shared layout under `src/app`.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
