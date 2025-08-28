@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, a UI login forms gallery, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate admin menu. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page, a UI login forms gallery, an admin dashboard, an admin charts screen, and a release notes page showing updates in English. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -41,7 +41,8 @@ _Only this section of the readme can be maintained using Russian language_
  - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
   - [x] 8.2 Создать компонент barLeftAdmin (пустой).
   - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
-  - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
+    - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
+   - [x] 8.5 Реализовать функциональность barLeftAdmin.
 
 9. Документация
  - [x] 9.1 Перечислить все используемые библиотеки в readme.
@@ -112,6 +113,8 @@ _Only this section of the readme can be maintained using Russian language_
 ## Code duplication log
 - `src/user/app/layout.jsx` duplicated in `src/admin/app/layout.jsx`
 - `src/user/app/layout.css` duplicated in `src/admin/app/layout.css`
+- `src/user/app/barLeftUser.jsx` duplicated in `src/admin/app/barLeftAdmin.jsx`
+- `src/user/app/barLeftUser.css` duplicated in `src/admin/app/barLeftAdmin.css`
 
 ## Release notes
 - File `release-notes.json` follows [release-notes-howto.md](release-notes-howto.md).

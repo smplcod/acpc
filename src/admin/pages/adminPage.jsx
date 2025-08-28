@@ -1,9 +1,14 @@
 import { useEffect } from 'react'
 
 export default function AdminPage() {
-  const title = 'Admin Page | ACPC'
+  const title = 'Admin Page'
+  const fullTitle = `${title} | Admin | ACPC`
   useEffect(() => {
-    document.title = title
-  }, [title])
-  return <h1>{title}</h1>
+    document.title = fullTitle
+  }, [fullTitle])
+  return (
+    <div>
+      <h1>{fullTitle}</h1>
+    </div>
+  )
 }
