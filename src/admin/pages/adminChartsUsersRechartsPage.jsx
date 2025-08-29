@@ -91,7 +91,7 @@ export default function AdminChartsUsersRechartsPage() {
         <h3>{title}</h3>
         <p>{description}</p>
         <div style={{ width: '100%', height: 300 }}>
-          <ResponsiveContainer>
+          <ResponsiveContainer width="100%" height="100%">
             {children}
           </ResponsiveContainer>
         </div>

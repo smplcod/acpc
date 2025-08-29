@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.42
+Current version: 0.0.43
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -10,7 +10,7 @@ Current version: 0.0.42
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
-- Admin pages display "Subpages:" at the end with a full URL tree
+- Admin pages display "Subpages:" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - Admin charts with 20 Recharts examples for users data
 
@@ -35,7 +35,8 @@ _Only this section of the readme can be maintained using Russian language_
 
 3. Графики
   - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
-  - [ ] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
+ - [ ] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
+  - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
@@ -90,8 +91,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 # 14. Правки оформления
  - [x] 14.1 Изменить заголовок админских страниц на "| Admin Control Panel |"
- - [x] 14.2 Уменьшить глобальный размер h1 до 2.4em
+- [x] 14.2 Уменьшить глобальный размер h1 до 2.4em
 - [x] 14.3 Добавить префикс "Subpages:" перед списком подстраниц в /admin/*
+- [x] 14.4 Скрывать заголовок Subpages при отсутствии подстраниц.
 
 # 15. Маршруты
  - [x] 15.1 Удалить страницу /admin/charts и убрать сегмент dev из всех адресов админки.
@@ -115,7 +117,7 @@ _Only this section of the readme can be maintained using Russian language_
 12. If there is no indication what language the page should be in, use English.
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
-15. The admin layout automatically renders the `SubPages` component at the end of every `/admin` route; admin pages should not render `SubPages` themselves to avoid duplication, and each page ends with a "Subpages:" heading and links when available.
+15. The admin layout automatically renders the `SubPages` component at the end of every `/admin` route; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages:" heading only when subpages exist.
 16. After each task, re-check navigation (see Verification steps).
 
 # Verification steps
