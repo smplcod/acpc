@@ -65,6 +65,65 @@
   background: #fafafa;
 }
 
+.variant-11 {
+  border-left: 4px solid #000;
+  padding-left: 8px;
+}
+
+.variant-12 {
+  background: #fff0f0;
+  padding: 8px;
+}
+
+.variant-13 {
+  text-align: right;
+}
+
+.variant-14 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+.variant-15 {
+  gap: 4px;
+}
+
+.variant-15 input,
+.variant-15 button {
+  width: 100%;
+}
+
+.variant-16 {
+  flex-direction: row-reverse;
+}
+
+.variant-17 input {
+  text-transform: uppercase;
+}
+
+.variant-18 {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.variant-19 {
+  border: 2px solid #007bff;
+  padding: 8px;
+}
+
+.variant-20 {
+  background: #333;
+  color: #fff;
+  padding: 8px;
+}
+
+.variant-20 input,
+.variant-20 button {
+  background: #444;
+  color: #fff;
+  border: none;
+}
+
 .tags {
   display: flex;
   gap: 4px;
@@ -110,4 +169,52 @@
 
 .tags-variant-10 span {
   font-size: 1.2em;
+}
+
+.tags-variant-11 span {
+  text-transform: uppercase;
+}
+
+.tags-variant-12 span {
+  border-bottom: 1px dotted #333;
+}
+
+.tags-variant-13 span {
+  background: #fffbdd;
+  padding: 4px 10px;
+}
+
+.tags-variant-14 span {
+  background: linear-gradient(#eee, #ccc);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.tags-variant-15 span {
+  letter-spacing: 2px;
+}
+
+.tags-variant-16 {
+  justify-content: space-between;
+}
+
+.tags-variant-17 span {
+  color: #e63946;
+}
+
+.tags-variant-18 span {
+  background: #ddd;
+  border-radius: 9999px;
+  padding: 2px 8px;
+}
+
+.tags-variant-19 span {
+  font-style: italic;
+}
+
+.tags-variant-20 span {
+  background: #000;
+  color: #fff;
+  text-shadow: 1px 1px 0 #333;
+  padding: 2px 6px;
 }

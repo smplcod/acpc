@@ -7,8 +7,8 @@ export default function AdminUiPage() {
     document.title = title
   }, [title])
 
-  const loginVariants = Array.from({ length: 10 }, (_, i) => i + 1)
-  const tagVariants = Array.from({ length: 10 }, (_, i) => i + 1)
+  const loginVariants = Array.from({ length: 20 }, (_, i) => i + 1)
+  const tagVariants = Array.from({ length: 20 }, (_, i) => i + 1)
   const tags = ['#alpha', '#beta', '#gamma']
 
   return (
