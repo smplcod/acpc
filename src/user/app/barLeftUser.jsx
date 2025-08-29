@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import urlTree from '../../urlTree.js'
 import './barLeftUser.css'
@@ -43,7 +43,13 @@ export default function BarLeftUser() {
     <ul>
       {nodes.map(n => (
         <li key={n.path}>
-          <Link to={n.path}>{n.path}</Link>
+          <NavLink
+            to={n.path}
+            end
+            className={({ isActive }) => (isActive ? 'active' : undefined)}
+          >
+            {n.path}
+          </NavLink>
           {n.children.length > 0 && renderTree(n.children)}
         </li>
       ))}

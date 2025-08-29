@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.44
+Current version: 0.0.45
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -12,6 +12,7 @@ Current version: 0.0.44
 - Code split between `src/user` and `src/admin`
 - Admin pages display "Subpages:" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
+- User and admin sidebars highlight the active link
 - Admin charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
@@ -58,8 +59,9 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 8.2 Создать компонент barLeftAdmin (пустой).
  - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
     - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
-   - [x] 8.5 Реализовать функциональность barLeftAdmin.
-  - [x] 8.6 Добавить подсказки к иконкам и ссылку-домик в сайдбары.
+ - [x] 8.5 Реализовать функциональность barLeftAdmin.
+ - [x] 8.6 Добавить подсказки к иконкам и ссылку-домик в сайдбары.
+ - [x] 8.7 Подсветить активные ссылки в сайдбарах пользователя и админа.
 
 9. Документация
  - [x] 9.1 Перечислить все используемые библиотеки в readme.
