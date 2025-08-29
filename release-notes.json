@@ -1061,6 +1061,28 @@
           "scope": "readme"
         }
       ]
+    },
+    {
+      "version": "0.0.41",
+      "date": "2025-08-29",
+      "time": "13:50:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Simplified time display and timezone label on release notes page",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Упрощены формат времени и указание часового пояса на странице release notes",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2013,6 +2035,28 @@
           "weight": 20,
           "type": "docs",
           "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.41",
+      "date": "2025-08-29",
+      "time": "13:50:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Simplified time display and timezone label on release notes page",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Упрощены формат времени и указание часового пояса на странице release notes",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ]
     }
