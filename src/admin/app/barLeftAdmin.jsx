@@ -1,8 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import urlTree from '../../urlTree.js'
 import './barLeftAdmin.css'
+
+const flattenTree = nodes =>
+  nodes.flatMap(n => [n.path, ...flattenTree(n.children)])
 
 export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
   const [collapsed, setCollapsed] = useState(true)
@@ -44,16 +47,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     if (collapsed) setHovered(false)
   }
 
-  const renderTree = nodes => (
-    <ul>
-      {nodes.map(n => (
-        <li key={n.path}>
-          <Link to={n.path}>{n.path}</Link>
-          {n.children.length > 0 && renderTree(n.children)}
-        </li>
-      ))}
-    </ul>
-  )
+  const flatUrls = useMemo(() => flattenTree(urlTree), [])
 
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
@@ -86,7 +80,17 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
           </>
         )}
       </div>
-      {!isCollapsed && <nav className="sidebar-content">{renderTree(urlTree)}</nav>}
+      {!isCollapsed && (
+        <nav className="sidebar-content">
+          <ul>
+            {flatUrls.map(path => (
+              <li key={path}>
+                <Link to={path}>{path}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </aside>
   )
 }
