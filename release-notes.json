@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "generated": "2025-08-29T06:30:00+00:00",
+  "generated": "2025-08-29T08:00:00+00:00",
   "changes": [
     {
       "id": "2025-08-28T09:35:00+00:00-docs-docs",
@@ -188,6 +188,17 @@
         "en": "Added hashtag display variants on admin UI",
         "ru": "Добавлены варианты отображения хэштегов в админском UI"
       }
+    },
+    {
+      "id": "2025-08-29T08:00:00+00:00-feat-ui",
+      "timestamp": "2025-08-29T08:00:00+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "ui",
+      "description": {
+        "en": "Expanded login and hashtag variants on admin UI",
+        "ru": "Расширены варианты форм входа и хэштегов в админском UI"
+      }
     }
   ],
   "daily": {
@@ -196,12 +207,12 @@
       "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки; реализован тёмный режим"
     },
     "2025-08-29": {
-      "en": "Aligned page titles with headings; fixed release notes layout; added login form variants page; documented user/admin code separation; added collapsible admin sidebar; moved login form variants page to admin UI; added sidebar tooltips and home links; displayed site icon and refreshed home page texts; added hashtag display variants on admin UI",
-      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes; добавлена страница вариантов форм входа; задокументировано разделение кода на пользователя и админа; добавлен сворачиваемый сайдбар админа; страница вариантов форм входа перенесена в админский UI; добавлены подсказки и ссылка-домик в сайдбары; показана иконка сайта и обновлены тексты главной; добавлены варианты отображения хэштегов в админском UI"
+      "en": "Aligned page titles with headings; fixed release notes layout; added login form variants page; documented user/admin code separation; added collapsible admin sidebar; moved login form variants page to admin UI; added sidebar tooltips and home links; displayed site icon and refreshed home page texts; added hashtag display variants on admin UI; expanded login and hashtag variants",
+      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes; добавлена страница вариантов форм входа; задокументировано разделение кода на пользователя и админа; добавлен сворачиваемый сайдбар админа; страница вариантов форм входа перенесена в админский UI; добавлены подсказки и ссылка-домик в сайдбары; показана иконка сайта и обновлены тексты главной; добавлены варианты отображения хэштегов в админском UI; расширены варианты форм входа и хэштегов"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout; login form variants page; documented code separation; collapsible admin sidebar; login forms moved to admin UI; sidebar tooltips and home links; home page icon and greeting updated; hashtag display variants",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes; страница вариантов форм входа; задокументировано разделение кода; сворачиваемый сайдбар админа; страница форм входа перенесена в админский UI; подсказки и ссылка-домик в сайдбары; обновлена иконка и приветствие на главной; варианты отображения хэштегов"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout; login form variants page; documented code separation; collapsible admin sidebar; login forms moved to admin UI; sidebar tooltips and home links; home page icon and greeting updated; hashtag display variants; expanded login and hashtag variants",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes; страница вариантов форм входа; задокументировано разделение кода; сворачиваемый сайдбар админа; страница форм входа перенесена в админский UI; подсказки и ссылка-домик в сайдбары; обновлена иконка и приветствие на главной; варианты отображения хэштегов; расширены варианты форм входа и хэштегов"
   }
 }
