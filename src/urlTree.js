@@ -6,20 +6,14 @@ const urlTree = [
     children: [
       { path: '/admin/login', children: [] },
       { path: '/admin/logout', children: [] },
-      { path: '/admin/charts', children: [] },
       {
-        path: '/admin/dev',
+        path: '/admin/charts',
         children: [
           {
-            path: '/admin/dev/charts',
+            path: '/admin/charts/users',
             children: [
-              {
-                path: '/admin/dev/charts/users',
-                children: [
-                  { path: '/admin/dev/charts/users/recharts', children: [] },
-                  { path: '/admin/dev/charts/users/chartjs2', children: [] }
-                ]
-              }
+              { path: '/admin/charts/users/recharts', children: [] },
+              { path: '/admin/charts/users/chartjs2', children: [] }
             ]
           }
         ]

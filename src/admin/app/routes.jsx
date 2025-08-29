@@ -1,38 +1,28 @@
 import AdminPage from '../pages/adminPage.jsx'
 import AdminChartsPage from '../pages/adminChartsPage.jsx'
+import AdminChartsUsersPage from '../pages/adminChartsUsersPage.jsx'
+import AdminChartsUsersRechartsPage from '../pages/adminChartsUsersRechartsPage.jsx'
+import AdminChartsUsersChartjs2Page from '../pages/adminChartsUsersChartjs2Page.jsx'
 import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
 import AdminLogoutPage from '../pages/adminLogoutPage.jsx'
-import AdminDevPage from '../pages/adminDevPage.jsx'
-import AdminDevChartsPage from '../pages/adminDevChartsPage.jsx'
-import AdminDevChartsUsersPage from '../pages/adminDevChartsUsersPage.jsx'
-import AdminDevChartsUsersRechartsPage from '../pages/adminDevChartsUsersRechartsPage.jsx'
-import AdminDevChartsUsersChartjs2Page from '../pages/adminDevChartsUsersChartjs2Page.jsx'
 
 const adminRoutes = [
   { path: 'login', element: <AdminLoginPage />, label: 'Login' },
   { path: 'logout', element: <AdminLogoutPage />, label: 'Logout' },
   { index: true, element: <AdminPage />, label: 'Home' },
-  { path: 'charts', element: <AdminChartsPage />, label: 'Charts' },
   {
-    path: 'dev',
-    element: <AdminDevPage />,
-    label: 'Dev',
+    path: 'charts',
+    element: <AdminChartsPage />,
+    label: 'Charts',
     children: [
       {
-        path: 'charts',
-        element: <AdminDevChartsPage />,
-        label: 'Charts',
+        path: 'users',
+        element: <AdminChartsUsersPage />,
+        label: 'Users',
         children: [
-          {
-            path: 'users',
-            element: <AdminDevChartsUsersPage />,
-            label: 'Users',
-            children: [
-              { path: 'recharts', element: <AdminDevChartsUsersRechartsPage />, label: 'Recharts' },
-              { path: 'chartjs2', element: <AdminDevChartsUsersChartjs2Page />, label: 'Chartjs2' }
-            ]
-          }
+          { path: 'recharts', element: <AdminChartsUsersRechartsPage />, label: 'Recharts' },
+          { path: 'chartjs2', element: <AdminChartsUsersChartjs2Page />, label: 'Chartjs2' }
         ]
       }
     ]

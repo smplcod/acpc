@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
+import SubPages from '../app/subPages.jsx'
 
-export default function AdminDevChartsPage() {
-  const title = 'Admin Dev Charts Page'
+export default function AdminChartsUsersChartjs2Page() {
+  const title = 'Admin Charts Users Chartjs2 Page'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
   useEffect(() => {
     document.title = fullTitle
@@ -11,6 +12,8 @@ export default function AdminDevChartsPage() {
     <div>
       <h1>{fullTitle}</h1>
       <AuthMessage />
+      <p>Chart.js 2 examples are not implemented yet.</p>
+      <SubPages />
     </div>
   )
 }
