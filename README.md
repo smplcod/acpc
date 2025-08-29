@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.35
+Current version: 0.0.36
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -10,7 +10,7 @@ Current version: 0.0.35
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
-- Admin pages list subpages via dedicated component
+- Admin pages display "Subpages:" at the end via a dedicated component
 - Admin dev charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
@@ -110,7 +110,7 @@ _Only this section of the readme can be maintained using Russian language_
 12. If there is no indication what language the page should be in, use English.
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
-15. When a page has nested routes, list its subpages at the end using the dedicated `SubPages` component stored in its own file.
+15. Always render the `SubPages` component at the end of every `/admin` route, regardless of depth, so each page ends with a "Subpages:" heading and links when available.
  
 # Project details
 

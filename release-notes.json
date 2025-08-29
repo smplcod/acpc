@@ -795,78 +795,6 @@
       ]
     },
     {
-      "date": "2025-08-29",
-      "time": "summary",
-      "summary": [
-        "Release notes rules and page documented; workflow clarified",
-        "Navigation split with collapsible sidebars and improved styling",
-        "Dark mode implemented, titles unified, and release notes layout fixed",
-        "Login and hashtag variants expanded; UI updated with tooltips, home icons, and refreshed home page",
-        "Admin auth flow enhanced with login/logout pages, message translated, and redirect to requested pages",
-        "Code separation documented and release notes instructions clarified",
-        "Admin subpages listed via dedicated component",
-        "Release notes page crash resolved",
-        "Release notes tagged with type and scope",
-        "Admin auth message refined",
-        "Admin titles clarified and h1 size reduced",
-        "Admin subpage lists labeled with 'Subpages:'",
-        "Features list reorganized and bot rule moved to conveniences",
-        "README intro shortened into bullet list",
-        "User charts with Recharts"
-      ],
-      "summary-ru": [
-        "Задокументированы правила и страница release notes, уточнён процесс",
-        "Разделена навигация, добавлены сворачиваемые сайдбары и улучшено оформление",
-        "Реализован тёмный режим, унифицированы заголовки и исправлено отображение release notes",
-        "Расширены варианты форм и хэштегов, UI дополнен подсказками, иконкой дома и обновлённой главной",
-        "Улучшен процесс авторизации админа: добавлены страницы входа/выхода, переведено сообщение и реализован редирект",
-        "Задокументировано разделение кода и уточнены инструкции по release notes",
-        "Подстраницы админа выведены через отдельный компонент",
-        "Исправлено падение страницы release notes",
-        "Release notes получили теги type и scope",
-        "Уточнено сообщение об авторизации админа",
-        "Уточнены заголовки админ-панели и уменьшен размер h1",
-        "Списки подстраниц админа теперь начинаются с \"Subpages:\"",
-        "Перенесено правило бота в раздел удобств и обновлён список Features ToDo",
-        "Введение README сокращено до маркированного списка",
-        "Добавлены демо графиков пользователей на Recharts"
-      ],
-      "ultrashort-summary": [
-        "Release notes documented",
-        "Navigation & sidebars",
-        "Dark mode & layout",
-        "UI variants expanded",
-        "Admin auth improved",
-        "Code docs updated",
-        "Admin subpages listed",
-        "Release notes crash fixed",
-        "Type and scope tags",
-        "Auth message refined",
-        "Admin titles & h1 size",
-        "Subpages label added",
-        "Features list updated",
-        "README intro concise",
-        "Recharts user charts"
-      ],
-      "ultrashort-summary-ru": [
-        "Документы release notes",
-        "Навигация и сайдбары",
-        "Тёмный режим и верстка",
-        "Расширен UI вариантов",
-        "Авторизация улучшена",
-        "Документация обновлена",
-        "Подстраницы админа",
-        "Исправлен crash release notes",
-        "Теги type и scope",
-        "Сообщение авторизации уточнено",
-        "Заголовки и h1",
-        "Подпись Subpages",
-        "Обновлён список задач",
-        "Краткое введение README",
-        "Графики Recharts"
-      ]
-    },
-    {
       "version": "0.0.35",
       "date": "2025-08-29",
       "time": "09:34:00",
@@ -898,6 +826,116 @@
           "type": "docs",
           "scope": "readme"
         }
+      ]
+    },
+    {
+      "version": "0.0.36",
+      "date": "2025-08-29",
+      "time": "09:35:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Displayed 'Subpages' heading on all admin routes",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-ui"
+        },
+        {
+          "description": "Clarified SubPages rule in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "На всех админских маршрутах показан заголовок 'Subpages'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-ui"
+        },
+        {
+          "description": "Уточнено правило SubPages в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
+      "date": "2025-08-29",
+      "time": "summary",
+      "summary": [
+        "Release notes rules and page documented; workflow clarified",
+        "Navigation split with collapsible sidebars and improved styling",
+        "Dark mode implemented, titles unified, and release notes layout fixed",
+        "Login and hashtag variants expanded; UI updated with tooltips, home icons, and refreshed home page",
+        "Admin auth flow enhanced with login/logout pages, message translated, and redirect to requested pages",
+        "Code separation documented and release notes instructions clarified",
+        "Admin subpages listed via dedicated component",
+        "Release notes page crash resolved",
+        "Release notes tagged with type and scope",
+        "Admin auth message refined",
+        "Admin titles clarified and h1 size reduced",
+        "Admin subpage lists labeled with 'Subpages:'",
+        "Features list reorganized and bot rule moved to conveniences",
+        "README intro shortened into bullet list",
+        "User charts with Recharts",
+        "Admin pages always show a 'Subpages:' heading"
+      ],
+      "summary-ru": [
+        "Задокументированы правила и страница release notes, уточнён процесс",
+        "Разделена навигация, добавлены сворачиваемые сайдбары и улучшено оформление",
+        "Реализован тёмный режим, унифицированы заголовки и исправлено отображение release notes",
+        "Расширены варианты форм и хэштегов, UI дополнен подсказками, иконкой дома и обновлённой главной",
+        "Улучшен процесс авторизации админа: добавлены страницы входа/выхода, переведено сообщение и реализован редирект",
+        "Задокументировано разделение кода и уточнены инструкции по release notes",
+        "Подстраницы админа выведены через отдельный компонент",
+        "Исправлено падение страницы release notes",
+        "Release notes получили теги type и scope",
+        "Уточнено сообщение об авторизации админа",
+        "Уточнены заголовки админ-панели и уменьшен размер h1",
+        "Списки подстраниц админа теперь начинаются с \"Subpages:\"",
+        "Перенесено правило бота в раздел удобств и обновлён список Features ToDo",
+        "Введение README сокращено до маркированного списка",
+        "Добавлены демо графиков пользователей на Recharts",
+        "На админских страницах всегда показывается заголовок 'Subpages:'"
+      ],
+      "ultrashort-summary": [
+        "Release notes documented",
+        "Navigation & sidebars",
+        "Dark mode & layout",
+        "UI variants expanded",
+        "Admin auth improved",
+        "Code docs updated",
+        "Admin subpages listed",
+        "Release notes crash fixed",
+        "Type and scope tags",
+        "Auth message refined",
+        "Admin titles & h1 size",
+        "Subpages label added",
+        "Features list updated",
+        "README intro concise",
+        "Recharts user charts",
+        "Admin subpages heading"
+      ],
+      "ultrashort-summary-ru": [
+        "Документы release notes",
+        "Навигация и сайдбары",
+        "Тёмный режим и верстка",
+        "Расширен UI вариантов",
+        "Авторизация улучшена",
+        "Документация обновлена",
+        "Подстраницы админа",
+        "Исправлен crash release notes",
+        "Теги type и scope",
+        "Сообщение авторизации уточнено",
+        "Заголовки и h1",
+        "Подпись Subpages",
+        "Обновлён список задач",
+        "Краткое введение README",
+        "Графики Recharts",
+        "Заголовок Subpages"
       ]
     }
   ],
@@ -1690,6 +1728,40 @@
         },
         {
           "description": "Задокументированы новые маршруты графиков в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.36",
+      "date": "2025-08-29",
+      "time": "09:35:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Displayed 'Subpages' heading on all admin routes",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-ui"
+        },
+        {
+          "description": "Clarified SubPages rule in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "На всех админских маршрутах показан заголовок 'Subpages'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-ui"
+        },
+        {
+          "description": "Уточнено правило SubPages в README",
           "weight": 20,
           "type": "docs",
           "scope": "readme"
