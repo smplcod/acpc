@@ -47,6 +47,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 9. Документация
  - [x] 9.1 Перечислить все используемые библиотеки в readme.
+ - [x] 9.2 Добавить .env.example с переменными авторизации администратора.
 
 10. Тёмная тема
  - [x] 10.1 Распознавать prefers-color-scheme для автоматического переключения темы.
