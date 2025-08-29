@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.32
+Current version: 0.0.33
 
 ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. After login, admins return to the page they originally requested. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 Every admin page lists its subpages at the bottom via a dedicated component.
@@ -24,10 +24,8 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
 
 3. Графики
-  - [ ] 3.1 Создать /admin/dev/charts . Создать /admin/dev/ , которая редиректит на /admin/dev/charts .
-  - [x] 3.2 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компоент в отдельном файле.
-  - [ ] 3.2.1 Создать страницу /admin/dev/charts/recharts и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Recharts. После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
-  - [ ] 3.2.2 Создать страницу /admin/dev/charts/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
+  - [ ] 3.1 Создать страницу /admin/dev/charts/recharts и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Recharts. После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
+  - [ ] 3.2 Создать страницу /admin/dev/charts/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
@@ -36,6 +34,7 @@ _Only this section of the readme can be maintained using Russian language_
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
   - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
  - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
+ - [x] 6.4 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компонент в отдельном файле.
 
 
 7. Recommendations from bot
