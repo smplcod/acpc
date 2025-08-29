@@ -6,56 +6,200 @@
       "time": "12:30:00",
       "timezone": "Asia/Bishkek",
       "changes": [
-        { "description": "Documented release notes rules", "weight": 20 },
-        { "description": "Added release notes page", "weight": 70 },
-        { "description": "Clarified past tense style for release notes", "weight": 20 },
-        { "description": "Limited release notes page to English", "weight": 30 },
-        { "description": "Separated user and admin menus", "weight": 60 },
-        { "description": "Added collapsible user sidebar", "weight": 60 },
-        { "description": "Darkened sidebar background and fixed icon order", "weight": 40 },
-        { "description": "Implemented dark mode with consistent palette", "weight": 80 },
-        { "description": "Unified page titles with headings", "weight": 40 },
-        { "description": "Fixed release notes layout showing content", "weight": 50 },
-        { "description": "Added login form variants page", "weight": 70 },
-        { "description": "Documented user and admin code separation", "weight": 30 },
-        { "description": "Added collapsible admin sidebar", "weight": 60 },
-        { "description": "Moved login form variants page to admin UI", "weight": 40 },
-        { "description": "Added tooltips and home icon links to sidebars", "weight": 40 },
-        { "description": "Displayed site icon and refreshed home page texts", "weight": 30 },
-        { "description": "Added hashtag display variants on admin UI", "weight": 60 },
-        { "description": "Expanded login and hashtag variants on admin UI", "weight": 60 },
-        { "description": "Marked current UI choices and added ten more form and hashtag variants", "weight": 60 },
-        { "description": "Added admin login page and set login form variant 30 as current choice", "weight": 70 },
-        { "description": "Added admin logout page and enforced auth redirects", "weight": 70 },
-        { "description": "Translated admin auth message to English", "weight": 40 },
-        { "description": "Redirected admins to requested page after login", "weight": 60 },
-        { "description": "Listed admin subpages via dedicated component", "weight": 40 }
+        {
+          "description": "Documented release notes rules",
+          "weight": 20
+        },
+        {
+          "description": "Added release notes page",
+          "weight": 70
+        },
+        {
+          "description": "Clarified past tense style for release notes",
+          "weight": 20
+        },
+        {
+          "description": "Limited release notes page to English",
+          "weight": 30
+        },
+        {
+          "description": "Separated user and admin menus",
+          "weight": 60
+        },
+        {
+          "description": "Added collapsible user sidebar",
+          "weight": 60
+        },
+        {
+          "description": "Darkened sidebar background and fixed icon order",
+          "weight": 40
+        },
+        {
+          "description": "Implemented dark mode with consistent palette",
+          "weight": 80
+        },
+        {
+          "description": "Unified page titles with headings",
+          "weight": 40
+        },
+        {
+          "description": "Fixed release notes layout showing content",
+          "weight": 50
+        },
+        {
+          "description": "Added login form variants page",
+          "weight": 70
+        },
+        {
+          "description": "Documented user and admin code separation",
+          "weight": 30
+        },
+        {
+          "description": "Added collapsible admin sidebar",
+          "weight": 60
+        },
+        {
+          "description": "Moved login form variants page to admin UI",
+          "weight": 40
+        },
+        {
+          "description": "Added tooltips and home icon links to sidebars",
+          "weight": 40
+        },
+        {
+          "description": "Displayed site icon and refreshed home page texts",
+          "weight": 30
+        },
+        {
+          "description": "Added hashtag display variants on admin UI",
+          "weight": 60
+        },
+        {
+          "description": "Expanded login and hashtag variants on admin UI",
+          "weight": 60
+        },
+        {
+          "description": "Marked current UI choices and added ten more form and hashtag variants",
+          "weight": 60
+        },
+        {
+          "description": "Added admin login page and set login form variant 30 as current choice",
+          "weight": 70
+        },
+        {
+          "description": "Added admin logout page and enforced auth redirects",
+          "weight": 70
+        },
+        {
+          "description": "Translated admin auth message to English",
+          "weight": 40
+        },
+        {
+          "description": "Redirected admins to requested page after login",
+          "weight": 60
+        },
+        {
+          "description": "Listed admin subpages via dedicated component",
+          "weight": 40
+        }
       ],
       "changes-ru": [
-        { "description": "Добавлены правила ведения release notes", "weight": 20 },
-        { "description": "Добавлена страница release notes", "weight": 70 },
-        { "description": "Уточнён стиль release notes в прошедшем времени", "weight": 20 },
-        { "description": "Страница release notes отображает только английский текст", "weight": 30 },
-        { "description": "Разделены меню пользователя и админа", "weight": 60 },
-        { "description": "Добавлен сворачиваемый сайдбар пользователя", "weight": 60 },
-        { "description": "Утемнён фон сайдбара и закреплён порядок иконок", "weight": 40 },
-        { "description": "Реализован тёмный режим с согласованной палитрой", "weight": 80 },
-        { "description": "Унифицированы тайтлы со страницами", "weight": 40 },
-        { "description": "Исправлено отображение release notes", "weight": 50 },
-        { "description": "Добавлена страница вариантов форм входа", "weight": 70 },
-        { "description": "Задокументировано разделение кода на пользователя и админа", "weight": 30 },
-        { "description": "Добавлен сворачиваемый сайдбар админа", "weight": 60 },
-        { "description": "Перенесена страница вариантов форм входа в админский UI", "weight": 40 },
-        { "description": "Добавлены подсказки и ссылка-домик в сайдбары", "weight": 40 },
-        { "description": "Показана иконка сайта и обновлены тексты главной", "weight": 30 },
-        { "description": "Добавлены варианты отображения хэштегов в админском UI", "weight": 60 },
-        { "description": "Расширены варианты форм входа и хэштегов в админском UI", "weight": 60 },
-        { "description": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов", "weight": 60 },
-        { "description": "Добавлена страница входа админа и выбран вариант формы 30", "weight": 70 },
-        { "description": "Добавлена страница выхода админа и проверка авторизации на страницах", "weight": 70 },
-        { "description": "Сообщение авторизации админа переведено на английский", "weight": 40 },
-        { "description": "После входа админов перенаправляет на запрошенную страницу", "weight": 60 },
-        { "description": "Выведены подстраницы админа через специальный компонент", "weight": 40 }
+        {
+          "description": "Добавлены правила ведения release notes",
+          "weight": 20
+        },
+        {
+          "description": "Добавлена страница release notes",
+          "weight": 70
+        },
+        {
+          "description": "Уточнён стиль release notes в прошедшем времени",
+          "weight": 20
+        },
+        {
+          "description": "Страница release notes отображает только английский текст",
+          "weight": 30
+        },
+        {
+          "description": "Разделены меню пользователя и админа",
+          "weight": 60
+        },
+        {
+          "description": "Добавлен сворачиваемый сайдбар пользователя",
+          "weight": 60
+        },
+        {
+          "description": "Утемнён фон сайдбара и закреплён порядок иконок",
+          "weight": 40
+        },
+        {
+          "description": "Реализован тёмный режим с согласованной палитрой",
+          "weight": 80
+        },
+        {
+          "description": "Унифицированы тайтлы со страницами",
+          "weight": 40
+        },
+        {
+          "description": "Исправлено отображение release notes",
+          "weight": 50
+        },
+        {
+          "description": "Добавлена страница вариантов форм входа",
+          "weight": 70
+        },
+        {
+          "description": "Задокументировано разделение кода на пользователя и админа",
+          "weight": 30
+        },
+        {
+          "description": "Добавлен сворачиваемый сайдбар админа",
+          "weight": 60
+        },
+        {
+          "description": "Перенесена страница вариантов форм входа в админский UI",
+          "weight": 40
+        },
+        {
+          "description": "Добавлены подсказки и ссылка-домик в сайдбары",
+          "weight": 40
+        },
+        {
+          "description": "Показана иконка сайта и обновлены тексты главной",
+          "weight": 30
+        },
+        {
+          "description": "Добавлены варианты отображения хэштегов в админском UI",
+          "weight": 60
+        },
+        {
+          "description": "Расширены варианты форм входа и хэштегов в админском UI",
+          "weight": 60
+        },
+        {
+          "description": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов",
+          "weight": 60
+        },
+        {
+          "description": "Добавлена страница входа админа и выбран вариант формы 30",
+          "weight": 70
+        },
+        {
+          "description": "Добавлена страница выхода админа и проверка авторизации на страницах",
+          "weight": 70
+        },
+        {
+          "description": "Сообщение авторизации админа переведено на английский",
+          "weight": 40
+        },
+        {
+          "description": "После входа админов перенаправляет на запрошенную страницу",
+          "weight": 60
+        },
+        {
+          "description": "Выведены подстраницы админа через специальный компонент",
+          "weight": 40
+        }
       ]
     },
     {
@@ -64,16 +208,51 @@
       "time": "13:30:00",
       "timezone": "Asia/Bishkek",
       "changes": [
-        { "description": "Introduced weighted release notes format with versioning", "weight": 50 },
-        { "description": "Clarified release note workflow in documentation", "weight": 30 },
-        { "description": "Expanded README instructions for maintaining release notes", "weight": 20 }
+        {
+          "description": "Introduced weighted release notes format with versioning",
+          "weight": 50
+        },
+        {
+          "description": "Clarified release note workflow in documentation",
+          "weight": 30
+        },
+        {
+          "description": "Expanded README instructions for maintaining release notes",
+          "weight": 20
+        }
       ],
       "changes-ru": [
-        { "description": "Введён формат release notes с весами и версиями", "weight": 50 },
-        { "description": "Уточнён процесс ведения release notes в документации", "weight": 30 },
-        { "description": "Расширены инструкции по release notes в README", "weight": 20 }
+        {
+          "description": "Введён формат release notes с весами и версиями",
+          "weight": 50
+        },
+        {
+          "description": "Уточнён процесс ведения release notes в документации",
+          "weight": 30
+        },
+        {
+          "description": "Расширены инструкции по release notes в README",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "version": "0.0.2",
+      "date": "2025-08-29",
+      "time": "09:17:46",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed release notes page crash on render",
+          "weight": 40
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено падение страницы release notes при рендере",
+          "weight": 40
+        }
       ]
     }
   ]
 }
-
