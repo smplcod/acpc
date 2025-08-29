@@ -9,7 +9,7 @@ export default function AdminUiPage() {
 
   const loginVariants = Array.from({ length: 30 }, (_, i) => i + 1)
   const tagVariants = Array.from({ length: 30 }, (_, i) => i + 1)
-  const loginChoice = 3
+  const loginChoice = 30
   const tagChoice = 20
   const tags = ['#alpha', '#beta', '#gamma']
 
