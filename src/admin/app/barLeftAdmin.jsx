@@ -78,6 +78,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
         <nav className="sidebar-content">
           <Link to="/admin">/admin</Link>
           <Link to="/admin/charts">/admin/charts</Link>
+          <Link to="/admin/dev">/admin/dev</Link>
           <Link to="/admin/ui">/admin/ui</Link>
           <Link to="/admin/logout">/admin/logout</Link>
         </nav>

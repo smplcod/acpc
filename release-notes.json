@@ -761,6 +761,40 @@
       ]
     },
     {
+      "version": "0.0.35",
+      "date": "2025-08-29",
+      "time": "09:34:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added 20 Recharts examples for user data",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Documented new charts routes in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлено 20 примеров графиков Recharts для данных пользователей",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Задокументированы новые маршруты графиков в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
       "date": "2025-08-29",
       "time": "summary",
       "summary": [
@@ -777,7 +811,8 @@
         "Admin titles clarified and h1 size reduced",
         "Admin subpage lists labeled with 'Subpages:'",
         "Features list reorganized and bot rule moved to conveniences",
-        "README intro shortened into bullet list"
+        "README intro shortened into bullet list",
+        "User charts with Recharts"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -793,7 +828,8 @@
         "Уточнены заголовки админ-панели и уменьшен размер h1",
         "Списки подстраниц админа теперь начинаются с \"Subpages:\"",
         "Перенесено правило бота в раздел удобств и обновлён список Features ToDo",
-        "Введение README сокращено до маркированного списка"
+        "Введение README сокращено до маркированного списка",
+        "Добавлены демо графиков пользователей на Recharts"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -809,7 +845,8 @@
         "Admin titles & h1 size",
         "Subpages label added",
         "Features list updated",
-        "README intro concise"
+        "README intro concise",
+        "Recharts user charts"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -825,7 +862,42 @@
         "Заголовки и h1",
         "Подпись Subpages",
         "Обновлён список задач",
-        "Краткое введение README"
+        "Краткое введение README",
+        "Графики Recharts"
+      ]
+    },
+    {
+      "version": "0.0.35",
+      "date": "2025-08-29",
+      "time": "09:34:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added 20 Recharts examples for user data",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Documented new charts routes in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлено 20 примеров графиков Recharts для данных пользователей",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Задокументированы новые маршруты графиков в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
       ]
     }
   ],
@@ -1545,8 +1617,7 @@
           "scope": "admin-ui"
         }
       ]
-    }
-    ,
+    },
     {
       "version": "0.0.33",
       "date": "2025-08-29",
@@ -1585,6 +1656,40 @@
       "changes-ru": [
         {
           "description": "Сокращён раздел ACP+Charts now до краткого маркированного списка",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.35",
+      "date": "2025-08-29",
+      "time": "09:34:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added 20 Recharts examples for user data",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Documented new charts routes in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлено 20 примеров графиков Recharts для данных пользователей",
+          "weight": 70,
+          "type": "feat",
+          "scope": "charts"
+        },
+        {
+          "description": "Задокументированы новые маршруты графиков в README",
           "weight": 20,
           "type": "docs",
           "scope": "readme"

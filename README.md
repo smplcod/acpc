@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.34
+Current version: 0.0.35
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -11,6 +11,7 @@ Current version: 0.0.34
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
 - Admin pages list subpages via dedicated component
+- Admin dev charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -32,8 +33,8 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
 
 3. Графики
-  - [ ] 3.1 Создать страницу /admin/dev/charts/recharts и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Recharts. После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
-  - [ ] 3.2 Создать страницу /admin/dev/charts/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из mockData.js.
+  - [x] 3.1 Создать страницы /admin/dev/charts/users и /admin/dev/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
+  - [ ] 3.2 Создать страницу /admin/dev/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
@@ -131,6 +132,7 @@ _Only this section of the readme can be maintained using Russian language_
 - react-dom 19.1.1
 - react-feather 2.0.10
 - react-router-dom 7.8.2
+- recharts 2.15.4
 
 **Dev dependencies**
 
