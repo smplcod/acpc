@@ -8,13 +8,17 @@
       "changes": [
         {
           "description": "Documented release notes rules",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены правила ведения release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -26,13 +30,17 @@
       "changes": [
         {
           "description": "Added release notes page",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница release notes",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ]
     },
@@ -44,13 +52,17 @@
       "changes": [
         {
           "description": "Clarified past tense style for release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Уточнён стиль release notes в прошедшем времени",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -62,13 +74,17 @@
       "changes": [
         {
           "description": "Limited release notes page to English",
-          "weight": 30
+          "weight": 30,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Страница release notes отображает только английский текст",
-          "weight": 30
+          "weight": 30,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ]
     },
@@ -80,13 +96,17 @@
       "changes": [
         {
           "description": "Separated user and admin menus",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "navigation"
         }
       ],
       "changes-ru": [
         {
           "description": "Разделены меню пользователя и админа",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "navigation"
         }
       ]
     },
@@ -98,13 +118,17 @@
       "changes": [
         {
           "description": "Added collapsible user sidebar",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлен сворачиваемый сайдбар пользователя",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -116,13 +140,17 @@
       "changes": [
         {
           "description": "Darkened sidebar background and fixed icon order",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Утемнён фон сайдбара и закреплён порядок иконок",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
         }
       ]
     },
@@ -134,13 +162,17 @@
       "changes": [
         {
           "description": "Implemented dark mode with consistent palette",
-          "weight": 80
+          "weight": 80,
+          "type": "feat",
+          "scope": "theme"
         }
       ],
       "changes-ru": [
         {
           "description": "Реализован тёмный режим с согласованной палитрой",
-          "weight": 80
+          "weight": 80,
+          "type": "feat",
+          "scope": "theme"
         }
       ]
     },
@@ -152,13 +184,17 @@
       "changes": [
         {
           "description": "Unified page titles with headings",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "pages"
         }
       ],
       "changes-ru": [
         {
           "description": "Унифицированы тайтлы со страницами",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "pages"
         }
       ]
     },
@@ -170,13 +206,17 @@
       "changes": [
         {
           "description": "Fixed release notes layout showing content",
-          "weight": 50
+          "weight": 50,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Исправлено отображение release notes",
-          "weight": 50
+          "weight": 50,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ]
     },
@@ -188,13 +228,17 @@
       "changes": [
         {
           "description": "Added login form variants page",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница вариантов форм входа",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -206,13 +250,17 @@
       "changes": [
         {
           "description": "Documented user and admin code separation",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "architecture"
         }
       ],
       "changes-ru": [
         {
           "description": "Задокументировано разделение кода на пользователя и админа",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "architecture"
         }
       ]
     },
@@ -224,13 +272,17 @@
       "changes": [
         {
           "description": "Added collapsible admin sidebar",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлен сворачиваемый сайдбар админа",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -242,13 +294,17 @@
       "changes": [
         {
           "description": "Moved login form variants page to admin UI",
-          "weight": 40
+          "weight": 40,
+          "type": "refactor",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Перенесена страница вариантов форм входа в админский UI",
-          "weight": 40
+          "weight": 40,
+          "type": "refactor",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -260,13 +316,17 @@
       "changes": [
         {
           "description": "Added tooltips and home icon links to sidebars",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены подсказки и ссылка-домик в сайдбары",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -278,13 +338,17 @@
       "changes": [
         {
           "description": "Displayed site icon and refreshed home page texts",
-          "weight": 30
+          "weight": 30,
+          "type": "feat",
+          "scope": "home"
         }
       ],
       "changes-ru": [
         {
           "description": "Показана иконка сайта и обновлены тексты главной",
-          "weight": 30
+          "weight": 30,
+          "type": "feat",
+          "scope": "home"
         }
       ]
     },
@@ -296,13 +360,17 @@
       "changes": [
         {
           "description": "Added hashtag display variants on admin UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены варианты отображения хэштегов в админском UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -314,13 +382,17 @@
       "changes": [
         {
           "description": "Expanded login and hashtag variants on admin UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Расширены варианты форм входа и хэштегов в админском UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -332,13 +404,17 @@
       "changes": [
         {
           "description": "Marked current UI choices and added ten more form and hashtag variants",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -350,13 +426,17 @@
       "changes": [
         {
           "description": "Added admin login page and set login form variant 30 as current choice",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница входа админа и выбран вариант формы 30",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ]
     },
@@ -368,13 +448,17 @@
       "changes": [
         {
           "description": "Added admin logout page and enforced auth redirects",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница выхода админа и проверка авторизации на страницах",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ]
     },
@@ -386,13 +470,17 @@
       "changes": [
         {
           "description": "Translated admin auth message to English",
-          "weight": 40
+          "weight": 40,
+          "type": "i18n",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Сообщение авторизации админа переведено на английский",
-          "weight": 40
+          "weight": 40,
+          "type": "i18n",
+          "scope": "auth"
         }
       ]
     },
@@ -404,13 +492,17 @@
       "changes": [
         {
           "description": "Redirected admins to requested page after login",
-          "weight": 60
+          "weight": 60,
+          "type": "fix",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "После входа админов перенаправляет на запрошенную страницу",
-          "weight": 60
+          "weight": 60,
+          "type": "fix",
+          "scope": "auth"
         }
       ]
     },
@@ -422,13 +514,17 @@
       "changes": [
         {
           "description": "Listed admin subpages via dedicated component",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Выведены подстраницы админа через специальный компонент",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -440,13 +536,17 @@
       "changes": [
         {
           "description": "Introduced weighted release notes format with versioning",
-          "weight": 50
+          "weight": 50,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Введён формат release notes с весами и версиями",
-          "weight": 50
+          "weight": 50,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ]
     },
@@ -458,13 +558,17 @@
       "changes": [
         {
           "description": "Clarified release note workflow in documentation",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Уточнён процесс ведения release notes в документации",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -476,13 +580,17 @@
       "changes": [
         {
           "description": "Expanded README instructions for maintaining release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
         }
       ],
       "changes-ru": [
         {
           "description": "Расширены инструкции по release notes в README",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
         }
       ]
     },
@@ -494,12 +602,38 @@
       "changes": [
         {
           "description": "Fixed release notes page crash on render",
-          "weight": 40
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Исправлено падение страницы release notes при рендере",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
+        }
+      ]
+    },
+    {
+      "version": "0.0.29",
+      "date": "2025-08-29",
+      "time": "09:28:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added type and scope tags to release notes",
+          "type": "feat",
+          "scope": "release-notes",
+          "weight": 40
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены теги type и scope в release notes",
+          "type": "feat",
+          "scope": "release-notes",
           "weight": 40
         }
       ]
@@ -515,7 +649,8 @@
         "Admin auth flow enhanced with login/logout pages, message translated, and redirect to requested pages",
         "Code separation documented and release notes instructions clarified",
         "Admin subpages listed via dedicated component",
-        "Release notes page crash resolved"
+        "Release notes page crash resolved",
+        "Release notes tagged with type and scope"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -525,7 +660,8 @@
         "Улучшен процесс авторизации админа: добавлены страницы входа/выхода, переведено сообщение и реализован редирект",
         "Задокументировано разделение кода и уточнены инструкции по release notes",
         "Подстраницы админа выведены через отдельный компонент",
-        "Исправлено падение страницы release notes"
+        "Исправлено падение страницы release notes",
+        "Release notes получили теги type и scope"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -535,7 +671,8 @@
         "Admin auth improved",
         "Code docs updated",
         "Admin subpages listed",
-        "Release notes crash fixed"
+        "Release notes crash fixed",
+        "Type and scope tags"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -545,7 +682,8 @@
         "Авторизация улучшена",
         "Документация обновлена",
         "Подстраницы админа",
-        "Исправлен crash release notes"
+        "Исправлен crash release notes",
+        "Теги type и scope"
       ]
     }
   ],
@@ -558,13 +696,17 @@
       "changes": [
         {
           "description": "Documented release notes rules",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены правила ведения release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -576,13 +718,17 @@
       "changes": [
         {
           "description": "Added release notes page",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница release notes",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ]
     },
@@ -594,13 +740,17 @@
       "changes": [
         {
           "description": "Clarified past tense style for release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Уточнён стиль release notes в прошедшем времени",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -612,13 +762,17 @@
       "changes": [
         {
           "description": "Limited release notes page to English",
-          "weight": 30
+          "weight": 30,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Страница release notes отображает только английский текст",
-          "weight": 30
+          "weight": 30,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ]
     },
@@ -630,13 +784,17 @@
       "changes": [
         {
           "description": "Separated user and admin menus",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "navigation"
         }
       ],
       "changes-ru": [
         {
           "description": "Разделены меню пользователя и админа",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "navigation"
         }
       ]
     },
@@ -648,13 +806,17 @@
       "changes": [
         {
           "description": "Added collapsible user sidebar",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлен сворачиваемый сайдбар пользователя",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -666,13 +828,17 @@
       "changes": [
         {
           "description": "Darkened sidebar background and fixed icon order",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Утемнён фон сайдбара и закреплён порядок иконок",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
         }
       ]
     },
@@ -684,13 +850,17 @@
       "changes": [
         {
           "description": "Implemented dark mode with consistent palette",
-          "weight": 80
+          "weight": 80,
+          "type": "feat",
+          "scope": "theme"
         }
       ],
       "changes-ru": [
         {
           "description": "Реализован тёмный режим с согласованной палитрой",
-          "weight": 80
+          "weight": 80,
+          "type": "feat",
+          "scope": "theme"
         }
       ]
     },
@@ -702,13 +872,17 @@
       "changes": [
         {
           "description": "Unified page titles with headings",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "pages"
         }
       ],
       "changes-ru": [
         {
           "description": "Унифицированы тайтлы со страницами",
-          "weight": 40
+          "weight": 40,
+          "type": "style",
+          "scope": "pages"
         }
       ]
     },
@@ -720,13 +894,17 @@
       "changes": [
         {
           "description": "Fixed release notes layout showing content",
-          "weight": 50
+          "weight": 50,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Исправлено отображение release notes",
-          "weight": 50
+          "weight": 50,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ]
     },
@@ -738,13 +916,17 @@
       "changes": [
         {
           "description": "Added login form variants page",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница вариантов форм входа",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -756,13 +938,17 @@
       "changes": [
         {
           "description": "Documented user and admin code separation",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "architecture"
         }
       ],
       "changes-ru": [
         {
           "description": "Задокументировано разделение кода на пользователя и админа",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "architecture"
         }
       ]
     },
@@ -774,13 +960,17 @@
       "changes": [
         {
           "description": "Added collapsible admin sidebar",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлен сворачиваемый сайдбар админа",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -792,13 +982,17 @@
       "changes": [
         {
           "description": "Moved login form variants page to admin UI",
-          "weight": 40
+          "weight": 40,
+          "type": "refactor",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Перенесена страница вариантов форм входа в админский UI",
-          "weight": 40
+          "weight": 40,
+          "type": "refactor",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -810,13 +1004,17 @@
       "changes": [
         {
           "description": "Added tooltips and home icon links to sidebars",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены подсказки и ссылка-домик в сайдбары",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
         }
       ]
     },
@@ -828,13 +1026,17 @@
       "changes": [
         {
           "description": "Displayed site icon and refreshed home page texts",
-          "weight": 30
+          "weight": 30,
+          "type": "feat",
+          "scope": "home"
         }
       ],
       "changes-ru": [
         {
           "description": "Показана иконка сайта и обновлены тексты главной",
-          "weight": 30
+          "weight": 30,
+          "type": "feat",
+          "scope": "home"
         }
       ]
     },
@@ -846,13 +1048,17 @@
       "changes": [
         {
           "description": "Added hashtag display variants on admin UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлены варианты отображения хэштегов в админском UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -864,13 +1070,17 @@
       "changes": [
         {
           "description": "Expanded login and hashtag variants on admin UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Расширены варианты форм входа и хэштегов в админском UI",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -882,13 +1092,17 @@
       "changes": [
         {
           "description": "Marked current UI choices and added ten more form and hashtag variants",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов",
-          "weight": 60
+          "weight": 60,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -900,13 +1114,17 @@
       "changes": [
         {
           "description": "Added admin login page and set login form variant 30 as current choice",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница входа админа и выбран вариант формы 30",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ]
     },
@@ -918,13 +1136,17 @@
       "changes": [
         {
           "description": "Added admin logout page and enforced auth redirects",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Добавлена страница выхода админа и проверка авторизации на страницах",
-          "weight": 70
+          "weight": 70,
+          "type": "feat",
+          "scope": "auth"
         }
       ]
     },
@@ -936,13 +1158,17 @@
       "changes": [
         {
           "description": "Translated admin auth message to English",
-          "weight": 40
+          "weight": 40,
+          "type": "i18n",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "Сообщение авторизации админа переведено на английский",
-          "weight": 40
+          "weight": 40,
+          "type": "i18n",
+          "scope": "auth"
         }
       ]
     },
@@ -954,13 +1180,17 @@
       "changes": [
         {
           "description": "Redirected admins to requested page after login",
-          "weight": 60
+          "weight": 60,
+          "type": "fix",
+          "scope": "auth"
         }
       ],
       "changes-ru": [
         {
           "description": "После входа админов перенаправляет на запрошенную страницу",
-          "weight": 60
+          "weight": 60,
+          "type": "fix",
+          "scope": "auth"
         }
       ]
     },
@@ -972,13 +1202,17 @@
       "changes": [
         {
           "description": "Listed admin subpages via dedicated component",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ],
       "changes-ru": [
         {
           "description": "Выведены подстраницы админа через специальный компонент",
-          "weight": 40
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     },
@@ -990,13 +1224,17 @@
       "changes": [
         {
           "description": "Introduced weighted release notes format with versioning",
-          "weight": 50
+          "weight": 50,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Введён формат release notes с весами и версиями",
-          "weight": 50
+          "weight": 50,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ]
     },
@@ -1008,13 +1246,17 @@
       "changes": [
         {
           "description": "Clarified release note workflow in documentation",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Уточнён процесс ведения release notes в документации",
-          "weight": 30
+          "weight": 30,
+          "type": "docs",
+          "scope": "release-notes"
         }
       ]
     },
@@ -1026,13 +1268,17 @@
       "changes": [
         {
           "description": "Expanded README instructions for maintaining release notes",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
         }
       ],
       "changes-ru": [
         {
           "description": "Расширены инструкции по release notes в README",
-          "weight": 20
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
         }
       ]
     },
@@ -1044,12 +1290,38 @@
       "changes": [
         {
           "description": "Fixed release notes page crash on render",
-          "weight": 40
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
         }
       ],
       "changes-ru": [
         {
           "description": "Исправлено падение страницы release notes при рендере",
+          "weight": 40,
+          "type": "fix",
+          "scope": "release-notes"
+        }
+      ]
+    },
+    {
+      "version": "0.0.29",
+      "date": "2025-08-29",
+      "time": "09:28:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added type and scope tags to release notes",
+          "type": "feat",
+          "scope": "release-notes",
+          "weight": 40
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены теги type и scope в release notes",
+          "type": "feat",
+          "scope": "release-notes",
           "weight": 40
         }
       ]
