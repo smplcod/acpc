@@ -1,35 +1,28 @@
 import { useEffect } from 'react'
-import releaseNotes from '../../../release-notes.json'
+import data from '../../../release-notes.json'
 
 export default function ReleaseNotesPage() {
-  const title = 'Release Notes Page | ACPC'
+  const title = 'Release Notes'
   useEffect(() => {
-    document.title = title
+    document.title = `${title} | ACPC`
   }, [title])
-  const changes = [...releaseNotes.changes].sort(
-    (a, b) => new Date(b.timestamp) - new Date(a.timestamp),
+  const releases = [...data.releaseNotes].sort(
+    (a, b) =>
+      new Date(`${b.date}T${b.time}`) - new Date(`${a.date}T${a.time}`),
   )
-  const groups = changes.reduce((acc, change) => {
-    const date = change.timestamp.slice(0, 10)
-    if (!acc[date]) acc[date] = []
-    acc[date].push(change)
-    return acc
-  }, {})
-  const dates = Object.keys(groups).sort((a, b) => new Date(b) - new Date(a))
   return (
     <div>
       <h1>{title}</h1>
-      {dates.map(date => (
-        <div key={date}>
-          <h2>{date}</h2>
-          {groups[date]
-            .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
-            .map(item => (
-              <div key={item.id}>
-                <h3>{item.timestamp.slice(11, 16)}</h3>
-                <p>{item.description.en}</p>
-              </div>
+      {releases.map(rel => (
+        <div key={rel.version}>
+          <h2>
+            {rel.version} – {rel.date} {rel.time} {rel.timezone}
+          </h2>
+          <ul>
+            {rel.changes.map((ch, i) => (
+              <li key={i}>{ch.description}</li>
             ))}
+          </ul>
         </div>
       ))}
     </div>
