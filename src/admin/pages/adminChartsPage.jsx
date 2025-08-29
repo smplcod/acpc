@@ -3,7 +3,7 @@ import AuthMessage from '../app/authMessage.jsx'
 
 export default function AdminChartsPage() {
   const title = 'Admin Charts Page'
-  const fullTitle = `${title} | Admin | ACPC`
+  const fullTitle = `${title} | Admin Control Panel | ACPC`
   useEffect(() => {
     document.title = fullTitle
   }, [fullTitle])

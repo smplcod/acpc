@@ -661,6 +661,40 @@
       ]
     },
     {
+      "version": "0.0.31",
+      "date": "2025-08-29",
+      "time": "09:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Renamed admin titles to 'Admin Control Panel'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-title"
+        },
+        {
+          "description": "Reduced global h1 font size to 2.4em",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переименованы админские заголовки в 'Admin Control Panel'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-title"
+        },
+        {
+          "description": "Уменьшен глобальный размер h1 до 2.4em",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
       "date": "2025-08-29",
       "time": "summary",
       "summary": [
@@ -673,7 +707,8 @@
         "Admin subpages listed via dedicated component",
         "Release notes page crash resolved",
         "Release notes tagged with type and scope",
-        "Admin auth message refined"
+        "Admin auth message refined",
+        "Admin titles clarified and h1 size reduced"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -685,7 +720,8 @@
         "Подстраницы админа выведены через отдельный компонент",
         "Исправлено падение страницы release notes",
         "Release notes получили теги type и scope",
-        "Уточнено сообщение об авторизации админа"
+        "Уточнено сообщение об авторизации админа",
+        "Уточнены заголовки админ-панели и уменьшен размер h1"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -697,7 +733,8 @@
         "Admin subpages listed",
         "Release notes crash fixed",
         "Type and scope tags",
-        "Auth message refined"
+        "Auth message refined",
+        "Admin titles & h1 size"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -709,7 +746,8 @@
         "Подстраницы админа",
         "Исправлен crash release notes",
         "Теги type и scope",
-        "Сообщение авторизации уточнено"
+        "Сообщение авторизации уточнено",
+        "Заголовки и h1"
       ]
     }
   ],
@@ -1371,6 +1409,40 @@
           "weight": 20,
           "type": "fix",
           "scope": "auth-message"
+        }
+      ]
+    },
+    {
+      "version": "0.0.31",
+      "date": "2025-08-29",
+      "time": "09:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Renamed admin titles to 'Admin Control Panel'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-title"
+        },
+        {
+          "description": "Reduced global h1 font size to 2.4em",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переименованы админские заголовки в 'Admin Control Panel'",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin-title"
+        },
+        {
+          "description": "Уменьшен глобальный размер h1 до 2.4em",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
         }
       ]
     }
