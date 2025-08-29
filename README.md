@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.0
+Current version: 0.0.1
 
 ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. After login, admins return to the page they originally requested. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 Every admin page lists its subpages at the bottom via a dedicated component.
@@ -93,7 +93,7 @@ _Only this section of the readme can be maintained using Russian language_
 10. After completing a task, suggest the next task to complete (don't add this to readme).
 11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
 12. If there is no indication what language the page should be in, use English.
-13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`.
+13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
 15. When a page has nested routes, list its subpages at the end using the dedicated `SubPages` component stored in its own file.
  
@@ -137,7 +137,7 @@ _Only this section of the readme can be maintained using Russian language_
 - `src/user/app/barLeftUser.css` duplicated in `src/admin/app/barLeftAdmin.css`
 
 ## Release notes
-- File `release-notes.json` follows [release-notes-howto.md](release-notes-howto.md).
-- Each user-facing change must append a bilingual entry with ISO 8601 timestamp.
-- Descriptions must use past tense (e.g., "Added release notes page").
-- Keep entries sorted chronologically and update daily summaries and the ultrashort digest.
+- File `release-notes.json` stores an array `releaseNotes` of release objects.
+- Each release has `version`, `date`, `time`, `timezone`, and bilingual `changes` with weights from 20 to 80.
+- Descriptions use past tense and appear in both English (`changes`) and Russian (`changes-ru`).
+- Keep releases sorted chronologically and increment only the PATCH part of the version.
