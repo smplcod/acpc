@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.38
+Current version: 0.0.39
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -43,6 +43,7 @@ _Only this section of the readme can be maintained using Russian language_
   - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
   - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
+  - - [x] 6.2.3 Настроить вывод даты в h2, версии и времени в h3 и добавить заметку о часовом поясе.
  - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
  - [x] 6.4 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компонент в отдельном файле.
 
