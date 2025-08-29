@@ -23,6 +23,7 @@ export default function SubPages() {
   if (subpages.length === 0) return null
   return (
     <div style={{ marginTop: '2rem' }}>
+      <h2>Subpages:</h2>
       <ul>
         {subpages.map(r => {
           const to = `${base}/${r.path || ''}`.replace(/\/+/g, '/').replace(/\/$/, '')
