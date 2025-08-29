@@ -1,284 +1,79 @@
 {
-  "version": "0.0.0",
-  "generated": "2025-08-29T12:30:00+00:00",
-  "changes": [
+  "releaseNotes": [
     {
-      "id": "2025-08-28T09:35:00+00:00-docs-docs",
-      "timestamp": "2025-08-28T09:35:00+00:00",
       "version": "0.0.0",
-      "type": "docs",
-      "scope": "docs",
-      "description": {
-        "en": "Documented release notes rules",
-        "ru": "Добавлены правила ведения release notes"
-      }
+      "date": "2025-08-29",
+      "time": "12:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        { "description": "Documented release notes rules", "weight": 20 },
+        { "description": "Added release notes page", "weight": 70 },
+        { "description": "Clarified past tense style for release notes", "weight": 20 },
+        { "description": "Limited release notes page to English", "weight": 30 },
+        { "description": "Separated user and admin menus", "weight": 60 },
+        { "description": "Added collapsible user sidebar", "weight": 60 },
+        { "description": "Darkened sidebar background and fixed icon order", "weight": 40 },
+        { "description": "Implemented dark mode with consistent palette", "weight": 80 },
+        { "description": "Unified page titles with headings", "weight": 40 },
+        { "description": "Fixed release notes layout showing content", "weight": 50 },
+        { "description": "Added login form variants page", "weight": 70 },
+        { "description": "Documented user and admin code separation", "weight": 30 },
+        { "description": "Added collapsible admin sidebar", "weight": 60 },
+        { "description": "Moved login form variants page to admin UI", "weight": 40 },
+        { "description": "Added tooltips and home icon links to sidebars", "weight": 40 },
+        { "description": "Displayed site icon and refreshed home page texts", "weight": 30 },
+        { "description": "Added hashtag display variants on admin UI", "weight": 60 },
+        { "description": "Expanded login and hashtag variants on admin UI", "weight": 60 },
+        { "description": "Marked current UI choices and added ten more form and hashtag variants", "weight": 60 },
+        { "description": "Added admin login page and set login form variant 30 as current choice", "weight": 70 },
+        { "description": "Added admin logout page and enforced auth redirects", "weight": 70 },
+        { "description": "Translated admin auth message to English", "weight": 40 },
+        { "description": "Redirected admins to requested page after login", "weight": 60 },
+        { "description": "Listed admin subpages via dedicated component", "weight": 40 }
+      ],
+      "changes-ru": [
+        { "description": "Добавлены правила ведения release notes", "weight": 20 },
+        { "description": "Добавлена страница release notes", "weight": 70 },
+        { "description": "Уточнён стиль release notes в прошедшем времени", "weight": 20 },
+        { "description": "Страница release notes отображает только английский текст", "weight": 30 },
+        { "description": "Разделены меню пользователя и админа", "weight": 60 },
+        { "description": "Добавлен сворачиваемый сайдбар пользователя", "weight": 60 },
+        { "description": "Утемнён фон сайдбара и закреплён порядок иконок", "weight": 40 },
+        { "description": "Реализован тёмный режим с согласованной палитрой", "weight": 80 },
+        { "description": "Унифицированы тайтлы со страницами", "weight": 40 },
+        { "description": "Исправлено отображение release notes", "weight": 50 },
+        { "description": "Добавлена страница вариантов форм входа", "weight": 70 },
+        { "description": "Задокументировано разделение кода на пользователя и админа", "weight": 30 },
+        { "description": "Добавлен сворачиваемый сайдбар админа", "weight": 60 },
+        { "description": "Перенесена страница вариантов форм входа в админский UI", "weight": 40 },
+        { "description": "Добавлены подсказки и ссылка-домик в сайдбары", "weight": 40 },
+        { "description": "Показана иконка сайта и обновлены тексты главной", "weight": 30 },
+        { "description": "Добавлены варианты отображения хэштегов в админском UI", "weight": 60 },
+        { "description": "Расширены варианты форм входа и хэштегов в админском UI", "weight": 60 },
+        { "description": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов", "weight": 60 },
+        { "description": "Добавлена страница входа админа и выбран вариант формы 30", "weight": 70 },
+        { "description": "Добавлена страница выхода админа и проверка авторизации на страницах", "weight": 70 },
+        { "description": "Сообщение авторизации админа переведено на английский", "weight": 40 },
+        { "description": "После входа админов перенаправляет на запрошенную страницу", "weight": 60 },
+        { "description": "Выведены подстраницы админа через специальный компонент", "weight": 40 }
+      ]
     },
     {
-      "id": "2025-08-28T09:35:30+00:00-feat-ui",
-      "timestamp": "2025-08-28T09:35:30+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added release notes page",
-        "ru": "Добавлена страница release notes"
-      }
-    },
-    {
-      "id": "2025-08-28T20:28:40+00:00-docs-docs",
-      "timestamp": "2025-08-28T20:28:40+00:00",
-      "version": "0.0.0",
-      "type": "docs",
-      "scope": "docs",
-      "description": {
-        "en": "Clarified past tense style for release notes",
-        "ru": "Уточнён стиль release notes в прошедшем времени"
-      }
-    },
-    {
-      "id": "2025-08-28T20:28:42+00:00-feat-ui",
-      "timestamp": "2025-08-28T20:28:42+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Limited release notes page to English",
-        "ru": "Страница release notes отображает только английский текст"
-      }
-    },
-    {
-      "id": "2025-08-28T20:57:30+00:00-feat-ui",
-      "timestamp": "2025-08-28T20:57:30+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Separated user and admin menus",
-        "ru": "Разделены меню пользователя и админа"
-      }
-    },
-    {
-      "id": "2025-08-28T21:43:30+00:00-feat-ui",
-      "timestamp": "2025-08-28T21:43:30+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added collapsible user sidebar",
-        "ru": "Добавлен сворачиваемый сайдбар пользователя"
-      }
-    },
-    {
-      "id": "2025-08-28T21:56:43+00:00-feat-ui",
-      "timestamp": "2025-08-28T21:56:43+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Darkened sidebar background and fixed icon order",
-        "ru": "Утемнён фон сайдбара и закреплён порядок иконок"
-      }
-    },
-    {
-      "id": "2025-08-28T22:08:00+00:00-feat-ui",
-      "timestamp": "2025-08-28T22:08:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Implemented dark mode with consistent palette",
-        "ru": "Реализован тёмный режим с согласованной палитрой"
-      }
-    },
-    {
-      "id": "2025-08-29T00:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T00:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Unified page titles with headings",
-        "ru": "Унифицированы тайтлы со страницами"
-      }
-    },
-    {
-      "id": "2025-08-29T00:30:00+00:00-fix-ui",
-      "timestamp": "2025-08-29T00:30:00+00:00",
-      "version": "0.0.0",
-      "type": "fix",
-      "scope": "ui",
-      "description": {
-        "en": "Fixed release notes layout showing content",
-        "ru": "Исправлено отображение release notes"
-      }
-    },
-    {
-      "id": "2025-08-29T01:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T01:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added login form variants page",
-        "ru": "Добавлена страница вариантов форм входа"
-      }
-    },
-    {
-      "id": "2025-08-29T02:15:00+00:00-docs-docs",
-      "timestamp": "2025-08-29T02:15:00+00:00",
-      "version": "0.0.0",
-      "type": "docs",
-      "scope": "docs",
-      "description": {
-        "en": "Documented user and admin code separation",
-        "ru": "Задокументировано разделение кода на пользователя и админа"
-      }
-    },
-    {
-      "id": "2025-08-29T03:30:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T03:30:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added collapsible admin sidebar",
-        "ru": "Добавлен сворачиваемый сайдбар админа"
-      }
-    },
-    {
-      "id": "2025-08-29T04:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T04:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Moved login form variants page to admin UI",
-        "ru": "Перенесена страница вариантов форм входа в админский UI"
-      }
-    },
-    {
-      "id": "2025-08-29T05:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T05:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added tooltips and home icon links to sidebars",
-        "ru": "Добавлены подсказки и ссылка-домик в сайдбары"
-      }
-    },
-    {
-      "id": "2025-08-29T06:30:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T06:30:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Displayed site icon and refreshed home page texts",
-        "ru": "Показана иконка сайта и обновлены тексты главной"
-      }
-    },
-    {
-      "id": "2025-08-29T07:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T07:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Added hashtag display variants on admin UI",
-        "ru": "Добавлены варианты отображения хэштегов в админском UI"
-      }
-    },
-    {
-      "id": "2025-08-29T08:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T08:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Expanded login and hashtag variants on admin UI",
-        "ru": "Расширены варианты форм входа и хэштегов в админском UI"
-      }
-    },
-    {
-      "id": "2025-08-29T09:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T09:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Marked current UI choices and added ten more form and hashtag variants",
-        "ru": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов"
-      }
-    },
-    {
-      "id": "2025-08-29T10:00:00+00:00-feat-auth",
-      "timestamp": "2025-08-29T10:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "auth",
-      "description": {
-        "en": "Added admin login page and set login form variant 30 as current choice",
-        "ru": "Добавлена страница входа админа и выбран вариант формы 30"
-      }
-    },
-    {
-      "id": "2025-08-29T11:00:00+00:00-feat-auth",
-      "timestamp": "2025-08-29T11:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "auth",
-      "description": {
-        "en": "Added admin logout page and enforced auth redirects",
-        "ru": "Добавлена страница выхода админа и проверка авторизации на страницах"
-      }
-    },
-    {
-      "id": "2025-08-29T12:00:00+00:00-fix-i18n",
-      "timestamp": "2025-08-29T12:00:00+00:00",
-      "version": "0.0.0",
-      "type": "fix",
-      "scope": "i18n",
-      "description": {
-        "en": "Translated admin auth message to English",
-        "ru": "Сообщение авторизации админа переведено на английский"
-      }
-    },
-    {
-      "id": "2025-08-29T12:30:00+00:00-feat-auth",
-      "timestamp": "2025-08-29T12:30:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "auth",
-      "description": {
-        "en": "Redirected admins to requested page after login",
-        "ru": "После входа админов перенаправляет на запрошенную страницу"
-      }
-    },
-    {
-      "id": "2025-08-29T13:00:00+00:00-feat-ui",
-      "timestamp": "2025-08-29T13:00:00+00:00",
-      "version": "0.0.0",
-      "type": "feat",
-      "scope": "ui",
-      "description": {
-        "en": "Listed admin subpages via dedicated component",
-        "ru": "Выведены подстраницы админа через специальный компонент"
-      }
+      "version": "0.0.1",
+      "date": "2025-08-29",
+      "time": "13:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        { "description": "Introduced weighted release notes format with versioning", "weight": 50 },
+        { "description": "Clarified release note workflow in documentation", "weight": 30 },
+        { "description": "Expanded README instructions for maintaining release notes", "weight": 20 }
+      ],
+      "changes-ru": [
+        { "description": "Введён формат release notes с весами и версиями", "weight": 50 },
+        { "description": "Уточнён процесс ведения release notes в документации", "weight": 30 },
+        { "description": "Расширены инструкции по release notes в README", "weight": 20 }
+      ]
     }
-  ],
-  "daily": {
-    "2025-08-28": {
-      "en": "Release notes page shows English only; rules and style clarified; separated user and admin menus; added collapsible user sidebar; darkened sidebar and stabilized icons; implemented dark mode",
-      "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки; реализован тёмный режим"
-    },
-    "2025-08-29": {
-        "en": "Aligned page titles with headings; fixed release notes layout; added login form variants page; documented user/admin code separation; added collapsible admin sidebar; moved login form variants page to admin UI; added sidebar tooltips and home links; displayed site icon and refreshed home page texts; added hashtag display variants on admin UI; expanded login and hashtag variants; marked current UI selections and extended variants to thirty; added admin login page; added admin logout page and auth checks; translated admin auth message to English; redirected admins to requested page after login; listed admin subpages via component",
-      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes; добавлена страница вариантов форм входа; задокументировано разделение кода на пользователя и админа; добавлен сворачиваемый сайдбар админа; страница вариантов форм входа перенесена в админский UI; добавлены подсказки и ссылка-домик в сайдбары; показана иконка сайта и обновлены тексты главной; добавлены варианты отображения хэштегов в админском UI; расширены варианты форм входа и хэштегов; отмечены текущие варианты UI и увеличено число вариантов до тридцати; добавлена страница входа админа; добавлена страница выхода админа и проверка авторизации на страницах; сообщение авторизации админа переведено на английский; после входа админов перенаправляет на запрошенную страницу; выведены подстраницы админа через компонент"
-    }
-  },
-  "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout; login form variants page; documented code separation; collapsible admin sidebar; login forms moved to admin UI; sidebar tooltips and home links; home page icon and greeting updated; hashtag display variants; expanded login and hashtag variants; marked current choices and raised variants to thirty; added admin login page; admin logout page and auth checks; login redirect to requested admin page; admin auth message in English; admin subpages listed via component",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes; страница вариантов форм входа; задокументировано разделение кода; сворачиваемый сайдбар админа; страница форм входа перенесена в админский UI; подсказки и ссылка-домик в сайдбары; обновлена иконка и приветствие на главной; варианты отображения хэштегов; расширены варианты форм входа и хэштегов; отмечены текущие варианты и число вариантов увеличено до тридцати; добавлена страница входа админа; добавлена страница выхода админа и проверка авторизации; редирект на запрошенную страницу после входа; сообщение авторизации админа на английском; выведены подстраницы админа"
-  }
+  ]
 }
+
