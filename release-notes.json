@@ -210,6 +210,17 @@
         "en": "Marked current UI choices and added ten more form and hashtag variants",
         "ru": "Отмечены текущие варианты UI и добавлены ещё десять форм и хэштегов"
       }
+    },
+    {
+      "id": "2025-08-29T10:00:00+00:00-feat-auth",
+      "timestamp": "2025-08-29T10:00:00+00:00",
+      "version": "0.0.0",
+      "type": "feat",
+      "scope": "auth",
+      "description": {
+        "en": "Added admin login page and set login form variant 30 as current choice",
+        "ru": "Добавлена страница входа админа и выбран вариант формы 30"
+      }
     }
   ],
   "daily": {
@@ -218,12 +229,12 @@
       "ru": "Страница release notes показывает только английский текст; уточнены правила и стиль; разделены меню пользователя и админа; добавлен сворачиваемый пользовательский сайдбар; затемнён сайдбар и упорядочены иконки; реализован тёмный режим"
     },
     "2025-08-29": {
-      "en": "Aligned page titles with headings; fixed release notes layout; added login form variants page; documented user/admin code separation; added collapsible admin sidebar; moved login form variants page to admin UI; added sidebar tooltips and home links; displayed site icon and refreshed home page texts; added hashtag display variants on admin UI; expanded login and hashtag variants; marked current UI selections and extended variants to thirty",
-      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes; добавлена страница вариантов форм входа; задокументировано разделение кода на пользователя и админа; добавлен сворачиваемый сайдбар админа; страница вариантов форм входа перенесена в админский UI; добавлены подсказки и ссылка-домик в сайдбары; показана иконка сайта и обновлены тексты главной; добавлены варианты отображения хэштегов в админском UI; расширены варианты форм входа и хэштегов; отмечены текущие варианты UI и увеличено число вариантов до тридцати"
+      "en": "Aligned page titles with headings; fixed release notes layout; added login form variants page; documented user/admin code separation; added collapsible admin sidebar; moved login form variants page to admin UI; added sidebar tooltips and home links; displayed site icon and refreshed home page texts; added hashtag display variants on admin UI; expanded login and hashtag variants; marked current UI selections and extended variants to thirty; added admin login page",
+      "ru": "Синхронизированы тайтлы с заголовками; исправлено отображение release notes; добавлена страница вариантов форм входа; задокументировано разделение кода на пользователя и админа; добавлен сворачиваемый сайдбар админа; страница вариантов форм входа перенесена в админский UI; добавлены подсказки и ссылка-домик в сайдбары; показана иконка сайта и обновлены тексты главной; добавлены варианты отображения хэштегов в админском UI; расширены варианты форм входа и хэштегов; отмечены текущие варианты UI и увеличено число вариантов до тридцати; добавлена страница входа админа"
     }
   },
   "ultrashort": {
-    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout; login form variants page; documented code separation; collapsible admin sidebar; login forms moved to admin UI; sidebar tooltips and home links; home page icon and greeting updated; hashtag display variants; expanded login and hashtag variants; marked current choices and raised variants to thirty",
-    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes; страница вариантов форм входа; задокументировано разделение кода; сворачиваемый сайдбар админа; страница форм входа перенесена в админский UI; подсказки и ссылка-домик в сайдбары; обновлена иконка и приветствие на главной; варианты отображения хэштегов; расширены варианты форм входа и хэштегов; отмечены текущие варианты и число вариантов увеличено до тридцати"
+    "en": "Release notes English-only; split user/admin menus; collapsible sidebar; dark mode; unified page titles; fixed release notes layout; login form variants page; documented code separation; collapsible admin sidebar; login forms moved to admin UI; sidebar tooltips and home links; home page icon and greeting updated; hashtag display variants; expanded login and hashtag variants; marked current choices and raised variants to thirty; added admin login page",
+    "ru": "Release notes только на английском; разделены меню; добавлен сворачиваемый сайдбар; тёмный режим; унификация тайтлов; исправлено отображение release notes; страница вариантов форм входа; задокументировано разделение кода; сворачиваемый сайдбар админа; страница форм входа перенесена в админский UI; подсказки и ссылка-домик в сайдбары; обновлена иконка и приветствие на главной; варианты отображения хэштегов; расширены варианты форм входа и хэштегов; отмечены текущие варианты и число вариантов увеличено до тридцати; добавлена страница входа админа"
   }
 }

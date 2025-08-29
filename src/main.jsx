@@ -9,8 +9,10 @@ import ReleaseNotesPage from './user/pages/releaseNotesPage.jsx'
 import AdminPage from './admin/pages/adminPage.jsx'
 import AdminChartsPage from './admin/pages/adminChartsPage.jsx'
 import AdminUiPage from './admin/pages/adminUiPage.jsx'
+import AdminLoginPage from './admin/pages/adminLoginPage.jsx'
 
 const router = createBrowserRouter([
+  { path: '/admin/login', element: <AdminLoginPage /> },
   {
     path: '/',
     element: <UserLayout />,
