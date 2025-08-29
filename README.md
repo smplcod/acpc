@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.28
+Current version: 0.0.29
 
 ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. After login, admins return to the page they originally requested. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 Every admin page lists its subpages at the bottom via a dedicated component.
@@ -34,6 +34,7 @@ _Only this section of the readme can be maintained using Russian language_
   - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
   - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
+ - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
 
 
 7. Recommendations from bot
@@ -140,6 +141,7 @@ _Only this section of the readme can be maintained using Russian language_
 - File `release-notes.json` stores two arrays: `releaseNotes` and `releases`.
 - `releaseNotes` is a chronological list that includes both release entries and daily summary entries.
 - Release entries contain `version` (semantic MAJOR.MINOR.PATCH, bump PATCH only), `date` (YYYY-MM-DD), `time` (HH:MM:SS), `timezone` (always `Asia/Bishkek`), and bilingual `changes` with weights from 10 to 90.
+- Each change item also includes `type` (feat, fix, docs, etc.) and `scope` (area affected).
 - Descriptions use past tense and appear in both English (`changes`) and Russian (`changes-ru`).
 - After all releases for a day, add a summary entry with `time` set to `summary` and provide `summary`, `summary-ru`, `ultrashort-summary`, and `ultrashort-summary-ru` arrays.
 - Keep all entries ordered by date and time.
