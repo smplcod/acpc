@@ -971,6 +971,40 @@
           "scope": "readme"
         }
       ]
+    },
+    {
+      "version": "0.0.38",
+      "date": "2025-08-29",
+      "time": "13:29:44",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Flattened admin sidebar URL list to a single level",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Documented flat admin sidebar rule in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Список URL админского сайдбара уплощён до одного уровня",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Задокументировано правило плоского списка админского сайдбара в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
     }
   ],
   "releases": [
@@ -1830,6 +1864,40 @@
         },
         {
           "description": "Добавлено правило проверки навигации в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.38",
+      "date": "2025-08-29",
+      "time": "13:29:44",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Flattened admin sidebar URL list to a single level",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Documented flat admin sidebar rule in README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Список URL админского сайдбара уплощён до одного уровня",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Задокументировано правило плоского списка админского сайдбара в README",
           "weight": 20,
           "type": "docs",
           "scope": "readme"

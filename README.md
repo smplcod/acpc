@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.37
+Current version: 0.0.38
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -11,7 +11,7 @@ Current version: 0.0.37
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
 - Admin pages display "Subpages:" at the end with a full URL tree
-- Navigation sidebars derive from the same tree; admin lists all URLs, public lists non-admin URLs
+- Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - Admin dev charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
@@ -116,7 +116,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 # Verification steps
 1. Open several pages: /admin, /admin/section, /admin/section/subsection — confirm each shows "Subpages" at the bottom with the full tree.
-2. Check the admin left sidebar — all URLs present, nesting correct.
+2. Check the admin left sidebar — all URLs present and shown flat (no nested lists).
 3. Check the public site left sidebar — all URLs present except /admin and its descendants.
 4. After any page structure change, repeat steps 1–3.
 
