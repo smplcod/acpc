@@ -1139,6 +1139,28 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.44",
+      "date": "2025-08-29",
+      "time": "14:55:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enabled nested admin charts routes to render Recharts examples",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Включена обработка вложенных маршрутов графиков для отображения примеров Recharts",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2166,6 +2188,28 @@
         },
         {
           "description": "Восстановлено отображение примеров Recharts",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.44",
+      "date": "2025-08-29",
+      "time": "14:55:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enabled nested admin charts routes to render Recharts examples",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Включена обработка вложенных маршрутов графиков для отображения примеров Recharts",
           "weight": 40,
           "type": "fix",
           "scope": "charts"
