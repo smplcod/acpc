@@ -20,21 +20,22 @@ export default function SubPages() {
   const { pathname } = useLocation()
   const { base, routes } = findRouteChildren(pathname, adminRoutes)
   const subpages = routes.filter(r => !r.index)
-  if (subpages.length === 0) return null
   return (
     <div style={{ marginTop: '2rem' }}>
       <h2>Subpages:</h2>
-      <ul>
-        {subpages.map(r => {
-          const to = `${base}/${r.path || ''}`.replace(/\/+/g, '/').replace(/\/$/, '')
-          const label = r.label || r.path
-          return (
-            <li key={to}>
-              <Link to={to}>{label}</Link>
-            </li>
-          )
-        })}
-      </ul>
+      {subpages.length > 0 && (
+        <ul>
+          {subpages.map(r => {
+            const to = `${base}/${r.path || ''}`.replace(/\/+/g, '/').replace(/\/$/, '')
+            const label = r.label || r.path
+            return (
+              <li key={to}>
+                <Link to={to}>{label}</Link>
+              </li>
+            )
+          })}
+        </ul>
+      )}
     </div>
   )
 }
