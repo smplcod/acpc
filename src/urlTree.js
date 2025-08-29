@@ -13,7 +13,8 @@ const urlTree = [
             path: '/admin/charts/users',
             children: [
               { path: '/admin/charts/users/recharts', children: [] },
-              { path: '/admin/charts/users/chartjs2', children: [] }
+              { path: '/admin/charts/users/chartjs2', children: [] },
+              { path: '/admin/charts/users/explain', children: [] }
             ]
           }
         ]

@@ -1249,6 +1249,28 @@
           "scope": "admin"
         }
       ]
+    },
+    {
+      "version": "0.0.49",
+      "date": "2025-08-29",
+      "time": "16:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added users data keys explanation page",
+          "weight": 30,
+          "type": "docs",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена страница с пояснением ключей данных пользователей",
+          "weight": 30,
+          "type": "docs",
+          "scope": "charts"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2389,6 +2411,28 @@
           "weight": 50,
           "type": "feat",
           "scope": "admin"
+        }
+      ]
+    },
+    {
+      "version": "0.0.49",
+      "date": "2025-08-29",
+      "time": "16:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added users data keys explanation page",
+          "weight": 30,
+          "type": "docs",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена страница с пояснением ключей данных пользователей",
+          "weight": 30,
+          "type": "docs",
+          "scope": "charts"
         }
       ]
     }

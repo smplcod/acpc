@@ -3,6 +3,7 @@ import AdminChartsPage from '../pages/adminChartsPage.jsx'
 import AdminChartsUsersPage from '../pages/adminChartsUsersPage.jsx'
 import AdminChartsUsersRechartsPage from '../pages/adminChartsUsersRechartsPage.jsx'
 import AdminChartsUsersChartjs2Page from '../pages/adminChartsUsersChartjs2Page.jsx'
+import AdminChartsUsersExplainPage from '../pages/adminChartsUsersExplainPage.jsx'
 import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
 import AdminLogoutPage from '../pages/adminLogoutPage.jsx'
@@ -22,7 +23,8 @@ const adminRoutes = [
         label: 'Users',
         children: [
           { path: 'recharts', element: <AdminChartsUsersRechartsPage />, label: 'Recharts' },
-          { path: 'chartjs2', element: <AdminChartsUsersChartjs2Page />, label: 'Chartjs2' }
+          { path: 'chartjs2', element: <AdminChartsUsersChartjs2Page />, label: 'Chartjs2' },
+          { path: 'explain', element: <AdminChartsUsersExplainPage />, label: 'Explain' }
         ]
       }
     ]
