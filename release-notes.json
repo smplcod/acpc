@@ -695,6 +695,28 @@
       ]
     },
     {
+      "version": "0.0.32",
+      "date": "2025-08-29",
+      "time": "09:31:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Prefixed admin subpage lists with 'Subpages:'",
+          "weight": 20,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages:\"",
+          "weight": 20,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ]
+    },
+    {
       "date": "2025-08-29",
       "time": "summary",
       "summary": [
@@ -708,7 +730,8 @@
         "Release notes page crash resolved",
         "Release notes tagged with type and scope",
         "Admin auth message refined",
-        "Admin titles clarified and h1 size reduced"
+        "Admin titles clarified and h1 size reduced",
+        "Admin subpage lists labeled with 'Subpages:'"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -721,7 +744,8 @@
         "Исправлено падение страницы release notes",
         "Release notes получили теги type и scope",
         "Уточнено сообщение об авторизации админа",
-        "Уточнены заголовки админ-панели и уменьшен размер h1"
+        "Уточнены заголовки админ-панели и уменьшен размер h1",
+        "Списки подстраниц админа теперь начинаются с \"Subpages:\""
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -734,7 +758,8 @@
         "Release notes crash fixed",
         "Type and scope tags",
         "Auth message refined",
-        "Admin titles & h1 size"
+        "Admin titles & h1 size",
+        "Subpages label added"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -747,7 +772,8 @@
         "Исправлен crash release notes",
         "Теги type и scope",
         "Сообщение авторизации уточнено",
-        "Заголовки и h1"
+        "Заголовки и h1",
+        "Подпись Subpages"
       ]
     }
   ],
@@ -1443,6 +1469,28 @@
           "weight": 30,
           "type": "style",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.32",
+      "date": "2025-08-29",
+      "time": "09:31:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Prefixed admin subpage lists with 'Subpages:'",
+          "weight": 20,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages:\"",
+          "weight": 20,
+          "type": "fix",
+          "scope": "admin-ui"
         }
       ]
     }
