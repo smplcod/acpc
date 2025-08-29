@@ -22,7 +22,9 @@ export default function AdminLoginPage() {
     if (username === envLogin && password === envPassword) {
       localStorage.setItem('adminAuth', 'true')
       localStorage.setItem('adminLogin', username)
-      navigate('/admin')
+      const redirect = localStorage.getItem('adminPostLoginRedirect') || '/admin'
+      localStorage.removeItem('adminPostLoginRedirect')
+      navigate(redirect)
     } else {
       setError('Invalid username or password')
     }

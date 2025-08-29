@@ -1,7 +1,7 @@
 # ACP+Charts now
 Current version: 0.0.0
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
+ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. After login, admins return to the page they originally requested. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -19,6 +19,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.3 Перенаправление на страницу /admin при успешном вводе логина и пароля на /admin/login .
   - [x] 2.4 Проверять авторизацию на всех страницах /admin/*. Если нет авторизации, то редирект на /admin/login .
   - [x] 2.5 Добавить страницу /admin/logout, сообщение об успешной авторизации и ссылку на выход.
+  - [x] 2.6 Возвращать на запрошенную страницу /admin/* после успешной авторизации.
 
 3. Графики
   - [ ] 3.1 Создать /admin/dev/charts . Создать /admin/dev/ , которая редиректит на /admin/dev/charts .

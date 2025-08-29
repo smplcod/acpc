@@ -11,6 +11,7 @@ export default function Layout() {
 
   useEffect(() => {
     if (!isLogin && !isAdminAuth()) {
+      localStorage.setItem('adminPostLoginRedirect', location.pathname + location.search)
       navigate('/admin/login', { replace: true })
     }
   }, [isLogin, navigate, location])
