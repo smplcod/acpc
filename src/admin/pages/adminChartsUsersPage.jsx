@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
-import SubPages from '../app/subPages.jsx'
 
 export default function AdminChartsUsersPage() {
   const title = 'Admin Charts Users Page'
@@ -12,7 +11,6 @@ export default function AdminChartsUsersPage() {
     <div>
       <h1>{fullTitle}</h1>
       <AuthMessage />
-      <SubPages />
     </div>
   )
 }

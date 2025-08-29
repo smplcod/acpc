@@ -1,6 +1,5 @@
 import { useEffect, useState, useMemo } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
-import SubPages from '../app/subPages.jsx'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   LineChart, Line,
@@ -523,7 +522,6 @@ export default function AdminChartsUsersRechartsPage() {
       >
         <Treemap data={cityData} dataKey="value" stroke="#fff" fill="#8884d8" />
       </ChartExample>
-      <SubPages />
     </div>
   )
 }

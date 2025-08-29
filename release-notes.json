@@ -1083,6 +1083,28 @@
           "scope": "release-notes"
         }
       ]
+    },
+    {
+      "version": "0.0.42",
+      "date": "2025-08-29",
+      "time": "14:20:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed duplicated SubPages on admin pages",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалено повторное отображение SubPages на админских страницах",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2057,6 +2079,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "release-notes"
+        }
+      ]
+    },
+    {
+      "version": "0.0.42",
+      "date": "2025-08-29",
+      "time": "14:20:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed duplicated SubPages on admin pages",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалено повторное отображение SubPages на админских страницах",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
         }
       ]
     }
