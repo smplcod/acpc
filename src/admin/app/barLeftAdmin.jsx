@@ -3,16 +3,20 @@ import { Link } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import './barLeftAdmin.css'
 
-export default function BarLeftAdmin() {
+export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
   const [collapsed, setCollapsed] = useState(true)
   const [hovered, setHovered] = useState(false)
 
   useEffect(() => {
+    if (forceCollapsed) {
+      setCollapsed(true)
+      return
+    }
     const saved = localStorage.getItem('barLeftAdminCollapsed')
     if (saved !== null) {
       setCollapsed(saved === 'true')
     }
-  }, [])
+  }, [forceCollapsed])
 
   useEffect(() => {
     function handleBlur() {
@@ -25,13 +29,14 @@ export default function BarLeftAdmin() {
   const isCollapsed = collapsed && !hovered
 
   const toggle = () => {
+    if (disableToggle || forceCollapsed) return
     const next = !collapsed
     setCollapsed(next)
     localStorage.setItem('barLeftAdminCollapsed', String(next))
   }
 
   const onIconEnter = () => {
-    if (collapsed) setHovered(true)
+    if (collapsed && !disableToggle && !forceCollapsed) setHovered(true)
   }
 
   const onMouseLeave = () => {
@@ -42,9 +47,9 @@ export default function BarLeftAdmin() {
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
         <div
-          className="icon-button"
-          onMouseEnter={onIconEnter}
-          onClick={toggle}
+          className={`icon-button${disableToggle ? ' disabled' : ''}`}
+          onMouseEnter={disableToggle ? undefined : onIconEnter}
+          onClick={disableToggle ? undefined : toggle}
           title="Toggle sidebar"
         >
           <Sidebar size={16} />
@@ -74,6 +79,7 @@ export default function BarLeftAdmin() {
           <Link to="/admin">/admin</Link>
           <Link to="/admin/charts">/admin/charts</Link>
           <Link to="/admin/ui">/admin/ui</Link>
+          <Link to="/admin/logout">/admin/logout</Link>
         </nav>
       )}
     </aside>

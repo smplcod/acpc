@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import AuthMessage from '../app/authMessage.jsx'
 import './adminUiPage.css'
 
 export default function AdminUiPage() {
@@ -16,6 +17,7 @@ export default function AdminUiPage() {
   return (
     <div>
       <h1>UI</h1>
+      <AuthMessage />
 
       <h2>Login form variants</h2>
       {loginVariants.map((num, idx) => (

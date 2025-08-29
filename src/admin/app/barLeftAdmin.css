@@ -42,6 +42,10 @@
 .icon-button:hover {
   background-color: var(--color-hover);
 }
+.icon-button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 .sidebar-content {
   display: flex;
   flex-direction: column;

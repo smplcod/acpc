@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import AuthMessage from '../app/authMessage.jsx'
 import './adminUiPage.css'
 
 export default function AdminLoginPage() {
@@ -19,6 +20,8 @@ export default function AdminLoginPage() {
     const envLogin = import.meta.env.VITE_ADMIN_LOGIN
     const envPassword = import.meta.env.VITE_ADMIN_PASSWORD
     if (username === envLogin && password === envPassword) {
+      localStorage.setItem('adminAuth', 'true')
+      localStorage.setItem('adminLogin', username)
       navigate('/admin')
     } else {
       setError('Invalid username or password')
@@ -28,30 +31,33 @@ export default function AdminLoginPage() {
   const disabled = !username || !password
 
   return (
-    <div>
-      <h1>Admin Login</h1>
-      <form className="login-form variant-30" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Login"
-          value={username}
-          onChange={e => {
-            setUsername(e.target.value)
-            if (error) setError('')
-          }}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={e => {
-            setPassword(e.target.value)
-            if (error) setError('')
-          }}
-        />
-        <button type="submit" disabled={disabled}>Login</button>
-      </form>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className="login-page">
+      <div>
+        <h1>Admin Login</h1>
+        <AuthMessage />
+        <form className="login-form variant-30" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Login"
+            value={username}
+            onChange={e => {
+              setUsername(e.target.value)
+              if (error) setError('')
+            }}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={e => {
+              setPassword(e.target.value)
+              if (error) setError('')
+            }}
+          />
+          <button type="submit" disabled={disabled}>Login</button>
+        </form>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+      </div>
     </div>
   )
 }

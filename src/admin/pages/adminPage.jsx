@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import AuthMessage from '../app/authMessage.jsx'
 
 export default function AdminPage() {
   const title = 'Admin Page'
@@ -9,6 +10,7 @@ export default function AdminPage() {
   return (
     <div>
       <h1>{fullTitle}</h1>
+      <AuthMessage />
     </div>
   )
 }

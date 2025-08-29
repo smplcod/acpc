@@ -5,6 +5,13 @@
   max-width: 240px;
 }
 
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 32px);
+}
+
 .login-form input,
 .login-form button {
   padding: 4px 8px;
