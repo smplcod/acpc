@@ -6,7 +6,7 @@
     </linearGradient>
     <mask id="notches">
       <rect width="256" height="256" fill="#fff"/>
-      <!-- зубцы ключа -->
+      <!-- key notches -->
       <rect x="176" y="140" width="22" height="16" rx="2" fill="#000"/>
       <rect x="204" y="132" width="28" height="24" rx="2" fill="#000"/>
       <rect x="232" y="140" width="16" height="16" rx="2" fill="#000"/>
@@ -14,10 +14,10 @@
   </defs>
 
   <g mask="url(#notches)">
-    <!-- кольцо ключа -->
+    <!-- key ring -->
     <path fill="url(#grad)" fill-rule="evenodd"
       d="M96 72a56 56 0 1 1 0 112a56 56 0 1 1 0-112Zm0 20a36 36 0 1 0 0 72a36 36 0 1 0 0-72Z"/>
-    <!-- стержень -->
+    <!-- shaft -->
     <rect x="152" y="108" width="88" height="40" rx="10" fill="url(#grad)"/>
   </g>
 </svg>
