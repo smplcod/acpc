@@ -1005,6 +1005,28 @@
           "scope": "readme"
         }
       ]
+    },
+    {
+      "version": "0.0.39",
+      "date": "2025-08-29",
+      "time": "13:34:58",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Grouped releases by date and adjusted tags on release notes page",
+          "weight": 20,
+          "type": "feat",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сгруппированы релизы по датам и обновлены теги на странице релизов",
+          "weight": 20,
+          "type": "feat",
+          "scope": "release-notes"
+        }
+      ]
     }
   ],
   "releases": [
@@ -1901,6 +1923,28 @@
           "weight": 20,
           "type": "docs",
           "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.39",
+      "date": "2025-08-29",
+      "time": "13:34:58",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Grouped releases by date and adjusted tags on release notes page",
+          "weight": 20,
+          "type": "feat",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сгруппированы релизы по датам и обновлены теги на странице релизов",
+          "weight": 20,
+          "type": "feat",
+          "scope": "release-notes"
         }
       ]
     }

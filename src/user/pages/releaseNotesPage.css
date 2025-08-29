@@ -10,3 +10,8 @@
   text-shadow: 1px 1px 0 #333;
   padding: 2px 6px;
 }
+
+.tags-variant-21 span {
+  border: 1px solid #000;
+  padding: 2px 6px;
+}
