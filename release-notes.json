@@ -1161,6 +1161,28 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.45",
+      "date": "2025-08-29",
+      "time": "15:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Highlighted active links in user and admin sidebars",
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Подсвечены активные ссылки в пользовательском и админском сайдбарах",
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2213,6 +2235,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.45",
+      "date": "2025-08-29",
+      "time": "15:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Highlighted active links in user and admin sidebars",
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Подсвечены активные ссылки в пользовательском и админском сайдбарах",
+          "weight": 40,
+          "type": "style",
+          "scope": "sidebar"
         }
       ]
     }

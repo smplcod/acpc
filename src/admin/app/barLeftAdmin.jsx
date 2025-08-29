@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import urlTree from '../../urlTree.js'
 import './barLeftAdmin.css'
@@ -85,7 +85,13 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
           <ul>
             {flatUrls.map(path => (
               <li key={path}>
-                <Link to={path}>{path}</Link>
+                <NavLink
+                  to={path}
+                  end
+                  className={({ isActive }) => (isActive ? 'active' : undefined)}
+                >
+                  {path}
+                </NavLink>
               </li>
             ))}
           </ul>

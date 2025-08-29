@@ -59,6 +59,10 @@
   display: block;
   padding: 2px 0;
 }
+.sidebar-content a.active {
+  filter: brightness(1.4);
+  font-weight: 700;
+}
 .sidebar-left.collapsed .sidebar-content {
   display: none;
 }
