@@ -64,3 +64,50 @@
   padding: 8px;
   background: #fafafa;
 }
+
+.tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.tags-variant-2 {
+  justify-content: center;
+}
+
+.tags-variant-3 span {
+  font-weight: bold;
+}
+
+.tags-variant-4 span {
+  color: #007bff;
+}
+
+.tags-variant-5 span {
+  text-decoration: underline;
+}
+
+.tags-variant-6 span {
+  background: #eee;
+  padding: 2px 6px;
+}
+
+.tags-variant-7 span {
+  background: #222;
+  color: #fff;
+  padding: 2px 6px;
+}
+
+.tags-variant-8 span {
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.tags-variant-9 {
+  flex-direction: column;
+}
+
+.tags-variant-10 span {
+  font-size: 1.2em;
+}
