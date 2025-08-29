@@ -5,4 +5,5 @@ export function isAdminAuth() {
 export function logoutAdmin() {
   localStorage.removeItem('adminAuth')
   localStorage.removeItem('adminLogin')
+  localStorage.removeItem('adminPostLoginRedirect')
 }
