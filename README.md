@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.46
+Current version: 0.0.47
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -39,6 +39,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
  - [ ] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
   - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
+  - [x] 3.4 Пронумеровать варианты графиков в заголовках на /admin/charts/users/recharts.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.

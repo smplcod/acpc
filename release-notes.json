@@ -1205,6 +1205,28 @@
           "scope": "mocks"
         }
       ]
+    },
+    {
+      "version": "0.0.47",
+      "date": "2025-08-29",
+      "time": "15:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Numbered Recharts example headings",
+          "weight": 20,
+          "type": "style",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Пронумерованы заголовки примеров Recharts",
+          "weight": 20,
+          "type": "style",
+          "scope": "charts"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2301,6 +2323,28 @@
           "weight": 30,
           "type": "feat",
           "scope": "mocks"
+        }
+      ]
+    },
+    {
+      "version": "0.0.47",
+      "date": "2025-08-29",
+      "time": "15:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Numbered Recharts example headings",
+          "weight": 20,
+          "type": "style",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Пронумерованы заголовки примеров Recharts",
+          "weight": 20,
+          "type": "style",
+          "scope": "charts"
         }
       ]
     }

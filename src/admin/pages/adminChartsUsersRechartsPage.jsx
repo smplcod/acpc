@@ -105,8 +105,8 @@ export default function AdminChartsUsersRechartsPage() {
       <h1>{fullTitle}</h1>
       <AuthMessage />
 
-      <ChartExample
-        title="Bar chart by plan"
+        <ChartExample
+          title="1. Bar chart by plan"
         description="Basic bar chart showing users per plan."
         code={`<BarChart data={planData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -125,8 +125,8 @@ export default function AdminChartsUsersRechartsPage() {
         </BarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Stacked bar chart"
+        <ChartExample
+          title="2. Stacked bar chart"
         description="Shows user status within each plan using stacked bars."
         code={`<BarChart data={planStatusData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -151,8 +151,8 @@ export default function AdminChartsUsersRechartsPage() {
         </BarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Vertical bar chart"
+        <ChartExample
+          title="3. Vertical bar chart"
         description="Displays status counts with vertical layout."
         code={`<BarChart data={statusData} layout="vertical" margin={{ left: 40 }}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -171,8 +171,8 @@ export default function AdminChartsUsersRechartsPage() {
         </BarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Bar chart with brush"
+        <ChartExample
+          title="4. Bar chart with brush"
         description="Scrollable bar chart for top cities."
         code={`<BarChart data={cityData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -193,8 +193,8 @@ export default function AdminChartsUsersRechartsPage() {
         </BarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Custom tooltip bar chart"
+        <ChartExample
+          title="5. Custom tooltip bar chart"
         description="Bar chart of operating systems with custom tooltip."
         code={`<BarChart data={osData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -213,8 +213,8 @@ export default function AdminChartsUsersRechartsPage() {
         </BarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Line chart of signups"
+        <ChartExample
+          title="6. Line chart of signups"
         description="Basic line chart of user signups by month."
         code={`<LineChart data={signupByMonth}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -233,8 +233,8 @@ export default function AdminChartsUsersRechartsPage() {
         </LineChart>
       </ChartExample>
 
-      <ChartExample
-        title="Line chart without dots"
+        <ChartExample
+          title="7. Line chart without dots"
         description="Active users per month with dots hidden."
         code={`<LineChart data={activeByMonth}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -253,8 +253,8 @@ export default function AdminChartsUsersRechartsPage() {
         </LineChart>
       </ChartExample>
 
-      <ChartExample
-        title="Multi-line chart"
+        <ChartExample
+          title="8. Multi-line chart"
         description="Compares signups and active users per month."
         code={`<LineChart data={monthlyData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -277,8 +277,8 @@ export default function AdminChartsUsersRechartsPage() {
         </LineChart>
       </ChartExample>
 
-      <ChartExample
-        title="Monotone line chart"
+        <ChartExample
+          title="9. Monotone line chart"
         description="Active users with monotone curve."
         code={`<LineChart data={activeByMonth}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -297,8 +297,8 @@ export default function AdminChartsUsersRechartsPage() {
         </LineChart>
       </ChartExample>
 
-      <ChartExample
-        title="Area chart"
+        <ChartExample
+          title="10. Area chart"
         description="Area chart of signups per month."
         code={`<AreaChart data={signupByMonth}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -317,8 +317,8 @@ export default function AdminChartsUsersRechartsPage() {
         </AreaChart>
       </ChartExample>
 
-      <ChartExample
-        title="Gradient area chart"
+        <ChartExample
+          title="11. Gradient area chart"
         description="Active users per month with gradient fill."
         code={`<AreaChart data={activeByMonth}>
   <defs>
@@ -347,8 +347,8 @@ export default function AdminChartsUsersRechartsPage() {
         </AreaChart>
       </ChartExample>
 
-      <ChartExample
-        title="Stacked area chart"
+        <ChartExample
+          title="12. Stacked area chart"
         description="Stacked areas comparing signups and active users."
         code={`<AreaChart data={monthlyData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -369,8 +369,8 @@ export default function AdminChartsUsersRechartsPage() {
         </AreaChart>
       </ChartExample>
 
-      <ChartExample
-        title="Area chart with custom active dot"
+        <ChartExample
+          title="13. Area chart with custom active dot"
         description="Highlights points with a larger active dot."
         code={`<AreaChart data={signupByMonth}>
   <XAxis dataKey="month" />
@@ -387,8 +387,8 @@ export default function AdminChartsUsersRechartsPage() {
         </AreaChart>
       </ChartExample>
 
-      <ChartExample
-        title="Composed chart"
+        <ChartExample
+          title="14. Composed chart"
         description="Combines bar and line in one chart."
         code={`<ComposedChart data={monthlyData}>
   <CartesianGrid strokeDasharray="3 3" />
@@ -411,8 +411,8 @@ export default function AdminChartsUsersRechartsPage() {
         </ComposedChart>
       </ChartExample>
 
-      <ChartExample
-        title="Pie chart"
+        <ChartExample
+          title="15. Pie chart"
         description="Plan distribution as a pie chart."
         code={`<PieChart>
   <Pie data={planData} dataKey="value" nameKey="name" label>
@@ -433,8 +433,8 @@ export default function AdminChartsUsersRechartsPage() {
         </PieChart>
       </ChartExample>
 
-      <ChartExample
-        title="Donut pie chart"
+        <ChartExample
+          title="16. Donut pie chart"
         description="Status distribution with inner radius."
         code={`<PieChart>
   <Pie data={statusData} dataKey="value" nameKey="name" innerRadius={60} outerRadius={80}>
@@ -455,8 +455,8 @@ export default function AdminChartsUsersRechartsPage() {
         </PieChart>
       </ChartExample>
 
-      <ChartExample
-        title="Radar chart"
+        <ChartExample
+          title="17. Radar chart"
         description="Compares device usage across categories."
         code={`<RadarChart data={deviceData} outerRadius={80}>
   <PolarGrid />
@@ -473,8 +473,8 @@ export default function AdminChartsUsersRechartsPage() {
         </RadarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Radial bar chart"
+        <ChartExample
+          title="18. Radial bar chart"
         description="Browser distribution with radial bars."
         code={`<RadialBarChart innerRadius="20%" outerRadius="90%" data={browserData} startAngle={180} endAngle={0}>
   <RadialBar background dataKey="value">
@@ -495,8 +495,8 @@ export default function AdminChartsUsersRechartsPage() {
         </RadialBarChart>
       </ChartExample>
 
-      <ChartExample
-        title="Scatter chart"
+        <ChartExample
+          title="19. Scatter chart"
         description="Days between signup and last active per user."
         code={`<ScatterChart>
   <CartesianGrid />
@@ -515,8 +515,8 @@ export default function AdminChartsUsersRechartsPage() {
         </ScatterChart>
       </ChartExample>
 
-      <ChartExample
-        title="Treemap"
+        <ChartExample
+          title="20. Treemap"
         description="Treemap of users by city (top 10)."
         code={`<Treemap data={cityData} dataKey="value" stroke="#fff" fill="#8884d8" />`}
       >
