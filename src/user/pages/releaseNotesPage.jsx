@@ -29,7 +29,7 @@ export default function ReleaseNotesPage() {
   return (
     <div>
       <h1>{title}</h1>
-      <p>{timeZoneOffset}, all times are shown in this time zone.</p>
+      <p>All times are shown in the {timeZoneOffset} time zone</p>
       {grouped.map(group => (
         <div key={group.date}>
           <h2>{group.date}</h2>
