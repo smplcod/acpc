@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.39
+Current version: 0.0.40
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -12,7 +12,7 @@ Current version: 0.0.39
 - Code split between `src/user` and `src/admin`
 - Admin pages display "Subpages:" at the end with a full URL tree
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
-- Admin dev charts with 20 Recharts examples for users data
+- Admin charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -34,19 +34,18 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
 
 3. Графики
-  - [x] 3.1 Создать страницы /admin/dev/charts/users и /admin/dev/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
-  - [ ] 3.2 Создать страницу /admin/dev/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
+  - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
+  - [ ] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
   - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
   - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
   - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
-  - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
+ - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
   - - [x] 6.2.3 Настроить вывод даты в h2, версии и времени в h3 и добавить заметку о часовом поясе.
- - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
- - [x] 6.4 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компонент в отдельном файле.
-
+  - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
+  - [x] 6.4 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компонент в отдельном файле.
 
 7. Recommendations from bot
   - 7.15 Принципы
@@ -91,7 +90,10 @@ _Only this section of the readme can be maintained using Russian language_
 # 14. Правки оформления
  - [x] 14.1 Изменить заголовок админских страниц на "| Admin Control Panel |"
  - [x] 14.2 Уменьшить глобальный размер h1 до 2.4em
- - [x] 14.3 Добавить префикс "Subpages:" перед списком подстраниц в /admin/*
+- [x] 14.3 Добавить префикс "Subpages:" перед списком подстраниц в /admin/*
+
+# 15. Маршруты
+ - [x] 15.1 Удалить страницу /admin/charts и убрать сегмент dev из всех адресов админки.
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.

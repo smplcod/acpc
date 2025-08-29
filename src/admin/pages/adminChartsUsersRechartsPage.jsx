@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
+import SubPages from '../app/subPages.jsx'
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
   LineChart, Line,
@@ -14,8 +15,8 @@ import {
   ResponsiveContainer
 } from 'recharts'
 
-export default function AdminDevChartsUsersRechartsPage() {
-  const title = 'Admin Dev Charts Users Recharts Page'
+export default function AdminChartsUsersRechartsPage() {
+  const title = 'Admin Charts Users Recharts Page'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
   const [users, setUsers] = useState([])
 
@@ -522,6 +523,7 @@ export default function AdminDevChartsUsersRechartsPage() {
       >
         <Treemap data={cityData} dataKey="value" stroke="#fff" fill="#8884d8" />
       </ChartExample>
+      <SubPages />
     </div>
   )
 }

@@ -1027,6 +1027,40 @@
           "scope": "release-notes"
         }
       ]
+    },
+    {
+      "version": "0.0.40",
+      "date": "2025-08-29",
+      "time": "13:42:57",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed dev segment from admin URLs and dropped placeholder charts page",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Documented new admin routes without dev segment",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалён сегмент dev из URL админки и убрана лишняя страница графиков",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Задокументированы новые админские маршруты без сегмента dev",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
     }
   ],
   "releases": [
@@ -1945,6 +1979,40 @@
           "weight": 20,
           "type": "feat",
           "scope": "release-notes"
+        }
+      ]
+    },
+    {
+      "version": "0.0.40",
+      "date": "2025-08-29",
+      "time": "13:42:57",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed dev segment from admin URLs and dropped placeholder charts page",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Documented new admin routes without dev segment",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалён сегмент dev из URL админки и убрана лишняя страница графиков",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Задокументированы новые админские маршруты без сегмента dev",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
         }
       ]
     }
