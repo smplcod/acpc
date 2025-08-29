@@ -7,3 +7,18 @@
   flex: 1;
   padding: 16px;
 }
+
+.acph-section {}
+
+.acph-section.is-collapsed {
+  display: none;
+}
+
+.acph-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.acph-toggle:focus {
+  outline: 2px solid currentColor;
+}

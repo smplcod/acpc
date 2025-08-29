@@ -1227,6 +1227,28 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.48",
+      "date": "2025-08-29",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added collapsible admin headings",
+          "weight": 50,
+          "type": "feat",
+          "scope": "admin"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены сворачиваемые заголовки в админке",
+          "weight": 50,
+          "type": "feat",
+          "scope": "admin"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2345,6 +2367,28 @@
           "weight": 20,
           "type": "style",
           "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.48",
+      "date": "2025-08-29",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added collapsible admin headings",
+          "weight": 50,
+          "type": "feat",
+          "scope": "admin"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены сворачиваемые заголовки в админке",
+          "weight": 50,
+          "type": "feat",
+          "scope": "admin"
         }
       ]
     }

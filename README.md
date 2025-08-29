@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.47
+Current version: 0.0.48
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -101,6 +101,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 # 15. Маршруты
  - [x] 15.1 Удалить страницу /admin/charts и убрать сегмент dev из всех адресов админки.
+
+16. Collapsible headings
+ - [x] 16.1 Enable collapsible headings in admin pages
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
