@@ -10,9 +10,9 @@ import AdminPage from './admin/pages/adminPage.jsx'
 import AdminChartsPage from './admin/pages/adminChartsPage.jsx'
 import AdminUiPage from './admin/pages/adminUiPage.jsx'
 import AdminLoginPage from './admin/pages/adminLoginPage.jsx'
+import AdminLogoutPage from './admin/pages/adminLogoutPage.jsx'
 
 const router = createBrowserRouter([
-  { path: '/admin/login', element: <AdminLoginPage /> },
   {
     path: '/',
     element: <UserLayout />,
@@ -25,6 +25,8 @@ const router = createBrowserRouter([
     path: '/admin',
     element: <AdminLayout />,
     children: [
+      { path: 'login', element: <AdminLoginPage /> },
+      { path: 'logout', element: <AdminLogoutPage /> },
       { index: true, element: <AdminPage /> },
       { path: 'charts', element: <AdminChartsPage /> },
       { path: 'ui', element: <AdminUiPage /> },
