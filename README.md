@@ -58,6 +58,11 @@ _Only this section of the readme can be maintained using Russian language_
 12. Code organization
  - [x] 12.1 Разделить код на /src/user и /src/admin с отдельными app и pages.
 
+13. Главная страница
+ - [x] 13.1 Добавить иконку перед названием
+ - [x] 13.2 Заменить текст приветствия
+ - [x] 13.3 Обновить ссылку /admin
+
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
 2. Maintain a hierarchical task list with consistent numbering.

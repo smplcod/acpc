@@ -7,10 +7,17 @@ export default function MainPage() {
   }, [])
   return (
     <>
-      <h1>ACPC</h1>
-      <p>Welcome</p>
+      <h1>
+        <img
+          src="/icon.svg"
+          alt="ACPC icon"
+          style={{ height: '1em', verticalAlign: 'middle', marginRight: '0.2em' }}
+        />
+        ACPC
+      </h1>
+      <p>Welcome to site with AdminCP with Charts!</p>
       <p>
-        Go to <Link to="/admin">/admin</Link>
+        Go to <Link to="/admin">/admin</Link> to see.
       </p>
     </>
   )
