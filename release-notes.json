@@ -639,6 +639,28 @@
       ]
     },
     {
+      "version": "0.0.30",
+      "date": "2025-08-29",
+      "time": "09:29:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Rephrased admin authentication message for clarity",
+          "weight": 20,
+          "type": "fix",
+          "scope": "auth-message"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переформулировано сообщение об авторизации админа",
+          "weight": 20,
+          "type": "fix",
+          "scope": "auth-message"
+        }
+      ]
+    },
+    {
       "date": "2025-08-29",
       "time": "summary",
       "summary": [
@@ -650,7 +672,8 @@
         "Code separation documented and release notes instructions clarified",
         "Admin subpages listed via dedicated component",
         "Release notes page crash resolved",
-        "Release notes tagged with type and scope"
+        "Release notes tagged with type and scope",
+        "Admin auth message refined"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -661,7 +684,8 @@
         "Задокументировано разделение кода и уточнены инструкции по release notes",
         "Подстраницы админа выведены через отдельный компонент",
         "Исправлено падение страницы release notes",
-        "Release notes получили теги type и scope"
+        "Release notes получили теги type и scope",
+        "Уточнено сообщение об авторизации админа"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -672,7 +696,8 @@
         "Code docs updated",
         "Admin subpages listed",
         "Release notes crash fixed",
-        "Type and scope tags"
+        "Type and scope tags",
+        "Auth message refined"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -683,7 +708,8 @@
         "Документация обновлена",
         "Подстраницы админа",
         "Исправлен crash release notes",
-        "Теги type и scope"
+        "Теги type и scope",
+        "Сообщение авторизации уточнено"
       ]
     }
   ],
@@ -1323,6 +1349,28 @@
           "type": "feat",
           "scope": "release-notes",
           "weight": 40
+        }
+      ]
+    },
+    {
+      "version": "0.0.30",
+      "date": "2025-08-29",
+      "time": "09:29:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Rephrased admin authentication message for clarity",
+          "weight": 20,
+          "type": "fix",
+          "scope": "auth-message"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переформулировано сообщение об авторизации админа",
+          "weight": 20,
+          "type": "fix",
+          "scope": "auth-message"
         }
       ]
     }

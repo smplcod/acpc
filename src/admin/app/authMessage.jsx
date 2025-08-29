@@ -6,7 +6,7 @@ export default function AuthMessage() {
   if (!isAdminAuth()) return null
   return (
     <p>
-      {login} is authenticated, <Link to="/admin/logout">log out</Link>
+      User {login} is authenticated. You can <Link to="/admin/logout">log out</Link>.
     </p>
   )
 }
