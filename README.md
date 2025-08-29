@@ -1,8 +1,16 @@
 # ACP+Charts now
-Current version: 0.0.33
+Current version: 0.0.34
 
-ACP+Charts is a minimal React + Vite app with basic routing. Users can navigate between a main page and a release notes page showing updates in English. Administrators can log in at `/admin/login` using credentials stored in environment variables and then access a dashboard, a charts screen, and a UI page with thirty login form variants and thirty hashtag variants. They can log out at `/admin/logout`, and all admin routes redirect to the login page if not authenticated. After login, admins return to the page they originally requested. Non-admin pages feature a collapsible left sidebar with navigation links and icons, while admin pages use a separate collapsible admin menu. Icons provide tooltips and include a home link. User code resides in `src/user` and admin code in `src/admin`, each with their own `app` and `pages` subfolders.
-Every admin page lists its subpages at the bottom via a dedicated component.
+- Minimal React + Vite app with basic routing
+- Public pages: home and English release notes
+- Admin login at `/admin/login` using env credentials
+- Admin access to dashboard, charts, and UI demos of 30 forms and 30 hashtags
+- Logout at `/admin/logout` with redirect for unauthenticated routes
+- Return to originally requested admin page after login
+- Public pages use a collapsible sidebar with icon tooltips and home link
+- Admin pages have a separate collapsible menu
+- Code split between `src/user` and `src/admin`
+- Admin pages list subpages via dedicated component
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
