@@ -1105,6 +1105,40 @@
           "scope": "admin"
         }
       ]
+    },
+    {
+      "version": "0.0.43",
+      "date": "2025-08-29",
+      "time": "14:40:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Hid empty Subpages section in admin",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        },
+        {
+          "description": "Restored Recharts example visibility",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Скрыт пустой блок Subpages в админке",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        },
+        {
+          "description": "Восстановлено отображение примеров Recharts",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2101,6 +2135,40 @@
           "weight": 30,
           "type": "fix",
           "scope": "admin"
+        }
+      ]
+    },
+    {
+      "version": "0.0.43",
+      "date": "2025-08-29",
+      "time": "14:40:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Hid empty Subpages section in admin",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        },
+        {
+          "description": "Restored Recharts example visibility",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Скрыт пустой блок Subpages в админке",
+          "weight": 30,
+          "type": "fix",
+          "scope": "admin"
+        },
+        {
+          "description": "Восстановлено отображение примеров Recharts",
+          "weight": 40,
+          "type": "fix",
+          "scope": "charts"
         }
       ]
     }
