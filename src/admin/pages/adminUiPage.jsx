@@ -7,8 +7,10 @@ export default function AdminUiPage() {
     document.title = title
   }, [title])
 
-  const loginVariants = Array.from({ length: 20 }, (_, i) => i + 1)
-  const tagVariants = Array.from({ length: 20 }, (_, i) => i + 1)
+  const loginVariants = Array.from({ length: 30 }, (_, i) => i + 1)
+  const tagVariants = Array.from({ length: 30 }, (_, i) => i + 1)
+  const loginChoice = 3
+  const tagChoice = 20
   const tags = ['#alpha', '#beta', '#gamma']
 
   return (
@@ -18,7 +20,10 @@ export default function AdminUiPage() {
       <h2>Login form variants</h2>
       {loginVariants.map((num, idx) => (
         <div key={`login-${num}`}>
-          <h3>{num}</h3>
+          <h3>
+            {num}
+            {num === loginChoice ? ' current choice' : ''}
+          </h3>
           <form className={`login-form variant-${num}`}>
             <input type="text" placeholder="Login" />
             <input type="password" placeholder="Password" />
@@ -31,7 +36,10 @@ export default function AdminUiPage() {
       <h2>Hashtag variants</h2>
       {tagVariants.map((num, idx) => (
         <div key={`tags-${num}`}>
-          <h3>{num}</h3>
+          <h3>
+            {num}
+            {num === tagChoice ? ' current choice' : ''}
+          </h3>
           <div className={`tags tags-variant-${num}`}>
             {tags.map(tag => (
               <span key={tag}>{tag}</span>
