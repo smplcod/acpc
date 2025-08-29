@@ -1183,6 +1183,28 @@
           "scope": "sidebar"
         }
       ]
+    },
+    {
+      "version": "0.0.46",
+      "date": "2025-08-29",
+      "time": "15:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Expanded activity mock data with visits, signups, and error breakdown",
+          "weight": 30,
+          "type": "feat",
+          "scope": "mocks"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Расширены мок-данные активности посещениями, регистрациями и кодами ошибок",
+          "weight": 30,
+          "type": "feat",
+          "scope": "mocks"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2257,6 +2279,28 @@
           "weight": 40,
           "type": "style",
           "scope": "sidebar"
+        }
+      ]
+    },
+    {
+      "version": "0.0.46",
+      "date": "2025-08-29",
+      "time": "15:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Expanded activity mock data with visits, signups, and error breakdown",
+          "weight": 30,
+          "type": "feat",
+          "scope": "mocks"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Расширены мок-данные активности посещениями, регистрациями и кодами ошибок",
+          "weight": 30,
+          "type": "feat",
+          "scope": "mocks"
         }
       ]
     }

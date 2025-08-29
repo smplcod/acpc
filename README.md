@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.45
+Current version: 0.0.46
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -24,6 +24,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 1.1 Узнать, что такое мок-данные
   - [ ] 1.2 Создать мок-данные (пользователи, роли, активность)
   - [ ] 1.3 Определить схему: user{id, name, role, email, active}, activity{date, logins, sessions, errors, conversion}
+  - [x] 1.4 Расширить мок-данные активности посещениями, регистрациями и кодами ошибок
  
 2. Авторизация
   - [x] 2.1 Создать страницу /admin/login .
