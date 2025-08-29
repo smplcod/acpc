@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Sidebar, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
+import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import './barLeftUser.css'
 
 export default function BarLeftUser() {
@@ -41,15 +41,31 @@ export default function BarLeftUser() {
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
-        <div className="icon-button" onMouseEnter={onIconEnter} onClick={toggle}>
+        <div
+          className="icon-button"
+          onMouseEnter={onIconEnter}
+          onClick={toggle}
+          title="Toggle sidebar"
+        >
           <Sidebar size={16} />
         </div>
         {!isCollapsed && (
           <>
-            <div className="icon-button"><Columns size={16} /></div>
-            <div className="icon-button"><Calendar size={16} /></div>
-            <div className="icon-button"><CheckCircle size={16} /></div>
-            <div className="icon-button"><Cloud size={16} /></div>
+            <Link to="/" className="icon-button" title="Home">
+              <Home size={16} />
+            </Link>
+            <div className="icon-button" title="Columns">
+              <Columns size={16} />
+            </div>
+            <div className="icon-button" title="Calendar">
+              <Calendar size={16} />
+            </div>
+            <div className="icon-button" title="Check circle">
+              <CheckCircle size={16} />
+            </div>
+            <div className="icon-button" title="Cloud">
+              <Cloud size={16} />
+            </div>
           </>
         )}
       </div>
