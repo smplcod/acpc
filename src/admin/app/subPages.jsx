@@ -1,41 +1,36 @@
 import { Link, useLocation } from 'react-router-dom'
-import adminRoutes from './routes.jsx'
+import urlTree from '../../urlTree.js'
 
-function findRouteChildren(pathname, routes, base = '/admin') {
-  let relative = pathname.startsWith(base) ? pathname.slice(base.length) : pathname
-  if (relative.startsWith('/')) relative = relative.slice(1)
-  const segments = relative.split('/').filter(Boolean)
-  let currentRoutes = routes
-  let currentBase = base
-  for (const segment of segments) {
-    const match = currentRoutes.find(r => r.path === segment)
-    if (!match) return { base: currentBase, routes: [] }
-    currentRoutes = match.children || []
-    currentBase += `/${segment}`
+function findNode(path, nodes) {
+  for (const node of nodes) {
+    if (node.path === path) return node
+    const found = findNode(path, node.children)
+    if (found) return found
   }
-  return { base: currentBase, routes: currentRoutes }
+  return null
+}
+
+function renderTree(nodes) {
+  return (
+    <ul>
+      {nodes.map(n => (
+        <li key={n.path}>
+          <Link to={n.path}>{n.path}</Link>
+          {n.children.length > 0 && renderTree(n.children)}
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 export default function SubPages() {
   const { pathname } = useLocation()
-  const { base, routes } = findRouteChildren(pathname, adminRoutes)
-  const subpages = routes.filter(r => !r.index)
+  const node = findNode(pathname, urlTree)
+  const children = node ? node.children : []
   return (
     <div style={{ marginTop: '2rem' }}>
       <h2>Subpages:</h2>
-      {subpages.length > 0 && (
-        <ul>
-          {subpages.map(r => {
-            const to = `${base}/${r.path || ''}`.replace(/\/+/g, '/').replace(/\/$/, '')
-            const label = r.label || r.path
-            return (
-              <li key={to}>
-                <Link to={to}>{label}</Link>
-              </li>
-            )
-          })}
-        </ul>
-      )}
+      {children.length > 0 && renderTree(children)}
     </div>
   )
 }

@@ -937,6 +937,40 @@
         "Графики Recharts",
         "Заголовок Subpages"
       ]
+    },
+    {
+      "version": "0.0.37",
+      "date": "2025-08-29",
+      "time": "09:36:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Synced sidebars and Subpages with global URL tree",
+          "weight": 60,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Added navigation re-check rule to README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Синхронизированы сайдбары и Subpages с глобальным деревом URL",
+          "weight": 60,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Добавлено правило проверки навигации в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
     }
   ],
   "releases": [
@@ -1762,6 +1796,40 @@
         },
         {
           "description": "Уточнено правило SubPages в README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ]
+    },
+    {
+      "version": "0.0.37",
+      "date": "2025-08-29",
+      "time": "09:36:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Synced sidebars and Subpages with global URL tree",
+          "weight": 60,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Added navigation re-check rule to README",
+          "weight": 20,
+          "type": "docs",
+          "scope": "readme"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Синхронизированы сайдбары и Subpages с глобальным деревом URL",
+          "weight": 60,
+          "type": "fix",
+          "scope": "navigation"
+        },
+        {
+          "description": "Добавлено правило проверки навигации в README",
           "weight": 20,
           "type": "docs",
           "scope": "readme"
