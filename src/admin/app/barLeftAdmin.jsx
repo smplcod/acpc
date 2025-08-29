@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
+import urlTree from '../../urlTree.js'
 import './barLeftAdmin.css'
 
 export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
@@ -43,6 +44,17 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     if (collapsed) setHovered(false)
   }
 
+  const renderTree = nodes => (
+    <ul>
+      {nodes.map(n => (
+        <li key={n.path}>
+          <Link to={n.path}>{n.path}</Link>
+          {n.children.length > 0 && renderTree(n.children)}
+        </li>
+      ))}
+    </ul>
+  )
+
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
@@ -74,15 +86,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
           </>
         )}
       </div>
-      {!isCollapsed && (
-        <nav className="sidebar-content">
-          <Link to="/admin">/admin</Link>
-          <Link to="/admin/charts">/admin/charts</Link>
-          <Link to="/admin/dev">/admin/dev</Link>
-          <Link to="/admin/ui">/admin/ui</Link>
-          <Link to="/admin/logout">/admin/logout</Link>
-        </nav>
-      )}
+      {!isCollapsed && <nav className="sidebar-content">{renderTree(urlTree)}</nav>}
     </aside>
   )
 }

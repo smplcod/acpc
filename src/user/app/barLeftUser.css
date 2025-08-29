@@ -43,11 +43,16 @@
   background-color: var(--color-hover);
 }
 .sidebar-content {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
   padding: 4px;
   color: var(--color-text);
+}
+.sidebar-content ul {
+  list-style: none;
+  padding-left: 16px;
+}
+.sidebar-content a {
+  display: block;
+  padding: 2px 0;
 }
 .sidebar-left.collapsed .sidebar-content {
   display: none;

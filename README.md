@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.36
+Current version: 0.0.37
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -10,7 +10,8 @@ Current version: 0.0.36
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
-- Admin pages display "Subpages:" at the end via a dedicated component
+- Admin pages display "Subpages:" at the end with a full URL tree
+- Navigation sidebars derive from the same tree; admin lists all URLs, public lists non-admin URLs
 - Admin dev charts with 20 Recharts examples for users data
 
 # ACP+Charts сomming soon
@@ -111,7 +112,14 @@ _Only this section of the readme can be maintained using Russian language_
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
 15. Always render the `SubPages` component at the end of every `/admin` route, regardless of depth, so each page ends with a "Subpages:" heading and links when available.
- 
+16. After each task, re-check navigation (see Verification steps).
+
+# Verification steps
+1. Open several pages: /admin, /admin/section, /admin/section/subsection — confirm each shows "Subpages" at the bottom with the full tree.
+2. Check the admin left sidebar — all URLs present, nesting correct.
+3. Check the public site left sidebar — all URLs present except /admin and its descendants.
+4. After any page structure change, repeat steps 1–3.
+
 # Project details
 
 ## Constraints
