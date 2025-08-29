@@ -2,6 +2,7 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import BarLeftAdmin from './barLeftAdmin.jsx'
 import { isAdminAuth } from './auth.js'
+import SubPages from './subPages.jsx'
 import './layout.css'
 
 export default function Layout() {
@@ -21,6 +22,7 @@ export default function Layout() {
       <BarLeftAdmin forceCollapsed={isLogin} disableToggle={isLogin} />
       <main>
         <Outlet />
+        <SubPages />
       </main>
     </div>
   )
