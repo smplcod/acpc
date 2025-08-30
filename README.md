@@ -1,10 +1,10 @@
 # ACP+Charts now
-Current version: 0.0.51
+Current version: 0.0.52
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
-- Admin access to dashboard, charts, and UI demos of 30 forms and 30 hashtags
+- Admin access to dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -15,6 +15,8 @@ Current version: 0.0.51
 - User and admin sidebars highlight the active link
 - Admin charts with 20 Recharts examples for users data
 - Admin charts with 21 Chart.js examples for users data
+- Admin dashboard with mini charts for growth, engagement, reliability, and revenue
+- Detailed analytics pages at `/admin/graph/*` for growth, engagement, reliability, and revenue
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -42,6 +44,8 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
   - [x] 3.4 Пронумеровать варианты графиков в заголовках на /admin/charts/users/recharts.
   - [x] 3.5 Создать страницу /admin/charts/users/explain и описать ключи из users.json.
+  - [x] 3.6 Добавить страницу /admin/dashboard с мини-графиками.
+  - [x] 3.7 Реализовать страницы /admin/graph/growth, /admin/graph/engagement, /admin/graph/reliability, /admin/graph/revenue с реальными графиками и подписями.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
