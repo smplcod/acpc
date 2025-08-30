@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
-import urlTree from '../../urlTree.js'
+import urlTree from '../../urlTree.json'
 import './barLeftUser.css'
 
 export default function BarLeftUser() {

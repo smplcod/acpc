@@ -1293,6 +1293,40 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.51",
+      "date": "2025-08-29",
+      "time": "16:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added URL/Name toggle for admin sidebar links",
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
+        },
+        {
+          "description": "Stored page names in JSON file",
+          "weight": 30,
+          "type": "refactor",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлен переключатель URL/Name в админском сайдбаре",
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
+        },
+        {
+          "description": "Названия страниц перенесены в JSON-файл",
+          "weight": 30,
+          "type": "refactor",
+          "scope": "navigation"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2477,6 +2511,40 @@
           "weight": 60,
           "type": "feat",
           "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.51",
+      "date": "2025-08-29",
+      "time": "16:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added URL/Name toggle for admin sidebar links",
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
+        },
+        {
+          "description": "Stored page names in JSON file",
+          "weight": 30,
+          "type": "refactor",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлен переключатель URL/Name в админском сайдбаре",
+          "weight": 40,
+          "type": "feat",
+          "scope": "sidebar"
+        },
+        {
+          "description": "Названия страниц перенесены в JSON-файл",
+          "weight": 30,
+          "type": "refactor",
+          "scope": "navigation"
         }
       ]
     }
