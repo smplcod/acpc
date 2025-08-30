@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { isAdminAuth } from '../app/auth.js'
 import AuthMessage from '../app/authMessage.jsx'
 import './adminUiPage.css'
 
@@ -13,6 +14,16 @@ export default function AdminLoginPage() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const navigate = useNavigate()
+
+  useEffect(() => {
+    if (isAdminAuth()) {
+      if (window.history.length > 1) {
+        navigate(-1)
+      } else {
+        navigate('/admin', { replace: true })
+      }
+    }
+  }, [navigate])
 
   const handleSubmit = e => {
     e.preventDefault()

@@ -1,9 +1,10 @@
 # ACP+Charts now
-Current version: 0.0.54
+Current version: 0.0.55
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
+- Authenticated admins visiting `/admin/login` are redirected back to the previous page
 - Admin access to charts dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
@@ -36,6 +37,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.5 Добавить страницу /admin/logout, сообщение об успешной авторизации и ссылку на выход.
   - [x] 2.6 Возвращать на запрошенную страницу /admin/* после успешной авторизации.
   - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
+  - [x] 2.8 Перенаправлять авторизованного админа со страницы /admin/login на предыдущую страницу
 
 3. Графики
   - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
