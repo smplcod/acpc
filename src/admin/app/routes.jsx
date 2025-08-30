@@ -7,11 +7,29 @@ import AdminChartsUsersExplainPage from '../pages/adminChartsUsersExplainPage.js
 import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
 import AdminLogoutPage from '../pages/adminLogoutPage.jsx'
+import AdminDashboardPage from '../pages/adminDashboardPage.jsx'
+import AdminGraphPage from '../pages/adminGraphPage.jsx'
+import AdminGraphGrowthPage from '../pages/adminGraphGrowthPage.jsx'
+import AdminGraphEngagementPage from '../pages/adminGraphEngagementPage.jsx'
+import AdminGraphReliabilityPage from '../pages/adminGraphReliabilityPage.jsx'
+import AdminGraphRevenuePage from '../pages/adminGraphRevenuePage.jsx'
 
 const adminRoutes = [
   { path: 'login', element: <AdminLoginPage />, label: 'Login' },
   { path: 'logout', element: <AdminLogoutPage />, label: 'Logout' },
   { index: true, element: <AdminPage />, label: 'Home' },
+  { path: 'dashboard', element: <AdminDashboardPage />, label: 'Dashboard' },
+  {
+    path: 'graph',
+    element: <AdminGraphPage />,
+    label: 'Graph',
+    children: [
+      { path: 'growth', element: <AdminGraphGrowthPage />, label: 'Growth' },
+      { path: 'engagement', element: <AdminGraphEngagementPage />, label: 'Engagement' },
+      { path: 'reliability', element: <AdminGraphReliabilityPage />, label: 'Reliability' },
+      { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' },
+    ]
+  },
   {
     path: 'charts',
     element: <AdminChartsPage />,
