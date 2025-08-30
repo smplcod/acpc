@@ -30,7 +30,7 @@ export default function SubPages() {
   if (children.length === 0) return null
   return (
     <div style={{ marginTop: '2rem' }}>
-      <h2>Subpages:</h2>
+      <h2>Subpages</h2>
       {renderTree(children)}
     </div>
   )
