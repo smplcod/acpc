@@ -22,7 +22,12 @@
           }
         ]
       },
-      { "path": "/admin/ui", "name": "UI", "children": [] }
+      { "path": "/admin/ui", "name": "UI", "children": [] },
+      { "path": "/admin/dashboard", "name": "Dashboard", "children": [] },
+      { "path": "/admin/graph/growth", "name": "Growth", "children": [] },
+      { "path": "/admin/graph/engagement", "name": "Engagement", "children": [] },
+      { "path": "/admin/graph/reliability", "name": "Reliability", "children": [] },
+      { "path": "/admin/graph/revenue", "name": "Revenue", "children": [] }
     ]
   }
 ]
