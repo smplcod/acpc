@@ -1,18 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
 import './adminUiPage.css'
-
-function SwitchDemo({ variant }) {
-  const [on, setOn] = useState(false)
-  return (
-    <button
-      type='button'
-      className={`switch switch-variant-${variant} ${on ? 'on' : ''}`}
-      onClick={() => setOn(!on)}
-      aria-label='toggle'
-    />
-  )
-}
 
 export default function AdminUiPage() {
   const title = 'UI | ACPC'
@@ -22,7 +10,6 @@ export default function AdminUiPage() {
 
   const loginVariants = Array.from({ length: 30 }, (_, i) => i + 1)
   const tagVariants = Array.from({ length: 30 }, (_, i) => i + 1)
-  const switchVariants = Array.from({ length: 20 }, (_, i) => i + 1)
   const loginChoice = 30
   const tagChoice = 20
   const tags = ['#alpha', '#beta', '#gamma']
@@ -61,15 +48,6 @@ export default function AdminUiPage() {
             ))}
           </div>
           {idx < tagVariants.length - 1 && <hr />}
-        </div>
-      ))}
-
-      <h2>Switch variants</h2>
-      {switchVariants.map((num, idx) => (
-        <div key={`switch-${num}`}>
-          <h3>{num}</h3>
-          <SwitchDemo variant={num} />
-          {idx < switchVariants.length - 1 && <hr />}
         </div>
       ))}
     </div>
