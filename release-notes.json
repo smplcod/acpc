@@ -1327,28 +1327,6 @@
           "scope": "navigation"
         }
       ]
-    },
-    {
-      "version": "0.0.52",
-      "date": "2025-08-29",
-      "time": "17:00:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Introduced admin dashboard and analytics graph pages",
-          "weight": 80,
-          "type": "feat",
-          "scope": "analytics"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Добавлена админская панель и страницы аналитики",
-          "weight": 80,
-          "type": "feat",
-          "scope": "analytics"
-        }
-      ]
     }
   ],
   "releases": [
@@ -2567,28 +2545,6 @@
           "weight": 30,
           "type": "refactor",
           "scope": "navigation"
-        }
-      ]
-    },
-    {
-      "version": "0.0.52",
-      "date": "2025-08-29",
-      "time": "17:00:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Introduced admin dashboard and analytics graph pages",
-          "weight": 80,
-          "type": "feat",
-          "scope": "analytics"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Добавлена админская панель и страницы аналитики",
-          "weight": 80,
-          "type": "feat",
-          "scope": "analytics"
         }
       ]
     }
