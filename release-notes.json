@@ -881,8 +881,7 @@
         "Features list reorganized and bot rule moved to conveniences",
         "README intro shortened into bullet list",
         "User charts with Recharts",
-        "Admin pages always show a 'Subpages:' heading",
-        "Mock data refreshed for charts"
+        "Admin pages always show a 'Subpages:' heading"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -900,8 +899,7 @@
         "Перенесено правило бота в раздел удобств и обновлён список Features ToDo",
         "Введение README сокращено до маркированного списка",
         "Добавлены демо графиков пользователей на Recharts",
-        "На админских страницах всегда показывается заголовок 'Subpages:'",
-        "Обновлены мок-данные для графиков"
+        "На админских страницах всегда показывается заголовок 'Subpages:'"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -919,8 +917,7 @@
         "Features list updated",
         "README intro concise",
         "Recharts user charts",
-        "Admin subpages heading",
-        "Mocks refreshed"
+        "Admin subpages heading"
       ],
       "ultrashort-summary-ru": [
         "Документы release notes",
@@ -938,8 +935,7 @@
         "Обновлён список задач",
         "Краткое введение README",
         "Графики Recharts",
-        "Заголовок Subpages",
-        "Моки обновлены"
+        "Заголовок Subpages"
       ]
     },
     {
@@ -1351,28 +1347,6 @@
           "weight": 70,
           "type": "feat",
           "scope": "analytics"
-        }
-      ]
-    },
-    {
-      "version": "0.0.53",
-      "date": "2025-08-29",
-      "time": "17:15:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Refreshed mock data files",
-          "weight": 20,
-          "type": "data",
-          "scope": "mocks"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Обновлены файлы мок-данных",
-          "weight": 20,
-          "type": "data",
-          "scope": "mocks"
         }
       ]
     }
@@ -2615,28 +2589,6 @@
           "weight": 70,
           "type": "feat",
           "scope": "analytics"
-        }
-      ]
-    },
-    {
-      "version": "0.0.53",
-      "date": "2025-08-29",
-      "time": "17:15:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Refreshed mock data files",
-          "weight": 20,
-          "type": "data",
-          "scope": "mocks"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Обновлены файлы мок-данных",
-          "weight": 20,
-          "type": "data",
-          "scope": "mocks"
         }
       ]
     }
