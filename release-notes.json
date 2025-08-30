@@ -1415,28 +1415,6 @@
           "scope": "auth"
         }
       ]
-    },
-    {
-      "version": "0.0.56",
-      "date": "2025-08-29",
-      "time": "17:04:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Added project name and version to admin sidebar",
-          "weight": 30,
-          "type": "feat",
-          "scope": "admin-sidebar"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Добавлено название проекта и версия в сайдбар админа",
-          "weight": 30,
-          "type": "feat",
-          "scope": "admin-sidebar"
-        }
-      ]
     }
   ],
   "releases": [
@@ -2743,28 +2721,6 @@
           "weight": 30,
           "type": "fix",
           "scope": "auth"
-        }
-      ]
-    },
-    {
-      "version": "0.0.56",
-      "date": "2025-08-29",
-      "time": "17:04:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Added project name and version to admin sidebar",
-          "weight": 30,
-          "type": "feat",
-          "scope": "admin-sidebar"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Добавлено название проекта и версия в сайдбар админа",
-          "weight": 30,
-          "type": "feat",
-          "scope": "admin-sidebar"
         }
       ]
     }
