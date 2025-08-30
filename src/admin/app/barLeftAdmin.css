@@ -81,3 +81,8 @@
   gap: 4px;
   cursor: pointer;
 }
+
+.sidebar-footer .project-info {
+  text-align: right;
+  margin-bottom: 4px;
+}
