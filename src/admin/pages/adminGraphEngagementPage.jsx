@@ -56,10 +56,17 @@ export default function AdminGraphEngagementPage() {
     <div>
       <h1>{fullTitle}</h1>
       <div style={{ maxWidth: '800px' }}>
+        <h2>Sessions and Conversion</h2>
         <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
         <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>
+        <p>Shows session volume against conversion metrics.</p>
+
+        <h2>Stickiness</h2>
         <Line data={stickinessData} />
         <p>Goal: product stickiness | Source: events | Formula: DAU/MAU | Period: all dates</p>
+        <p>Shows DAU/MAU ratio versus benchmarks.</p>
+
+        <h2>Cohort Retention</h2>
         <table style={{ borderCollapse: 'collapse' }}>
           <thead><tr><th>Week</th><th>d+7</th><th>d+14</th><th>d+28</th></tr></thead>
           <tbody>
@@ -74,8 +81,12 @@ export default function AdminGraphEngagementPage() {
           </tbody>
         </table>
         <p>Goal: cohort retention | Source: users | Formula: activity at d+N | Period: all cohorts</p>
+        <p>Shows percentage of users retained after 7, 14, and 28 days.</p>
+
+        <h2>User Profile Distribution</h2>
         <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
         <p>Goal: platform profile | Source: users | Period: last 30 days</p>
+        <p>Shows share of devices, OS, and browsers.</p>
       </div>
     </div>
   )

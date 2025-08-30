@@ -10,6 +10,7 @@ export default function Layout() {
   const location = useLocation()
   const navigate = useNavigate()
   const isLogin = location.pathname === '/admin/login'
+  const hideSubPages = location.pathname === '/admin/charts'
 
   useEffect(() => {
     if (!isLogin && !isAdminAuth()) {
@@ -25,7 +26,7 @@ export default function Layout() {
       <BarLeftAdmin forceCollapsed={isLogin} disableToggle={isLogin} />
       <main>
         <Outlet />
-        <SubPages />
+        {!hideSubPages && <SubPages />}
       </main>
     </div>
   )
