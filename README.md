@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.49
+Current version: 0.0.50
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -14,6 +14,7 @@ Current version: 0.0.49
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
 - Admin charts with 20 Recharts examples for users data
+- Admin charts with 21 Chart.js examples for users data
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -37,7 +38,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 3. Графики
   - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
-  - [ ] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
+  - [x] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
   - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
   - [x] 3.4 Пронумеровать варианты графиков в заголовках на /admin/charts/users/recharts.
   - [x] 3.5 Создать страницу /admin/charts/users/explain и описать ключи из users.json.
@@ -155,6 +156,10 @@ _Only this section of the readme can be maintained using Russian language_
 - react-feather 2.0.10
 - react-router-dom 7.8.2
 - recharts 2.15.4
+- chart.js 4.5.0
+- react-chartjs-2 5.3.0
+- chartjs-plugin-zoom 2.2.0
+- chartjs-chart-treemap 3.1.0
 
 **Dev dependencies**
 
