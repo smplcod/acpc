@@ -1,10 +1,11 @@
 # ACP+Charts now
-Current version: 0.0.51
+Current version: 0.0.52
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
 - Admin access to dashboard, charts, and UI demos of 30 forms and 30 hashtags
+- Metrics dashboard at `/admin/dashboard` with links to growth, engagement, reliability, and revenue charts
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -110,6 +111,10 @@ _Only this section of the readme can be maintained using Russian language_
 17. Сайдбар админа
  - [x] 17.1 Вести названия страниц в json-файле
  - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
+
+18. Metrics dashboard
+ - [x] 18.1 Create `/admin/dashboard` with clickable mini charts
+ - [x] 18.2 Add growth, engagement, reliability, and revenue pages with client-side metrics
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
