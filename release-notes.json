@@ -1393,6 +1393,28 @@
           "scope": "admin-navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.55",
+      "date": "2025-08-29",
+      "time": "17:03:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Redirected authenticated admin from login page to previous page",
+          "weight": 30,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Авторизованный админ перенаправляется со страницы входа на предыдущую страницу",
+          "weight": 30,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2677,6 +2699,28 @@
           "weight": 60,
           "type": "refactor",
           "scope": "admin-navigation"
+        }
+      ]
+    },
+    {
+      "version": "0.0.55",
+      "date": "2025-08-29",
+      "time": "17:03:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Redirected authenticated admin from login page to previous page",
+          "weight": 30,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Авторизованный админ перенаправляется со страницы входа на предыдущую страницу",
+          "weight": 30,
+          "type": "fix",
+          "scope": "auth"
         }
       ]
     }
