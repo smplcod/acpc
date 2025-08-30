@@ -1327,6 +1327,40 @@
           "scope": "navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.52",
+      "date": "2025-08-29",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added admin dashboard with mini metric charts",
+          "weight": 70,
+          "type": "feat",
+          "scope": "dashboard"
+        },
+        {
+          "description": "Introduced growth, engagement, reliability and revenue analytics pages",
+          "weight": 80,
+          "type": "feat",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена админ-панель с мини-графиками показателей",
+          "weight": 70,
+          "type": "feat",
+          "scope": "dashboard"
+        },
+        {
+          "description": "Добавлены страницы аналитики роста, вовлечённости, стабильности и доходов",
+          "weight": 80,
+          "type": "feat",
+          "scope": "analytics"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2545,6 +2579,40 @@
           "weight": 30,
           "type": "refactor",
           "scope": "navigation"
+        }
+      ]
+    },
+    {
+      "version": "0.0.52",
+      "date": "2025-08-29",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added admin dashboard with mini metric charts",
+          "weight": 70,
+          "type": "feat",
+          "scope": "dashboard"
+        },
+        {
+          "description": "Introduced growth, engagement, reliability and revenue analytics pages",
+          "weight": 80,
+          "type": "feat",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена админ-панель с мини-графиками показателей",
+          "weight": 70,
+          "type": "feat",
+          "scope": "dashboard"
+        },
+        {
+          "description": "Добавлены страницы аналитики роста, вовлечённости, стабильности и доходов",
+          "weight": 80,
+          "type": "feat",
+          "scope": "analytics"
         }
       ]
     }
