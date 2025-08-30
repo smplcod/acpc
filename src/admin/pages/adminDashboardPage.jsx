@@ -5,7 +5,7 @@ import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
 
 export default function AdminDashboardPage() {
-  const title = 'Admin Dashboard'
+  const title = 'Charts Dashboard'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
   const [data, setData] = useState(null)
 
@@ -36,19 +36,19 @@ export default function AdminDashboardPage() {
     <div>
       <h1>{fullTitle}</h1>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-        <Link to="/admin/graph/growth" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/growth" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Line data={dauData} options={commonLineOpts} />
           <p>Goal: growth | Source: events | Period: {period}</p>
         </Link>
-        <Link to="/admin/graph/engagement" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/engagement" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Line data={convData} options={commonLineOpts} />
           <p>Goal: conversion | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/graph/reliability" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/reliability" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Line data={errData} options={commonLineOpts} />
           <p>Goal: stability | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/graph/revenue" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/revenue" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Bar data={subsData} options={commonBarOpts} />
           <p>Goal: revenue | Source: events | Period: {period}</p>
         </Link>

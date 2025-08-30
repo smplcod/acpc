@@ -7,33 +7,23 @@
     "children": [
       { "path": "/admin/login", "name": "Login", "children": [] },
       { "path": "/admin/logout", "name": "Logout", "children": [] },
-      { "path": "/admin/dashboard", "name": "Dashboard", "children": [] },
-      {
-        "path": "/admin/graph",
-        "name": "Graph",
-        "children": [
-          { "path": "/admin/graph/growth", "name": "Growth", "children": [] },
-          { "path": "/admin/graph/engagement", "name": "Engagement", "children": [] },
-          { "path": "/admin/graph/reliability", "name": "Reliability", "children": [] },
-          { "path": "/admin/graph/revenue", "name": "Revenue", "children": [] }
-        ]
-      },
       {
         "path": "/admin/charts",
-        "name": "Charts",
+        "name": "Charts Dashboard",
         "children": [
-          {
-            "path": "/admin/charts/users",
-            "name": "Users",
-            "children": [
-              { "path": "/admin/charts/users/recharts", "name": "Recharts", "children": [] },
-              { "path": "/admin/charts/users/chartjs2", "name": "Chart.js", "children": [] },
-              { "path": "/admin/charts/users/explain", "name": "Explain", "children": [] }
-            ]
-          }
+          { "path": "/admin/charts/growth", "name": "Growth", "children": [] },
+          { "path": "/admin/charts/engagement", "name": "Engagement", "children": [] },
+          { "path": "/admin/charts/reliability", "name": "Reliability", "children": [] },
+          { "path": "/admin/charts/revenue", "name": "Revenue", "children": [] }
         ]
       },
-      { "path": "/admin/ui", "name": "UI", "children": [] }
+      {
+        "path": "/admin/ui",
+        "name": "UI",
+        "children": [
+          { "path": "/admin/ui/charts", "name": "Charts", "children": [] }
+        ]
+      }
     ]
   }
 ]
