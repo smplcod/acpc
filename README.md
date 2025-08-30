@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.51
+Current version: 0.0.52
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -15,6 +15,8 @@ Current version: 0.0.51
 - User and admin sidebars highlight the active link
 - Admin charts with 20 Recharts examples for users data
 - Admin charts with 21 Chart.js examples for users data
+- Admin dashboard with mini charts for growth, engagement, reliability, and revenue
+- Dedicated analytics pages for growth, engagement, reliability, and revenue using mock data
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -110,6 +112,13 @@ _Only this section of the readme can be maintained using Russian language_
 17. Сайдбар админа
  - [x] 17.1 Вести названия страниц в json-файле
  - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
+
+# 18. Analytics dashboard
+  - [x] 18.1 Добавить страницу /admin/dashboard с мини-графиками
+  - [x] 18.2 Добавить страницу /admin/graph/growth с графиками роста
+  - [x] 18.3 Добавить страницу /admin/graph/engagement с графиками вовлеченности
+  - [x] 18.4 Добавить страницу /admin/graph/reliability с графиками надежности
+  - [x] 18.5 Добавить страницу /admin/graph/revenue с графиками выручки
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
