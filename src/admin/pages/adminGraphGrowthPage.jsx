@@ -104,25 +104,14 @@ export default function AdminGraphGrowthPage() {
     <div>
       <h1>{fullTitle}</h1>
       <div style={{ maxWidth: '800px' }}>
-        <h2>Active Audience Levels</h2>
         <Line data={areaData} options={{ stacked: true }} />
         <p>Goal: compare active audiences | Source: events | Formula: DAU/WAU/MAU/SMA7 | Period: all dates</p>
-        <p>Compares daily, weekly, and monthly active users.</p>
-
-        <h2>New vs Returning Users</h2>
         <Line data={newReturningData} options={{ stacked: true }} />
         <p>Goal: share of new vs returning | Source: events | Formula: rule "new" | Period: all dates</p>
-        <p>Shows how many users are new versus returning.</p>
-
-        <h2>Top of Funnel</h2>
         <Line data={funnelTopData} />
         <p>Goal: upper funnel dynamics | Source: activity | Period: all dates</p>
-        <p>Visualizes visits, signups, and logins over time.</p>
-
-        <h2>Logins by Weekday</h2>
         <Bar data={weekdayData} />
         <p>Goal: seasonality | Source: events | Formula: aggregate by weekday | Period: all dates</p>
-        <p>Highlights which weekdays see the most logins.</p>
       </div>
     </div>
   )
