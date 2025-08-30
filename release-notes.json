@@ -1293,6 +1293,28 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.51",
+      "date": "2025-08-29",
+      "time": "16:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added switch design variants to admin UI page",
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены варианты дизайна переключателей на странице админского UI",
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2477,6 +2499,28 @@
           "weight": 60,
           "type": "feat",
           "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.51",
+      "date": "2025-08-29",
+      "time": "16:45:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added switch design variants to admin UI page",
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены варианты дизайна переключателей на странице админского UI",
+          "weight": 40,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     }

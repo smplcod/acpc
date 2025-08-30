@@ -313,3 +313,130 @@
 .tags-variant-30 {
   justify-content: flex-end;
 }
+
+.switch {
+  --switch-width: 40px;
+  --switch-height: 20px;
+  --switch-off-bg: #ccc;
+  --switch-on-bg: #4caf50;
+  --switch-knob-bg: #fff;
+  position: relative;
+  display: inline-block;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  border-radius: var(--switch-radius, calc(var(--switch-height) / 2));
+  background: var(--switch-off-bg);
+  border: 1px solid #aaa;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: calc(var(--switch-height) - 2px);
+  height: calc(var(--switch-height) - 2px);
+  border-radius: var(--switch-knob-radius, 50%);
+  background: var(--switch-knob-bg);
+  transition: transform 0.2s;
+}
+
+.switch.on {
+  background: var(--switch-on-bg);
+}
+
+.switch.on::after {
+  transform: translateX(calc(var(--switch-width) - var(--switch-height)));
+}
+
+.switch-variant-1 {}
+
+.switch-variant-2 {
+  --switch-on-bg: #2196f3;
+}
+
+.switch-variant-3 {
+  --switch-on-bg: #f44336;
+}
+
+.switch-variant-4 {
+  --switch-on-bg: #9c27b0;
+}
+
+.switch-variant-5 {
+  --switch-on-bg: #ff9800;
+}
+
+.switch-variant-6 {
+  --switch-off-bg: #444;
+  --switch-on-bg: #0d6efd;
+  --switch-knob-bg: #fff;
+}
+
+.switch-variant-7 {
+  --switch-radius: 4px;
+  --switch-knob-radius: 2px;
+}
+
+.switch-variant-8 {
+  --switch-width: 60px;
+}
+
+.switch-variant-9 {
+  --switch-height: 26px;
+}
+
+.switch-variant-10 {
+  --switch-height: 14px;
+}
+
+.switch-variant-11 {
+  --switch-knob-bg: #000;
+}
+
+.switch-variant-12 {
+  --switch-knob-radius: 0;
+}
+
+.switch-variant-13 {
+  --switch-on-bg: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.switch-variant-14 {
+  border: 2px dashed #666;
+}
+
+.switch-variant-15 {
+  border: 2px solid #000;
+}
+
+.switch-variant-16 {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.switch-variant-17::after {
+  border: 1px solid #ccc;
+}
+
+.switch-variant-18 {
+  --switch-off-bg: #000;
+  --switch-on-bg: #0f0;
+  --switch-knob-bg: #fff;
+}
+
+.switch-variant-19 {
+  --switch-off-bg: transparent;
+  --switch-on-bg: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.switch-variant-20 {
+  --switch-on-bg: #333;
+}
+
+.switch-variant-20::after {
+  background: radial-gradient(circle, #fff 0%, #ccc 100%);
+}
