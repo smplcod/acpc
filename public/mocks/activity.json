@@ -1,412 +1,412 @@
 [
   {
-    "date": "2026-02-01",
-    "visits": 366,
-    "signups": 30,
-    "logins": 218,
-    "sessions": 510,
-    "errors": 39,
-    "conversion": 0.08,
-    "errorsByCode": {
-      "401": 5,
-      "408": 14,
-      "500": 1,
-      "JS:TypeError": 8
-    }
-  },
-  {
-    "date": "2026-02-02",
-    "visits": 666,
-    "signups": 69,
-    "logins": 359,
-    "sessions": 595,
-    "errors": 13,
+    "date": "2025-08-01",
+    "visits": 646,
+    "signups": 90,
+    "logins": 340,
+    "sessions": 520,
+    "errors": 8,
     "conversion": 0.1,
     "errorsByCode": {
       "401": 1,
-      "408": 7,
-      "JS:TypeError": 4
-    }
-  },
-  {
-    "date": "2026-02-03",
-    "visits": 1264,
-    "signups": 139,
-    "logins": 431,
-    "sessions": 1057,
-    "errors": 12,
-    "conversion": 0.11,
-    "errorsByCode": {
-      "401": 10,
-      "408": 1
-    }
-  },
-  {
-    "date": "2026-02-04",
-    "visits": 391,
-    "signups": 64,
-    "logins": 220,
-    "sessions": 494,
-    "errors": 39,
-    "conversion": 0.16,
-    "errorsByCode": {
-      "401": 18,
-      "408": 7,
-      "500": 8,
-      "JS:TypeError": 1
-    }
-  },
-  {
-    "date": "2026-02-05",
-    "visits": 1430,
-    "signups": 254,
-    "logins": 625,
-    "sessions": 867,
-    "errors": 39,
-    "conversion": 0.18,
-    "errorsByCode": {
-      "401": 30,
       "408": 2,
-      "JS:TypeError": 2
-    }
-  },
-  {
-    "date": "2026-02-06",
-    "visits": 2061,
-    "signups": 330,
-    "logins": 1259,
-    "sessions": 1867,
-    "errors": 37,
-    "conversion": 0.16,
-    "errorsByCode": {
-      "401": 7,
-      "408": 19,
-      "500": 9,
-      "JS:TypeError": 1
-    }
-  },
-  {
-    "date": "2026-02-07",
-    "visits": 1557,
-    "signups": 273,
-    "logins": 565,
-    "sessions": 647,
-    "errors": 48,
-    "conversion": 0.18,
-    "errorsByCode": {
-      "401": 17,
-      "408": 24,
-      "JS:TypeError": 5
-    }
-  },
-  {
-    "date": "2026-02-08",
-    "visits": 1920,
-    "signups": 469,
-    "logins": 740,
-    "sessions": 870,
-    "errors": 13,
-    "conversion": 0.24,
-    "errorsByCode": {
-      "401": 11,
-      "408": 1
-    }
-  },
-  {
-    "date": "2026-02-09",
-    "visits": 693,
-    "signups": 126,
-    "logins": 409,
-    "sessions": 911,
-    "errors": 10,
-    "conversion": 0.18,
-    "errorsByCode": {
-      "408": 2,
-      "500": 5,
-      "JS:TypeError": 2
-    }
-  },
-  {
-    "date": "2026-02-10",
-    "visits": 1966,
-    "signups": 126,
-    "logins": 1332,
-    "sessions": 1648,
-    "errors": 38,
-    "conversion": 0.06,
-    "errorsByCode": {
-      "401": 11,
-      "408": 10,
-      "500": 7,
-      "JS:TypeError": 5
-    }
-  },
-  {
-    "date": "2026-02-11",
-    "visits": 1238,
-    "signups": 171,
-    "logins": 421,
-    "sessions": 581,
-    "errors": 24,
-    "conversion": 0.14,
-    "errorsByCode": {
-      "401": 22,
-      "500": 1
-    }
-  },
-  {
-    "date": "2026-02-12",
-    "visits": 1425,
-    "signups": 251,
-    "logins": 497,
-    "sessions": 837,
-    "errors": 23,
-    "conversion": 0.18,
-    "errorsByCode": {
-      "401": 1,
-      "500": 5,
-      "JS:TypeError": 9
-    }
-  },
-  {
-    "date": "2026-02-13",
-    "visits": 816,
-    "signups": 50,
-    "logins": 468,
-    "sessions": 700,
-    "errors": 13,
-    "conversion": 0.06,
-    "errorsByCode": {
-      "401": 7,
-      "408": 2,
-      "500": 2,
-      "JS:TypeError": 1
-    }
-  },
-  {
-    "date": "2026-02-14",
-    "visits": 1564,
-    "signups": 259,
-    "logins": 1048,
-    "sessions": 2319,
-    "errors": 38,
-    "conversion": 0.17,
-    "errorsByCode": {
-      "408": 12,
-      "500": 20,
-      "JS:TypeError": 4
-    }
-  },
-  {
-    "date": "2026-02-15",
-    "visits": 2076,
-    "signups": 509,
-    "logins": 1047,
-    "sessions": 1531,
-    "errors": 31,
-    "conversion": 0.25,
-    "errorsByCode": {
-      "401": 2,
-      "408": 17,
-      "JS:TypeError": 7
-    }
-  },
-  {
-    "date": "2026-02-16",
-    "visits": 854,
-    "signups": 50,
-    "logins": 326,
-    "sessions": 718,
-    "errors": 8,
-    "conversion": 0.06,
-    "errorsByCode": {
-      "401": 6,
-      "408": 1
-    }
-  },
-  {
-    "date": "2026-02-17",
-    "visits": 1782,
-    "signups": 244,
-    "logins": 1085,
-    "sessions": 2281,
-    "errors": 26,
-    "conversion": 0.14,
-    "errorsByCode": {
-      "401": 5,
-      "500": 4,
-      "JS:TypeError": 8
-    }
-  },
-  {
-    "date": "2026-02-18",
-    "visits": 1528,
-    "signups": 179,
-    "logins": 552,
-    "sessions": 1178,
-    "errors": 24,
-    "conversion": 0.12,
-    "errorsByCode": {
-      "401": 1,
-      "408": 16,
       "500": 2,
       "JS:TypeError": 3
     }
   },
   {
-    "date": "2026-02-19",
-    "visits": 1952,
-    "signups": 257,
-    "logins": 623,
-    "sessions": 840,
-    "errors": 1,
+    "date": "2025-08-02",
+    "visits": 494,
+    "signups": 69,
+    "logins": 260,
+    "sessions": 390,
+    "errors": 6,
+    "conversion": 0.11,
+    "errorsByCode": {
+      "401": 1,
+      "408": 1,
+      "500": 1,
+      "JS:TypeError": 3
+    }
+  },
+  {
+    "date": "2025-08-03",
+    "visits": 466,
+    "signups": 65,
+    "logins": 245,
+    "sessions": 370,
+    "errors": 5,
+    "conversion": 0.09,
+    "errorsByCode": {
+      "401": 1,
+      "408": 1,
+      "500": 1,
+      "JS:TypeError": 2
+    }
+  },
+  {
+    "date": "2025-08-04",
+    "visits": 722,
+    "signups": 101,
+    "logins": 380,
+    "sessions": 560,
+    "errors": 9,
+    "conversion": 0.12,
+    "errorsByCode": {
+      "401": 1,
+      "408": 2,
+      "500": 2,
+      "JS:TypeError": 4
+    }
+  },
+  {
+    "date": "2025-08-05",
+    "visits": 751,
+    "signups": 105,
+    "logins": 395,
+    "sessions": 590,
+    "errors": 0,
     "conversion": 0.13,
     "errorsByCode": {}
   },
   {
-    "date": "2026-02-20",
-    "visits": 1977,
-    "signups": 362,
-    "logins": 653,
-    "sessions": 700,
-    "errors": 30,
-    "conversion": 0.18,
+    "date": "2025-08-06",
+    "visits": 779,
+    "signups": 109,
+    "logins": 410,
+    "sessions": 610,
+    "errors": 12,
+    "conversion": 0.12,
     "errorsByCode": {
-      "401": 16,
+      "401": 2,
       "408": 3,
-      "500": 6
+      "500": 3,
+      "JS:TypeError": 4
     }
   },
   {
-    "date": "2026-02-21",
-    "visits": 1699,
-    "signups": 103,
-    "logins": 854,
-    "sessions": 1575,
-    "errors": 6,
-    "conversion": 0.06,
-    "errorsByCode": {
-      "401": 4,
-      "500": 1
-    }
-  },
-  {
-    "date": "2026-02-22",
-    "visits": 1609,
-    "signups": 294,
-    "logins": 633,
-    "sessions": 877,
-    "errors": 35,
-    "conversion": 0.18,
-    "errorsByCode": {
-      "401": 10,
-      "408": 8,
-      "500": 16
-    }
-  },
-  {
-    "date": "2026-02-23",
-    "visits": 181,
-    "signups": 26,
-    "logins": 87,
-    "sessions": 132,
-    "errors": 23,
+    "date": "2025-08-07",
+    "visits": 817,
+    "signups": 114,
+    "logins": 430,
+    "sessions": 640,
+    "errors": 11,
     "conversion": 0.14,
     "errorsByCode": {
+      "401": 2,
+      "408": 3,
+      "500": 2,
+      "JS:TypeError": 4
+    }
+  },
+  {
+    "date": "2025-08-08",
+    "visits": 846,
+    "signups": 118,
+    "logins": 445,
+    "sessions": 660,
+    "errors": 13,
+    "conversion": 0.12,
+    "errorsByCode": {
+      "401": 2,
+      "408": 3,
+      "500": 3,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-09",
+    "visits": 570,
+    "signups": 80,
+    "logins": 300,
+    "sessions": 450,
+    "errors": 7,
+    "conversion": 0.1,
+    "errorsByCode": {
       "401": 1,
-      "408": 4,
-      "500": 14,
+      "408": 2,
+      "500": 1,
       "JS:TypeError": 3
     }
   },
   {
-    "date": "2026-02-24",
-    "visits": 1567,
-    "signups": 218,
-    "logins": 823,
-    "sessions": 1622,
+    "date": "2025-08-10",
+    "visits": 542,
+    "signups": 76,
+    "logins": 285,
+    "sessions": 430,
+    "errors": 0,
+    "conversion": 0.09,
+    "errorsByCode": {}
+  },
+  {
+    "date": "2025-08-11",
+    "visits": 798,
+    "signups": 112,
+    "logins": 420,
+    "sessions": 630,
     "errors": 12,
-    "conversion": 0.14,
-    "errorsByCode": {
-      "401": 11
-    }
-  },
-  {
-    "date": "2026-02-25",
-    "visits": 942,
-    "signups": 175,
-    "logins": 624,
-    "sessions": 1020,
-    "errors": 32,
-    "conversion": 0.19,
-    "errorsByCode": {
-      "401": 29,
-      "408": 2
-    }
-  },
-  {
-    "date": "2026-02-26",
-    "visits": 1563,
-    "signups": 200,
-    "logins": 998,
-    "sessions": 2282,
-    "errors": 14,
     "conversion": 0.13,
     "errorsByCode": {
-      "401": 11,
-      "408": 1,
-      "500": 1
+      "401": 2,
+      "408": 3,
+      "500": 3,
+      "JS:TypeError": 4
     }
   },
   {
-    "date": "2026-02-27",
-    "visits": 1053,
-    "signups": 167,
-    "logins": 502,
-    "sessions": 943,
-    "errors": 6,
+    "date": "2025-08-12",
+    "visits": 836,
+    "signups": 117,
+    "logins": 440,
+    "sessions": 660,
+    "errors": 14,
+    "conversion": 0.12,
+    "errorsByCode": {
+      "401": 2,
+      "408": 4,
+      "500": 3,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-13",
+    "visits": 865,
+    "signups": 121,
+    "logins": 455,
+    "sessions": 680,
+    "errors": 15,
+    "conversion": 0.13,
+    "errorsByCode": {
+      "401": 3,
+      "408": 4,
+      "500": 3,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-14",
+    "visits": 893,
+    "signups": 125,
+    "logins": 470,
+    "sessions": 700,
+    "errors": 16,
+    "conversion": 0.14,
+    "errorsByCode": {
+      "401": 3,
+      "408": 4,
+      "500": 4,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-15",
+    "visits": 912,
+    "signups": 128,
+    "logins": 480,
+    "sessions": 720,
+    "errors": 0,
+    "conversion": 0.12,
+    "errorsByCode": {}
+  },
+  {
+    "date": "2025-08-16",
+    "visits": 608,
+    "signups": 85,
+    "logins": 320,
+    "sessions": 480,
+    "errors": 8,
+    "conversion": 0.11,
+    "errorsByCode": {
+      "401": 1,
+      "408": 2,
+      "500": 2,
+      "JS:TypeError": 3
+    }
+  },
+  {
+    "date": "2025-08-17",
+    "visits": 580,
+    "signups": 81,
+    "logins": 305,
+    "sessions": 460,
+    "errors": 7,
+    "conversion": 0.1,
+    "errorsByCode": {
+      "401": 1,
+      "408": 2,
+      "500": 1,
+      "JS:TypeError": 3
+    }
+  },
+  {
+    "date": "2025-08-18",
+    "visits": 874,
+    "signups": 122,
+    "logins": 460,
+    "sessions": 690,
+    "errors": 17,
+    "conversion": 0.13,
+    "errorsByCode": {
+      "401": 3,
+      "408": 5,
+      "500": 4,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-19",
+    "visits": 903,
+    "signups": 126,
+    "logins": 475,
+    "sessions": 710,
+    "errors": 16,
+    "conversion": 0.14,
+    "errorsByCode": {
+      "401": 3,
+      "408": 4,
+      "500": 4,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-20",
+    "visits": 931,
+    "signups": 130,
+    "logins": 490,
+    "sessions": 735,
+    "errors": 0,
+    "conversion": 0.13,
+    "errorsByCode": {}
+  },
+  {
+    "date": "2025-08-21",
+    "visits": 960,
+    "signups": 134,
+    "logins": 505,
+    "sessions": 750,
+    "errors": 20,
+    "conversion": 0.15,
+    "errorsByCode": {
+      "401": 4,
+      "408": 6,
+      "500": 5,
+      "JS:TypeError": 5
+    }
+  },
+  {
+    "date": "2025-08-22",
+    "visits": 979,
+    "signups": 137,
+    "logins": 515,
+    "sessions": 770,
+    "errors": 22,
+    "conversion": 0.14,
+    "errorsByCode": {
+      "401": 4,
+      "408": 6,
+      "500": 5,
+      "JS:TypeError": 7
+    }
+  },
+  {
+    "date": "2025-08-23",
+    "visits": 627,
+    "signups": 88,
+    "logins": 330,
+    "sessions": 500,
+    "errors": 9,
+    "conversion": 0.11,
+    "errorsByCode": {
+      "401": 1,
+      "408": 2,
+      "500": 2,
+      "JS:TypeError": 4
+    }
+  },
+  {
+    "date": "2025-08-24",
+    "visits": 599,
+    "signups": 84,
+    "logins": 315,
+    "sessions": 480,
+    "errors": 8,
+    "conversion": 0.1,
+    "errorsByCode": {
+      "401": 1,
+      "408": 2,
+      "500": 2,
+      "JS:TypeError": 3
+    }
+  },
+  {
+    "date": "2025-08-25",
+    "visits": 988,
+    "signups": 138,
+    "logins": 520,
+    "sessions": 780,
+    "errors": 0,
+    "conversion": 0.15,
+    "errorsByCode": {}
+  },
+  {
+    "date": "2025-08-26",
+    "visits": 1017,
+    "signups": 142,
+    "logins": 535,
+    "sessions": 800,
+    "errors": 23,
     "conversion": 0.16,
     "errorsByCode": {
       "401": 4,
-      "JS:TypeError": 1
+      "408": 6,
+      "500": 5,
+      "JS:TypeError": 8
     }
   },
   {
-    "date": "2026-02-28",
-    "visits": 1628,
-    "signups": 335,
-    "logins": 1041,
-    "sessions": 1353,
-    "errors": 2,
-    "conversion": 0.21,
+    "date": "2025-08-27",
+    "visits": 1045,
+    "signups": 146,
+    "logins": 550,
+    "sessions": 820,
+    "errors": 24,
+    "conversion": 0.15,
     "errorsByCode": {
-      "401": 1
+      "401": 4,
+      "408": 7,
+      "500": 6,
+      "JS:TypeError": 7
     }
   },
   {
-    "date": "2026-03-01",
-    "visits": 940,
-    "signups": 217,
-    "logins": 509,
-    "sessions": 977,
-    "errors": 35,
-    "conversion": 0.23,
+    "date": "2025-08-28",
+    "visits": 1074,
+    "signups": 150,
+    "logins": 565,
+    "sessions": 840,
+    "errors": 25,
+    "conversion": 0.16,
     "errorsByCode": {
-      "401": 7,
-      "408": 12,
-      "500": 15
+      "401": 5,
+      "408": 7,
+      "500": 6,
+      "JS:TypeError": 7
     }
   },
   {
-    "date": "2026-03-02",
-    "visits": 352,
-    "signups": 29,
-    "logins": 124,
-    "sessions": 245,
-    "errors": 2,
-    "conversion": 0.08,
+    "date": "2025-08-29",
+    "visits": 1100,
+    "signups": 160,
+    "logins": 580,
+    "sessions": 860,
+    "errors": 26,
+    "conversion": 0.17,
     "errorsByCode": {
-      "401": 1
+      "401": 5,
+      "408": 8,
+      "500": 6,
+      "JS:TypeError": 7
     }
   }
 ]
