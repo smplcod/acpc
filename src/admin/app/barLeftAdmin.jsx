@@ -1,15 +1,16 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
-import urlTree from '../../urlTree.js'
+import urlTree from '../../urlTree.json'
 import './barLeftAdmin.css'
 
 const flattenTree = nodes =>
-  nodes.flatMap(n => [n.path, ...flattenTree(n.children)])
+  nodes.flatMap(n => [{ path: n.path, name: n.name }, ...flattenTree(n.children)])
 
 export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
   const [collapsed, setCollapsed] = useState(true)
   const [hovered, setHovered] = useState(false)
+  const [showNames, setShowNames] = useState(false)
 
   useEffect(() => {
     if (forceCollapsed) {
@@ -30,6 +31,11 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     return () => window.removeEventListener('blur', handleBlur)
   }, [collapsed])
 
+  useEffect(() => {
+    const saved = localStorage.getItem('barLeftAdminShowNames')
+    if (saved !== null) setShowNames(saved === 'true')
+  }, [])
+
   const isCollapsed = collapsed && !hovered
 
   const toggle = () => {
@@ -47,7 +53,13 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     if (collapsed) setHovered(false)
   }
 
-  const flatUrls = useMemo(() => flattenTree(urlTree), [])
+  const flatNodes = useMemo(() => flattenTree(urlTree), [])
+
+  const toggleNames = () => {
+    const next = !showNames
+    setShowNames(next)
+    localStorage.setItem('barLeftAdminShowNames', String(next))
+  }
 
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
@@ -81,21 +93,29 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
         )}
       </div>
       {!isCollapsed && (
-        <nav className="sidebar-content">
-          <ul>
-            {flatUrls.map(path => (
-              <li key={path}>
-                <NavLink
-                  to={path}
-                  end
-                  className={({ isActive }) => (isActive ? 'active' : undefined)}
-                >
-                  {path}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <>
+          <nav className="sidebar-content">
+            <ul>
+              {flatNodes.map(node => (
+                <li key={node.path}>
+                  <NavLink
+                    to={node.path}
+                    end
+                    className={({ isActive }) => (isActive ? 'active' : undefined)}
+                  >
+                    {showNames ? node.name : node.path}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="sidebar-footer">
+            <label>
+              <input type="checkbox" checked={showNames} onChange={toggleNames} />
+              {showNames ? 'Name' : 'URL'}
+            </label>
+          </div>
+        </>
       )}
     </aside>
   )

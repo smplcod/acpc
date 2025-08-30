@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import urlTree from '../../urlTree.js'
+import urlTree from '../../urlTree.json'
 
 function findNode(path, nodes) {
   for (const node of nodes) {

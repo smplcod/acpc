@@ -1,0 +1,28 @@
+[
+  { "path": "/", "name": "Home", "children": [] },
+  { "path": "/release-notes", "name": "Release Notes", "children": [] },
+  {
+    "path": "/admin",
+    "name": "Admin",
+    "children": [
+      { "path": "/admin/login", "name": "Login", "children": [] },
+      { "path": "/admin/logout", "name": "Logout", "children": [] },
+      {
+        "path": "/admin/charts",
+        "name": "Charts",
+        "children": [
+          {
+            "path": "/admin/charts/users",
+            "name": "Users",
+            "children": [
+              { "path": "/admin/charts/users/recharts", "name": "Recharts", "children": [] },
+              { "path": "/admin/charts/users/chartjs2", "name": "Chart.js", "children": [] },
+              { "path": "/admin/charts/users/explain", "name": "Explain", "children": [] }
+            ]
+          }
+        ]
+      },
+      { "path": "/admin/ui", "name": "UI", "children": [] }
+    ]
+  }
+]

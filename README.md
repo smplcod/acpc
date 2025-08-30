@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.50
+Current version: 0.0.51
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -106,6 +106,10 @@ _Only this section of the readme can be maintained using Russian language_
 
 16. Collapsible headings
  - [x] 16.1 Enable collapsible headings in admin pages
+
+17. Сайдбар админа
+ - [x] 17.1 Вести названия страниц в json-файле
+ - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
