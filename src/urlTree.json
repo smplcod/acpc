@@ -7,11 +7,6 @@
     "children": [
       { "path": "/admin/login", "name": "Login", "children": [] },
       { "path": "/admin/logout", "name": "Logout", "children": [] },
-      { "path": "/admin/dashboard", "name": "Dashboard", "children": [] },
-      { "path": "/admin/graph/growth", "name": "Growth", "children": [] },
-      { "path": "/admin/graph/engagement", "name": "Engagement", "children": [] },
-      { "path": "/admin/graph/reliability", "name": "Reliability", "children": [] },
-      { "path": "/admin/graph/revenue", "name": "Revenue", "children": [] },
       {
         "path": "/admin/charts",
         "name": "Charts",
