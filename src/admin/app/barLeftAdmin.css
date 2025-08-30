@@ -75,6 +75,11 @@
   font-size: 0.9em;
 }
 
+.sidebar-footer .project-info {
+  text-align: right;
+  margin-bottom: 4px;
+}
+
 .sidebar-footer label {
   display: flex;
   align-items: center;

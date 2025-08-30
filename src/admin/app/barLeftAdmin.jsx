@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
 import urlTree from '../../urlTree.json'
+import { projectName, projectVersion } from '../../projectInfo'
 import './barLeftAdmin.css'
 
 const flattenTree = nodes =>
@@ -110,6 +111,9 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
             </ul>
           </nav>
           <div className="sidebar-footer">
+            <div className="project-info">
+              {projectName} {projectVersion}
+            </div>
             <label>
               <input type="checkbox" checked={showNames} onChange={toggleNames} />
               {showNames ? 'Name' : 'URL'}
