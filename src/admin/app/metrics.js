@@ -15,10 +15,11 @@ function dateRange(start, end) {
 }
 
 export async function loadMetrics() {
+  const opts = { cache: 'no-store' }
   const [events, activity, users] = await Promise.all([
-    fetch('/mocks/events.json').then(r => r.json()),
-    fetch('/mocks/activity.json').then(r => r.json()),
-    fetch('/mocks/users.json').then(r => r.json())
+    fetch('/mocks/events.json', opts).then(r => r.json()),
+    fetch('/mocks/activity.json', opts).then(r => r.json()),
+    fetch('/mocks/users.json', opts).then(r => r.json())
   ])
 
   const eventDates = events.map(e => e.ts.slice(0, 10))
