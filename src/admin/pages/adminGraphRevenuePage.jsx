@@ -53,25 +53,14 @@ export default function AdminGraphRevenuePage() {
     <div>
       <h1>{fullTitle}</h1>
       <div style={{ maxWidth: '800px' }}>
-        <h2>Acquisition Funnel</h2>
         <Bar data={funnelData} />
         <p>Goal: step drop-off | Source: events | Formula: funnel totals | Period: all dates</p>
-        <p>Shows counts at each step of the funnel.</p>
-
-        <h2>Subscriber Segments</h2>
         <Bar data={segData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
         <p>Goal: paying segments | Source: events+users | Period: all subs</p>
-        <p>Shows distribution by plan, UTM source, and country.</p>
-
-        <h2>Signups vs Subscriptions</h2>
         <Bar data={signupSubData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right' } } }} />
         <p>Goal: inflow vs paid conversions | Source: activity+events | Period: all dates</p>
-        <p>Shows daily signups compared to subscriptions.</p>
-
-        <h2>Cumulative Users</h2>
         <Line data={cumulativeData} />
         <p>Goal: user base growth | Source: users | Period: all dates</p>
-        <p>Shows total user count over time.</p>
       </div>
     </div>
   )
