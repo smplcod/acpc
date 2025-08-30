@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.56
+Current version: 0.0.55
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -14,7 +14,6 @@ Current version: 0.0.56
 - Admin pages display "Subpages:" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
-- Admin sidebar shows project name and current version above the URL/Name toggle
 - Charts dashboard at `/admin/charts` with mini charts for growth, engagement, reliability, and revenue
 - Detailed analytics pages at `/admin/charts/*` for growth, engagement, reliability, and revenue
 - Chart.js users charts at `/admin/ui/charts`
@@ -116,7 +115,6 @@ _Only this section of the readme can be maintained using Russian language_
 17. Сайдбар админа
  - [x] 17.1 Вести названия страниц в json-файле
  - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
- - [x] 17.3 Показать название и версию проекта над переключателем URL/Name
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
