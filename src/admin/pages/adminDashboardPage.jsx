@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useOutlet } from 'react-router-dom'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
@@ -7,16 +7,18 @@ import { loadMetrics } from '../app/metrics.js'
 export default function AdminDashboardPage() {
   const title = 'Charts Dashboard'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const outlet = useOutlet()
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    document.title = fullTitle
-  }, [fullTitle])
+    if (!outlet) document.title = fullTitle
+  }, [fullTitle, outlet])
 
   useEffect(() => {
-    loadMetrics().then(setData)
-  }, [])
+    if (!outlet) loadMetrics().then(setData)
+  }, [outlet])
 
+  if (outlet) return outlet
   if (!data) return <div>Loading...</div>
 
   const { daily } = data
