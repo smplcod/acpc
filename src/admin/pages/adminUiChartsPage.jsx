@@ -9,8 +9,8 @@ ChartJS.register(...registerables, zoomPlugin, TreemapController, TreemapElement
 
 const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#413ea0', '#ff0000']
 
-export default function AdminChartsUsersChartjs2Page() {
-  const title = 'Admin Charts Users Chartjs2 Page'
+export default function AdminUiChartsPage() {
+  const title = 'Admin UI Charts Page'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
   const [users, setUsers] = useState([])
 

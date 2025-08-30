@@ -1,12 +1,17 @@
 import { useEffect } from 'react'
+import { useOutlet } from 'react-router-dom'
 import AuthMessage from '../app/authMessage.jsx'
 import './adminUiPage.css'
 
 export default function AdminUiPage() {
-  const title = 'UI | ACPC'
+  const title = 'Admin UI'
+  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const outlet = useOutlet()
   useEffect(() => {
-    document.title = title
-  }, [title])
+    document.title = fullTitle
+  }, [fullTitle])
+
+  if (outlet) return outlet
 
   const loginVariants = Array.from({ length: 30 }, (_, i) => i + 1)
   const tagVariants = Array.from({ length: 30 }, (_, i) => i + 1)
@@ -16,7 +21,7 @@ export default function AdminUiPage() {
 
   return (
     <div>
-      <h1>UI</h1>
+      <h1>{fullTitle}</h1>
       <AuthMessage />
 
       <h2>Login form variants</h2>
