@@ -27,10 +27,10 @@ export default function SubPages() {
   const { pathname } = useLocation()
   const node = findNode(pathname, urlTree)
   const children = node ? node.children : []
-  if (children.length === 0) return null
+  if (children.length === 0 || pathname === '/admin/charts') return null
   return (
     <div style={{ marginTop: '2rem' }}>
-      <h2>Subpages:</h2>
+      <h2>Subpages</h2>
       {renderTree(children)}
     </div>
   )

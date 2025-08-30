@@ -701,7 +701,7 @@
       "timezone": "Asia/Bishkek",
       "changes": [
         {
-          "description": "Prefixed admin subpage lists with 'Subpages:'",
+          "description": "Prefixed admin subpage lists with 'Subpages'",
           "weight": 20,
           "type": "fix",
           "scope": "admin-ui"
@@ -709,7 +709,7 @@
       ],
       "changes-ru": [
         {
-          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages:\"",
+          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages\"",
           "weight": 20,
           "type": "fix",
           "scope": "admin-ui"
@@ -877,11 +877,11 @@
         "Release notes tagged with type and scope",
         "Admin auth message refined",
         "Admin titles clarified and h1 size reduced",
-        "Admin subpage lists labeled with 'Subpages:'",
+        "Admin subpage lists labeled with 'Subpages'",
         "Features list reorganized and bot rule moved to conveniences",
         "README intro shortened into bullet list",
         "User charts with Recharts",
-        "Admin pages always show a 'Subpages:' heading"
+        "Admin pages always show a 'Subpages' heading"
       ],
       "summary-ru": [
         "Задокументированы правила и страница release notes, уточнён процесс",
@@ -895,11 +895,11 @@
         "Release notes получили теги type и scope",
         "Уточнено сообщение об авторизации админа",
         "Уточнены заголовки админ-панели и уменьшен размер h1",
-        "Списки подстраниц админа теперь начинаются с \"Subpages:\"",
+        "Списки подстраниц админа теперь начинаются с \"Subpages\"",
         "Перенесено правило бота в раздел удобств и обновлён список Features ToDo",
         "Введение README сокращено до маркированного списка",
         "Добавлены демо графиков пользователей на Recharts",
-        "На админских страницах всегда показывается заголовок 'Subpages:'"
+        "На админских страницах всегда показывается заголовок 'Subpages'"
       ],
       "ultrashort-summary": [
         "Release notes documented",
@@ -1413,6 +1413,29 @@
           "weight": 30,
           "type": "fix",
           "scope": "auth"
+        }
+      ]
+    }
+    ,
+    {
+      "version": "0.0.56",
+      "date": "2025-08-29",
+      "time": "17:04:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Clarified charts with explanations and collapsible sections; removed colon from Subpages heading",
+          "weight": 60,
+          "type": "feat",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены пояснения и сворачиваемые разделы для графиков; убрано двоеточие в заголовке Subpages",
+          "weight": 60,
+          "type": "feat",
+          "scope": "analytics"
         }
       ]
     }
@@ -2119,7 +2142,7 @@
       "timezone": "Asia/Bishkek",
       "changes": [
         {
-          "description": "Prefixed admin subpage lists with 'Subpages:'",
+          "description": "Prefixed admin subpage lists with 'Subpages'",
           "weight": 20,
           "type": "fix",
           "scope": "admin-ui"
@@ -2127,7 +2150,7 @@
       ],
       "changes-ru": [
         {
-          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages:\"",
+          "description": "Перед списками подстраниц админа добавлен префикс \"Subpages\"",
           "weight": 20,
           "type": "fix",
           "scope": "admin-ui"
@@ -2721,6 +2744,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "auth"
+        }
+      ]
+    },
+    {
+      "version": "0.0.56",
+      "date": "2025-08-29",
+      "time": "17:04:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Clarified charts with explanations and collapsible sections; removed colon from Subpages heading",
+          "weight": 60,
+          "type": "feat",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены пояснения и сворачиваемые разделы для графиков; убрано двоеточие в заголовке Subpages",
+          "weight": 60,
+          "type": "feat",
+          "scope": "analytics"
         }
       ]
     }

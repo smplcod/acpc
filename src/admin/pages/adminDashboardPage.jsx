@@ -40,18 +40,25 @@ export default function AdminDashboardPage() {
           <Line data={dauData} options={commonLineOpts} />
           <p>Goal: growth | Source: events | Period: {period}</p>
         </Link>
+        <p>Tracks daily active users to gauge growth.</p>
+
         <Link to="/admin/charts/engagement" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Line data={convData} options={commonLineOpts} />
           <p>Goal: conversion | Source: activity | Period: {period}</p>
         </Link>
+        <p>Shows conversion rate shifts to assess engagement.</p>
+
         <Link to="/admin/charts/reliability" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Line data={errData} options={commonLineOpts} />
           <p>Goal: stability | Source: activity | Period: {period}</p>
         </Link>
+        <p>Highlights error rate changes for reliability.</p>
+
         <Link to="/admin/charts/revenue" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
           <Bar data={subsData} options={commonBarOpts} />
           <p>Goal: revenue | Source: events | Period: {period}</p>
         </Link>
+        <p>Summarizes subscriptions to monitor revenue.</p>
       </div>
     </div>
   )
