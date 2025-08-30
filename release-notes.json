@@ -1271,6 +1271,28 @@
           "scope": "charts"
         }
       ]
+    },
+    {
+      "version": "0.0.50",
+      "date": "2025-08-29",
+      "time": "16:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added Chart.js users charts page",
+          "weight": 60,
+          "type": "feat",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена страница графиков пользователей на Chart.js",
+          "weight": 60,
+          "type": "feat",
+          "scope": "charts"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2432,6 +2454,28 @@
           "description": "Добавлена страница с пояснением ключей данных пользователей",
           "weight": 30,
           "type": "docs",
+          "scope": "charts"
+        }
+      ]
+    },
+    {
+      "version": "0.0.50",
+      "date": "2025-08-29",
+      "time": "16:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added Chart.js users charts page",
+          "weight": 60,
+          "type": "feat",
+          "scope": "charts"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлена страница графиков пользователей на Chart.js",
+          "weight": 60,
+          "type": "feat",
           "scope": "charts"
         }
       ]
