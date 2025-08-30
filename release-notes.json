@@ -1349,6 +1349,28 @@
           "scope": "analytics"
         }
       ]
+    },
+    {
+      "version": "0.0.53",
+      "date": "2025-08-29",
+      "time": "17:01:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Bypassed cache when loading admin metrics to update mock data",
+          "weight": 40,
+          "type": "fix",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Обеспечен обход кэша при загрузке метрик админки для обновления мок-данных",
+          "weight": 40,
+          "type": "fix",
+          "scope": "analytics"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2588,6 +2610,28 @@
           "description": "Добавлены админский дашборд и аналитические графики",
           "weight": 70,
           "type": "feat",
+          "scope": "analytics"
+        }
+      ]
+    },
+    {
+      "version": "0.0.53",
+      "date": "2025-08-29",
+      "time": "17:01:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Bypassed cache when loading admin metrics to update mock data",
+          "weight": 40,
+          "type": "fix",
+          "scope": "analytics"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Обеспечен обход кэша при загрузке метрик админки для обновления мок-данных",
+          "weight": 40,
+          "type": "fix",
           "scope": "analytics"
         }
       ]

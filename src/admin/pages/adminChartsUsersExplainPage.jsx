@@ -75,7 +75,7 @@ export default function AdminChartsUsersExplainPage() {
 
   useEffect(() => {
     document.title = fullTitle
-    fetch('/mocks/users.json')
+    fetch('/mocks/users.json', { cache: 'no-store' })
       .then(r => r.json())
       .then(data => {
         setExample(data[0])

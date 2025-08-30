@@ -19,7 +19,9 @@ export default function AdminChartsUsersChartjs2Page() {
   }, [fullTitle])
 
   useEffect(() => {
-    fetch('/mocks/users.json').then(r => r.json()).then(setUsers)
+    fetch('/mocks/users.json', { cache: 'no-store' })
+      .then(r => r.json())
+      .then(setUsers)
   }, [])
 
   function aggregate(arr, key) {
