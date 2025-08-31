@@ -6,7 +6,8 @@ import './adminGraphEngagementPage.css'
 
 export default function AdminGraphEngagementPage() {
   const title = 'Engagement Metrics'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const [data, setData] = useState(null)
 
   useEffect(() => { document.title = fullTitle }, [fullTitle])
@@ -55,7 +56,7 @@ export default function AdminGraphEngagementPage() {
 
   return (
     <section className="engagement-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <section className="engagement-page__content">
         <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
         <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>

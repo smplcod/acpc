@@ -1613,6 +1613,28 @@
           "scope": "routing"
         }
       ]
+    },
+    {
+      "version": "0.0.65",
+      "date": "2025-08-31",
+      "time": "12:57:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed site name segment from page headings",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалён сегмент названия сайта из заголовков страниц",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3117,6 +3139,28 @@
           "weight": 40,
           "type": "feat",
           "scope": "routing"
+        }
+      ]
+    },
+    {
+      "version": "0.0.65",
+      "date": "2025-08-31",
+      "time": "12:57:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed site name segment from page headings",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалён сегмент названия сайта из заголовков страниц",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
         }
       ]
     }

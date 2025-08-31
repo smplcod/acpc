@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.64
+Current version: 0.0.65
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -130,6 +130,9 @@ _Only this section of the readme can be maintained using Russian language_
 21. Фокус
   - [x] 21.1 Отключить обводку при фокусе
 
+22. Заголовки
+ - [x] 22.1 Удалить сегмент " | ACPC" из h1 всех страниц
+
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
 2. Maintain a hierarchical task list with consistent numbering.
@@ -164,7 +167,7 @@ _Only this section of the readme can be maintained using Russian language_
 - JavaScript only (no TypeScript).
 - No remote databases and no custom backend.
 - Demo data must come from local sources (in-memory, JSON, or localStorage).
-- Every page uses a single `<h1>` mirrored in the document title; non-home pages append " | ACPC".
+- Every page uses a single `<h1>` mirrored in the document title; document titles append " | ACPC".
 
 ## Tech and infrastructure
 - React + Vite (fast HMR).

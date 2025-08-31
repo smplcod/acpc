@@ -7,7 +7,8 @@ import './adminDashboardPage.css'
 
 export default function AdminDashboardPage() {
   const title = 'Dashboard'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const outlet = useOutlet()
   const [data, setData] = useState(null)
 
@@ -37,7 +38,7 @@ export default function AdminDashboardPage() {
 
   return (
     <section className="dashboard-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <section className="dashboard-grid">
         <Link to="/admin/growth" className="dashboard-card">
           <Line data={dauData} options={commonLineOpts} />

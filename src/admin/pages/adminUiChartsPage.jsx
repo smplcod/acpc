@@ -12,7 +12,8 @@ const colors = ['#8884d8', '#82ca9d', '#ffc658', '#ff7300', '#413ea0', '#ff0000'
 
 export default function AdminUiChartsPage() {
   const title = 'Admin UI Charts Page'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const [users, setUsers] = useState([])
 
   useEffect(() => {
@@ -558,7 +559,7 @@ export default function AdminUiChartsPage() {
 
   return (
     <section className="admin-ui-charts-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <AuthMessage />
       {chartExamples.map(({ title, description, render, code }) => (
         <ChartExample key={title} title={title} description={description} code={code}>
