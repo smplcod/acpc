@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
+import './adminGraphEngagementPage.css'
 
 export default function AdminGraphEngagementPage() {
   const title = 'Engagement Metrics'
@@ -11,7 +12,7 @@ export default function AdminGraphEngagementPage() {
   useEffect(() => { document.title = fullTitle }, [fullTitle])
   useEffect(() => { loadMetrics().then(setData) }, [])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loading">Loading...</div>
   const { daily, retention, profileDist } = data
   const labels = daily.map(d => d.date)
 
@@ -53,14 +54,14 @@ export default function AdminGraphEngagementPage() {
   })()
 
   return (
-    <div>
+    <main className="engagement-page">
       <h1>{fullTitle}</h1>
-      <div style={{ maxWidth: '800px' }}>
+      <section className="engagement-page__content">
         <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
         <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>
         <Line data={stickinessData} />
         <p>Goal: product stickiness | Source: events | Formula: DAU/MAU | Period: all dates</p>
-        <table style={{ borderCollapse: 'collapse' }}>
+        <table className="engagement-page__table">
           <thead><tr><th>Week</th><th>d+7</th><th>d+14</th><th>d+28</th></tr></thead>
           <tbody>
             {retention.map(r => (
@@ -76,7 +77,7 @@ export default function AdminGraphEngagementPage() {
         <p>Goal: cohort retention | Source: users | Formula: activity at d+N | Period: all cohorts</p>
         <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
         <p>Goal: platform profile | Source: users | Period: last 30 days</p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

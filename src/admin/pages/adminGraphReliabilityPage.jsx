@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
+import './adminGraphReliabilityPage.css'
 
 export default function AdminGraphReliabilityPage() {
   const title = 'Reliability Metrics'
@@ -11,7 +12,7 @@ export default function AdminGraphReliabilityPage() {
   useEffect(() => { document.title = fullTitle }, [fullTitle])
   useEffect(() => { loadMetrics().then(setData) }, [])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loading">Loading...</div>
   const { daily, errorTotals, errorPagesTop } = data
   const labels = daily.map(d => d.date)
 
@@ -56,9 +57,9 @@ export default function AdminGraphReliabilityPage() {
   }
 
   return (
-    <div>
+  <main className="reliability-page">
       <h1>{fullTitle}</h1>
-      <div style={{ maxWidth: '800px' }}>
+      <section className="reliability-page__content">
         <Line data={errRateData} />
         <p>Goal: stability per session | Source: activity | Formula: errors/sessions | Period: all dates</p>
         <Line data={stackedErrorsData} options={{ stacked: true }} />
@@ -67,7 +68,7 @@ export default function AdminGraphReliabilityPage() {
         <p>Goal: 80/20 principle | Source: activity | Period: all dates</p>
         <Bar data={pagesData} options={{ indexAxis: 'y' }} />
         <p>Goal: problematic pages | Source: events | Formula: type=error aggregated | Period: all dates</p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

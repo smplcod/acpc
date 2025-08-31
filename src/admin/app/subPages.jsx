@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import urlTree from '../../urlTree.json'
+import './subPages.css'
 
 function findNode(path, nodes) {
   for (const node of nodes) {
@@ -29,7 +30,7 @@ export default function SubPages() {
   const children = node ? node.children : []
   if (children.length === 0) return null
   return (
-    <div style={{ marginTop: '2rem' }}>
+    <div className="subpages">
       <h2>Subpages:</h2>
       {renderTree(children)}
     </div>

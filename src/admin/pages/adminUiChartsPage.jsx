@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo } from 'react'
 import AuthMessage from '../app/authMessage.jsx'
+import './adminUiChartsPage.css'
 import { Chart as ChartJS, registerables } from 'chart.js'
 import zoomPlugin from 'chartjs-plugin-zoom'
 import { TreemapController, TreemapElement } from 'chartjs-chart-treemap'
@@ -540,23 +541,23 @@ export default function AdminUiChartsPage() {
 
   function ChartExample({ title, description, code, children }) {
     return (
-      <section style={{ marginBottom: '3rem' }}>
+      <section className="chart-example">
         <h3>{title}</h3>
         <p>{description}</p>
-        <div style={{ width: '100%', height: 300 }}>
+        <div className="chart-example__chart">
           {children}
         </div>
         <textarea
           readOnly
           value={code}
-          style={{ width: '100%', height: '200px', marginTop: '1rem' }}
+          className="chart-example__code"
         />
       </section>
     )
   }
 
   return (
-    <div>
+    <main className="admin-ui-charts-page">
       <h1>{fullTitle}</h1>
       <AuthMessage />
       {chartExamples.map(({ title, description, render, code }) => (
@@ -564,7 +565,7 @@ export default function AdminUiChartsPage() {
           {render()}
         </ChartExample>
       ))}
-    </div>
+    </main>
   )
 }
 

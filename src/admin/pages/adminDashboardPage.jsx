@@ -3,6 +3,7 @@ import { Link, useOutlet } from 'react-router-dom'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
+import './adminDashboardPage.css'
 
 export default function AdminDashboardPage() {
   const title = 'Charts Dashboard'
@@ -19,7 +20,7 @@ export default function AdminDashboardPage() {
   }, [outlet])
 
   if (outlet) return outlet
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loading">Loading...</div>
 
   const { daily } = data
   const labels = daily.map(d => d.date)
@@ -35,26 +36,26 @@ export default function AdminDashboardPage() {
   const period = `${labels[0]} to ${labels[labels.length - 1]}`
 
   return (
-    <div>
+    <main className="dashboard-page">
       <h1>{fullTitle}</h1>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-        <Link to="/admin/charts/growth" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+      <section className="dashboard-grid">
+        <Link to="/admin/charts/growth" className="dashboard-card">
           <Line data={dauData} options={commonLineOpts} />
           <p>Goal: growth | Source: events | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/engagement" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/engagement" className="dashboard-card">
           <Line data={convData} options={commonLineOpts} />
           <p>Goal: conversion | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/reliability" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/reliability" className="dashboard-card">
           <Line data={errData} options={commonLineOpts} />
           <p>Goal: stability | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/revenue" style={{ border: '1px solid #ccc', padding: '0.5rem' }}>
+        <Link to="/admin/charts/revenue" className="dashboard-card">
           <Bar data={subsData} options={commonBarOpts} />
           <p>Goal: revenue | Source: events | Period: {period}</p>
         </Link>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
