@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
+import './adminGraphGrowthPage.css'
 
 export default function AdminGraphGrowthPage() {
   const title = 'Growth Metrics'
@@ -16,7 +17,7 @@ export default function AdminGraphGrowthPage() {
     loadMetrics().then(setData)
   }, [])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loading">Loading...</div>
   const { daily, loginsByWeekday } = data
   const labels = daily.map(d => d.date)
 
@@ -101,9 +102,9 @@ export default function AdminGraphGrowthPage() {
   }
 
   return (
-    <div>
+    <main className="growth-page">
       <h1>{fullTitle}</h1>
-      <div style={{ maxWidth: '800px' }}>
+      <section className="growth-page__content">
         <Line data={areaData} options={{ stacked: true }} />
         <p>Goal: compare active audiences | Source: events | Formula: DAU/WAU/MAU/SMA7 | Period: all dates</p>
         <Line data={newReturningData} options={{ stacked: true }} />
@@ -112,7 +113,7 @@ export default function AdminGraphGrowthPage() {
         <p>Goal: upper funnel dynamics | Source: activity | Period: all dates</p>
         <Bar data={weekdayData} />
         <p>Goal: seasonality | Source: events | Formula: aggregate by weekday | Period: all dates</p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

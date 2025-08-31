@@ -45,7 +45,7 @@ export default function AdminLoginPage() {
 
   return (
     <div className="login-page">
-      <div>
+      <div className="login-page__content">
         <h1>Admin Login</h1>
         <AuthMessage />
         <form className="login-form variant-30" onSubmit={handleSubmit}>
@@ -69,7 +69,7 @@ export default function AdminLoginPage() {
           />
           <button type="submit" disabled={disabled}>Login</button>
         </form>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p className="login-error">{error}</p>}
       </div>
     </div>
   )

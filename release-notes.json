@@ -1437,6 +1437,28 @@
           "scope": "analytics"
         }
       ]
+    },
+    {
+      "version": "0.0.57",
+      "date": "2025-08-29",
+      "time": "17:05:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Moved inline styles into CSS files and added semantic classes to containers",
+          "weight": 30,
+          "type": "style",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перенесены встроенные стили в CSS и добавлены семантические классы контейнерам",
+          "weight": 30,
+          "type": "style",
+          "scope": "layout"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2765,6 +2787,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "analytics"
+        }
+      ]
+    },
+    {
+      "version": "0.0.57",
+      "date": "2025-08-29",
+      "time": "17:05:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Moved inline styles into CSS files and added semantic classes to containers",
+          "weight": 30,
+          "type": "style",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перенесены встроенные стили в CSS и добавлены семантические классы контейнерам",
+          "weight": 30,
+          "type": "style",
+          "scope": "layout"
         }
       ]
     }

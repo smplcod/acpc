@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Line, Bar } from 'react-chartjs-2'
 import '../app/chartSetup.js'
 import { loadMetrics } from '../app/metrics.js'
+import './adminGraphRevenuePage.css'
 
 export default function AdminGraphRevenuePage() {
   const title = 'Revenue Metrics'
@@ -11,7 +12,7 @@ export default function AdminGraphRevenuePage() {
   useEffect(() => { document.title = fullTitle }, [fullTitle])
   useEffect(() => { loadMetrics().then(setData) }, [])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div className="loading">Loading...</div>
   const { daily, funnel, seg, cumulativeUsers } = data
   const labels = daily.map(d => d.date)
 
@@ -50,9 +51,9 @@ export default function AdminGraphRevenuePage() {
   }
 
   return (
-    <div>
+    <main className="revenue-page">
       <h1>{fullTitle}</h1>
-      <div style={{ maxWidth: '800px' }}>
+      <section className="revenue-page__content">
         <Bar data={funnelData} />
         <p>Goal: step drop-off | Source: events | Formula: funnel totals | Period: all dates</p>
         <Bar data={segData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
@@ -61,7 +62,7 @@ export default function AdminGraphRevenuePage() {
         <p>Goal: inflow vs paid conversions | Source: activity+events | Period: all dates</p>
         <Line data={cumulativeData} />
         <p>Goal: user base growth | Source: users | Period: all dates</p>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }

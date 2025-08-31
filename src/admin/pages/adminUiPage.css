@@ -12,6 +12,13 @@
   height: calc(100vh - 32px);
 }
 
+.login-page__content {
+}
+
+.login-error {
+  color: red;
+}
+
 .login-form input,
 .login-form button {
   padding: 4px 8px;
