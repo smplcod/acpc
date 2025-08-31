@@ -27,7 +27,7 @@ export default function ReleaseNotesPage() {
     .find(p => p.type === 'timeZoneName')
     .value.replace('GMT', 'UTC')
   return (
-    <div>
+    <>
       <h1>{title}</h1>
       <p>All times are shown in the {timeZoneOffset} time zone</p>
       {grouped.map(group => (
@@ -56,6 +56,6 @@ export default function ReleaseNotesPage() {
           })}
         </div>
       ))}
-    </div>
+    </>
   )
 }
