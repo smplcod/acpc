@@ -1591,6 +1591,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.64",
+      "date": "2025-08-31",
+      "time": "12:47:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Moved charts dashboard to /admin and shortened growth, engagement, reliability, and revenue URLs",
+          "weight": 40,
+          "type": "feat",
+          "scope": "routing"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перенесена панель графиков на /admin и сокращены адреса роста, вовлеченности, надежности и дохода",
+          "weight": 40,
+          "type": "feat",
+          "scope": "routing"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3073,6 +3095,28 @@
           "weight": 20,
           "type": "style",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.64",
+      "date": "2025-08-31",
+      "time": "12:47:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Moved charts dashboard to /admin and shortened growth, engagement, reliability, and revenue URLs",
+          "weight": 40,
+          "type": "feat",
+          "scope": "routing"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Перенесена панель графиков на /admin и сокращены адреса роста, вовлеченности, надежности и дохода",
+          "weight": 40,
+          "type": "feat",
+          "scope": "routing"
         }
       ]
     }

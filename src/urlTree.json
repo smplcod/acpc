@@ -3,20 +3,14 @@
   { "path": "/release-notes", "name": "Release Notes", "children": [] },
   {
     "path": "/admin",
-    "name": "Admin",
+    "name": "Dashboard",
     "children": [
       { "path": "/admin/login", "name": "Login", "children": [] },
       { "path": "/admin/logout", "name": "Logout", "children": [] },
-      {
-        "path": "/admin/charts",
-        "name": "Charts Dashboard",
-        "children": [
-          { "path": "/admin/charts/growth", "name": "Growth", "children": [] },
-          { "path": "/admin/charts/engagement", "name": "Engagement", "children": [] },
-          { "path": "/admin/charts/reliability", "name": "Reliability", "children": [] },
-          { "path": "/admin/charts/revenue", "name": "Revenue", "children": [] }
-        ]
-      },
+      { "path": "/admin/growth", "name": "Growth", "children": [] },
+      { "path": "/admin/engagement", "name": "Engagement", "children": [] },
+      { "path": "/admin/reliability", "name": "Reliability", "children": [] },
+      { "path": "/admin/revenue", "name": "Revenue", "children": [] },
       {
         "path": "/admin/ui",
         "name": "UI",
