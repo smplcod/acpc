@@ -26,3 +26,23 @@
 .acph-toggle:focus {
   outline: 2px solid currentColor;
 }
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  z-index: 1000;
+}

@@ -48,28 +48,38 @@ export default function AdminLoginPage() {
       <div className="login-page__content">
         <h1>Admin Login</h1>
         <AuthMessage />
-        <form className="login-form variant-30" onSubmit={handleSubmit}>
+        <form className="login-form variant-30" onSubmit={handleSubmit} aria-describedby={error ? 'login-error' : undefined}>
+          <label htmlFor="login-username">Login</label>
           <input
+            id="login-username"
             type="text"
             placeholder="Login"
+            autoComplete="username"
             value={username}
             onChange={e => {
               setUsername(e.target.value)
               if (error) setError('')
             }}
+            aria-invalid={error ? true : undefined}
+            aria-describedby={error ? 'login-error' : undefined}
           />
+          <label htmlFor="login-password">Password</label>
           <input
+            id="login-password"
             type="password"
             placeholder="Password"
+            autoComplete="current-password"
             value={password}
             onChange={e => {
               setPassword(e.target.value)
               if (error) setError('')
             }}
+            aria-invalid={error ? true : undefined}
+            aria-describedby={error ? 'login-error' : undefined}
           />
           <button type="submit" disabled={disabled}>Login</button>
         </form>
-        {error && <p className="login-error">{error}</p>}
+        {error && <p id="login-error" className="login-error">{error}</p>}
       </div>
     </div>
   )

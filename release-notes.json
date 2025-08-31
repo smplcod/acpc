@@ -1503,6 +1503,28 @@
           "scope": "layout"
         }
       ]
+    },
+    {
+      "version": "0.0.60",
+      "date": "2025-08-31",
+      "time": "06:17:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Improved accessibility with skip link and labeled admin login inputs",
+          "weight": 40,
+          "type": "feat",
+          "scope": "accessibility"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Улучшена доступность: добавлены ссылка пропуска и подписи полей входа администратора",
+          "weight": 40,
+          "type": "feat",
+          "scope": "accessibility"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2897,6 +2919,28 @@
           "weight": 20,
           "type": "fix",
           "scope": "layout"
+        }
+      ]
+    },
+    {
+      "version": "0.0.60",
+      "date": "2025-08-31",
+      "time": "06:17:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Improved accessibility with skip link and labeled admin login inputs",
+          "weight": 40,
+          "type": "feat",
+          "scope": "accessibility"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Улучшена доступность: добавлены ссылка пропуска и подписи полей входа администратора",
+          "weight": 40,
+          "type": "feat",
+          "scope": "accessibility"
         }
       ]
     }
