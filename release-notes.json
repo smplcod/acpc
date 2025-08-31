@@ -2001,6 +2001,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.81",
+      "date": "2025-09-01",
+      "time": "15:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Indented nested links in admin sidebar regardless of URL or name mode",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Вложенные ссылки админского сайдбара получили отступ независимо от режима URL/Name",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3893,6 +3915,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "ui"
+        }
+      ]
+    }
+    ,{
+      "version": "0.0.81",
+      "date": "2025-09-01",
+      "time": "15:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Indented nested links in admin sidebar regardless of URL or name mode",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Вложенные ссылки админского сайдбара получили отступ независимо от режима URL/Name",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
         }
       ]
     }
