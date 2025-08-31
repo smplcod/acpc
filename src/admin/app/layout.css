@@ -57,3 +57,7 @@ h3 > .acph-toggle {
   filter: brightness(1.2);
 }
 
+.acph-heading {
+  cursor: pointer;
+}
+

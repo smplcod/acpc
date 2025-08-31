@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.81
+Current version: 0.0.82
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -167,6 +167,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 30. Admin sidebar indentation
  - [x] 30.1 Indent nested links relative to parent regardless of URL or name mode
+
+31. Collapsible headings
+ - [x] 31.1 Toggle sections when clicking on h2 and h3 titles
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
