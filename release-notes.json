@@ -1569,6 +1569,28 @@
           "scope": "admin-ui"
         }
       ]
+    },
+    {
+      "version": "0.0.63",
+      "date": "2025-08-31",
+      "time": "06:28:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed focus outlines from interactive elements",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены обводки фокуса с интерактивных элементов",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3029,6 +3051,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "admin-ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.63",
+      "date": "2025-08-31",
+      "time": "06:28:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed focus outlines from interactive elements",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены обводки фокуса с интерактивных элементов",
+          "weight": 20,
+          "type": "style",
+          "scope": "ui"
         }
       ]
     }

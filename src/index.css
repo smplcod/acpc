@@ -95,9 +95,8 @@ button:hover {
   border-color: var(--color-link);
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+:focus {
+  outline: none;
 }
 
   h1 {
