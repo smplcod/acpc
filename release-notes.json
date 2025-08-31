@@ -2111,6 +2111,40 @@
           "scope": "sidebar"
         }
       ]
+    },
+    {
+      "version": "0.0.86",
+      "date": "2025-08-31",
+      "time": "19:06:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed admin UI demo pages",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Sidebars now show names instead of URLs",
+          "weight": 40,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены страницы демо интерфейса администратора",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Сайдбары показывают названия вместо URL",
+          "weight": 40,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ]
     }
   ],
   "releases": [
@@ -4111,6 +4145,40 @@
         {
           "description": "Сайдбар растягивается по высоте основного контента",
           "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ]
+    },
+    {
+      "version": "0.0.86",
+      "date": "2025-08-31",
+      "time": "19:06:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed admin UI demo pages",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Sidebars now show names instead of URLs",
+          "weight": 40,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены страницы демо интерфейса администратора",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Сайдбары показывают названия вместо URL",
+          "weight": 40,
           "type": "fix",
           "scope": "sidebar"
         }

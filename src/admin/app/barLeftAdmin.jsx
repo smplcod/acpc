@@ -21,7 +21,6 @@ const flattenTree = (nodes, depth = 0) =>
 export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
   const [collapsed, setCollapsed] = useState(true)
   const [hovered, setHovered] = useState(false)
-  const [showNames, setShowNames] = useState(false)
   const sidebarRef = useRef(null)
   const toggleRef = useRef(null)
 
@@ -43,11 +42,6 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     window.addEventListener('blur', handleBlur)
     return () => window.removeEventListener('blur', handleBlur)
   }, [collapsed])
-
-  useEffect(() => {
-    const saved = localStorage.getItem('barLeftAdminShowNames')
-    if (saved !== null) setShowNames(saved === 'true')
-  }, [])
 
   const isCollapsed = collapsed && !hovered
 
@@ -119,22 +113,11 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   }, [collapsed])
 
   const flatNodes = useMemo(() => flattenTree(urlTree), [])
-  const hidden = new Set([
-    '/',
-    '/admin/login',
-    '/admin/ui',
-    '/admin/ui/charts'
-  ])
+  const hidden = new Set(['/', '/admin/login'])
   const navNodes = flatNodes.filter(
     node => !hidden.has(node.path) && node.path !== '/admin/logout'
   )
   const logoutNode = flatNodes.find(node => node.path === '/admin/logout')
-
-  const toggleNames = () => {
-    const next = !showNames
-    setShowNames(next)
-    localStorage.setItem('barLeftAdminShowNames', String(next))
-  }
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -205,18 +188,12 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
                     end
                     className={({ isActive }) => (isActive ? 'active' : undefined)}
                   >
-                    {showNames ? node.name : node.path}
+                    {node.name}
                   </NavLink>
                 </li>
               ))}
             </ul>
           </nav>
-          <div className="sidebar-footer">
-            <label>
-              <input type="checkbox" checked={showNames} onChange={toggleNames} />
-              {showNames ? 'Name' : 'URL'}
-            </label>
-          </div>
           {logoutNode && (
             <div className="sidebar-footer">
               <NavLink
@@ -225,7 +202,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
                 style={{ marginLeft: `${logoutNode.depth * 12}px` }}
               >
-                {showNames ? logoutNode.name : logoutNode.path}
+                {logoutNode.name}
               </NavLink>
             </div>
           )}

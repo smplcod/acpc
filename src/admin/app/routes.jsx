@@ -1,5 +1,3 @@
-import AdminUiChartsPage from '../pages/adminUiChartsPage.jsx'
-import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
 import AdminLogoutPage from '../pages/adminLogoutPage.jsx'
 import AdminDashboardPage from '../pages/adminDashboardPage.jsx'
@@ -15,15 +13,7 @@ const adminRoutes = [
   { path: 'growth', element: <AdminGraphGrowthPage />, label: 'Growth' },
   { path: 'engagement', element: <AdminGraphEngagementPage />, label: 'Engagement' },
   { path: 'reliability', element: <AdminGraphReliabilityPage />, label: 'Reliability' },
-  { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' },
-  {
-    path: 'ui',
-    element: <AdminUiPage />,
-    label: 'UI',
-    children: [
-      { path: 'charts', element: <AdminUiChartsPage />, label: 'Charts' }
-    ]
-  },
+  { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' }
 ]
 
 export default adminRoutes

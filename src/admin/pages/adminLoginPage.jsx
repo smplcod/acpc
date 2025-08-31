@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { isAdminAuth } from '../app/auth.js'
 import AuthMessage from '../app/authMessage.jsx'
-import './adminUiPage.css'
+import './adminLoginPage.css'
 
 export default function AdminLoginPage() {
   const title = 'Login | ACPC'
