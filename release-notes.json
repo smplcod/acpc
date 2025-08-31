@@ -1713,28 +1713,6 @@
           "scope": "ui"
         }
       ]
-    },
-    {
-      "version": "0.0.69",
-      "date": "2025-08-31",
-      "time": "14:20:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Raised h2/h3 collapse triangles for better alignment",
-          "weight": 20,
-          "type": "style",
-          "scope": "ui"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Повышено положение треугольников сворачивания h2/h3 для лучшего выравнивания",
-          "weight": 20,
-          "type": "style",
-          "scope": "ui"
-        }
-      ]
     }
   ],
   "releases": [
@@ -3337,28 +3315,6 @@
         {
           "description": "Увеличены и приподняты треугольники сворачивания h2/h3",
           "weight": 30,
-          "type": "style",
-          "scope": "ui"
-        }
-      ]
-    },
-    {
-      "version": "0.0.69",
-      "date": "2025-08-31",
-      "time": "14:20:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Raised h2/h3 collapse triangles for better alignment",
-          "weight": 20,
-          "type": "style",
-          "scope": "ui"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Повышено положение треугольников сворачивания h2/h3 для лучшего выравнивания",
-          "weight": 20,
           "type": "style",
           "scope": "ui"
         }
