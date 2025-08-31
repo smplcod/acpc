@@ -61,14 +61,15 @@ export default function BarLeftUser() {
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
-        <div
+        <button
+          type="button"
           className="icon-button"
           onMouseEnter={onIconEnter}
           onClick={toggle}
-          title="Toggle sidebar"
+          aria-label="Toggle sidebar"
         >
           <Sidebar size={16} />
-        </div>
+        </button>
         {!isCollapsed && (
           <>
             <Link to="/" className="icon-button" title="Home">
@@ -89,7 +90,11 @@ export default function BarLeftUser() {
           </>
         )}
       </div>
-      {!isCollapsed && <nav className="sidebar-content">{renderTree(publicTree)}</nav>}
+      {!isCollapsed && (
+        <nav className="sidebar-content" aria-label="Main navigation">
+          {renderTree(publicTree)}
+        </nav>
+      )}
     </aside>
   )
 }

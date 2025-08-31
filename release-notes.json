@@ -1503,6 +1503,28 @@
           "scope": "layout"
         }
       ]
+    },
+    {
+      "version": "0.0.60",
+      "date": "2025-08-31",
+      "time": "06:17:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added skip link and focus management and replaced clickable divs with buttons",
+          "weight": 30,
+          "type": "feat",
+          "scope": "a11y"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены ссылка пропуска, управление фокусом и замена кликабельных div на кнопки",
+          "weight": 30,
+          "type": "feat",
+          "scope": "a11y"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2897,6 +2919,28 @@
           "weight": 20,
           "type": "fix",
           "scope": "layout"
+        }
+      ]
+    },
+    {
+      "version": "0.0.60",
+      "date": "2025-08-31",
+      "time": "06:17:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added skip link and focus management and replaced clickable divs with buttons",
+          "weight": 30,
+          "type": "feat",
+          "scope": "a11y"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены ссылка пропуска, управление фокусом и замена кликабельных div на кнопки",
+          "weight": 30,
+          "type": "feat",
+          "scope": "a11y"
         }
       ]
     }
