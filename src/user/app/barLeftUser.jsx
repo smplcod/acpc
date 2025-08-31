@@ -54,6 +54,7 @@ export default function BarLeftUser() {
 
   useEffect(() => {
     if (!isCollapsed) {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches
       const handleClick = e => {
         if (
           sidebarRef.current &&
@@ -73,10 +74,10 @@ export default function BarLeftUser() {
           localStorage.setItem('barLeftUserCollapsed', 'true')
         }
       }
-      document.addEventListener('click', handleClick)
+      if (isMobile) document.addEventListener('click', handleClick)
       document.addEventListener('keydown', handleKey)
       return () => {
-        document.removeEventListener('click', handleClick)
+        if (isMobile) document.removeEventListener('click', handleClick)
         document.removeEventListener('keydown', handleKey)
       }
     }
