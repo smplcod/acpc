@@ -35,9 +35,23 @@
 .acph-toggle {
   cursor: pointer;
   user-select: none;
+  font-size: 10px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  transition: filter 0.2s;
+}
 
-    font-size: 10px;
-    vertical-align: text-bottom;
-    margin-right: 5px;  
+h3 > .acph-toggle {
+  font-size: 8px;
+}
+
+.acph-toggle:hover {
+  border: none;
+  filter: brightness(1.2);
 }
 
