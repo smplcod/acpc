@@ -40,6 +40,11 @@ Current version: 0.0.88
    ```
 5. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+## Admin credentials
+To access the admin panel at ‎`/admin/login`, use the following credentials:
+ • Username: admin
+ • Password: 123456
+
 ## Libraries
 
 **Dependencies**
