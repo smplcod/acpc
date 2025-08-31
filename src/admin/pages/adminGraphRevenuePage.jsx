@@ -56,17 +56,25 @@ export default function AdminGraphRevenuePage() {
       <h1>{heading}</h1>
       <section className="revenue-page__content">
         <h3>Funnel conversion</h3>
-        <Bar data={funnelData} />
-        <p>Goal: step drop-off | Source: events | Formula: funnel totals | Period: all dates</p>
+        <div>
+          <Bar data={funnelData} />
+          <p>Goal: step drop-off | Source: events | Formula: funnel totals | Period: all dates</p>
+        </div>
         <h3>Paying segments</h3>
-        <Bar data={segData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
-        <p>Goal: paying segments | Source: events+users | Period: all subs</p>
+        <div>
+          <Bar data={segData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
+          <p>Goal: paying segments | Source: events+users | Period: all subs</p>
+        </div>
         <h3>Signups vs subscriptions</h3>
-        <Bar data={signupSubData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right' } } }} />
-        <p>Goal: inflow vs paid conversions | Source: activity+events | Period: all dates</p>
+        <div>
+          <Bar data={signupSubData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right' } } }} />
+          <p>Goal: inflow vs paid conversions | Source: activity+events | Period: all dates</p>
+        </div>
         <h3>Cumulative users</h3>
-        <Line data={cumulativeData} />
-        <p>Goal: user base growth | Source: users | Period: all dates</p>
+        <div>
+          <Line data={cumulativeData} />
+          <p>Goal: user base growth | Source: users | Period: all dates</p>
+        </div>
       </section>
     </section>
   )

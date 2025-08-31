@@ -1823,6 +1823,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.74",
+      "date": "2025-08-31",
+      "time": "16:05:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Collapsing headings now hide charts on metric pages",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сворачивание заголовков скрывает графики на страницах метрик",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3535,6 +3557,28 @@
         {
           "description": "Заголовки аналитики сворачивают целые блоки и переведены на h3",
           "weight": 40,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.74",
+      "date": "2025-08-31",
+      "time": "16:05:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Collapsing headings now hide charts on metric pages",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сворачивание заголовков скрывает графики на страницах метрик",
+          "weight": 30,
           "type": "fix",
           "scope": "ui"
         }
