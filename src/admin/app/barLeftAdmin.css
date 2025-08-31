@@ -85,13 +85,6 @@
   padding: 2px 0;
 }
 
-.sidebar-footer label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
-}
-
 .sidebar-version {
   text-align: right;
 }

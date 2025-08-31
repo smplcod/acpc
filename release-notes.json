@@ -2111,6 +2111,40 @@
           "scope": "sidebar"
         }
       ]
+    },
+    {
+      "version": "0.0.86",
+      "date": "2025-09-01",
+      "time": "20:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed obsolete admin UI demo pages",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Sidebars now always show link names instead of URLs",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены устаревшие страницы демонстрации UI админки",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Сайдбары всегда показывают имена ссылок вместо URL",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ]
     }
   ],
   "releases": [
@@ -4113,6 +4147,40 @@
           "weight": 30,
           "type": "fix",
           "scope": "sidebar"
+        }
+      ]
+    },
+    {
+      "version": "0.0.86",
+      "date": "2025-09-01",
+      "time": "20:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed obsolete admin UI demo pages",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Sidebars now always show link names instead of URLs",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены устаревшие страницы демонстрации UI админки",
+          "weight": 30,
+          "type": "chore",
+          "scope": "admin"
+        },
+        {
+          "description": "Сайдбары всегда показывают имена ссылок вместо URL",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
         }
       ]
     }
