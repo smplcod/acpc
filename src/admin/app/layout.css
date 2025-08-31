@@ -28,9 +28,8 @@
   z-index: 1000;
 }
 
-.acph-section {}
 
-.acph-section.is-collapsed {
+.acph-collapsed {
   display: none;
 }
 
