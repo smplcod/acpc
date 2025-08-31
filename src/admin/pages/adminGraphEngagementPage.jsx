@@ -58,10 +58,13 @@ export default function AdminGraphEngagementPage() {
     <section className="engagement-page">
       <h1>{heading}</h1>
       <section className="engagement-page__content">
+        <h3>Sessions vs conversion</h3>
         <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
         <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>
+        <h3>Stickiness</h3>
         <Line data={stickinessData} />
         <p>Goal: product stickiness | Source: events | Formula: DAU/MAU | Period: all dates</p>
+        <h3>Cohort retention</h3>
         <table className="engagement-page__table">
           <thead><tr><th>Week</th><th>d+7</th><th>d+14</th><th>d+28</th></tr></thead>
           <tbody>
@@ -76,6 +79,7 @@ export default function AdminGraphEngagementPage() {
           </tbody>
         </table>
         <p>Goal: cohort retention | Source: users | Formula: activity at d+N | Period: all cohorts</p>
+        <h3>Platform profile</h3>
         <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
         <p>Goal: platform profile | Source: users | Period: last 30 days</p>
       </section>

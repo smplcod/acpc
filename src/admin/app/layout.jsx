@@ -32,7 +32,7 @@ export default function Layout() {
         <BarLeftAdmin forceCollapsed={isLogin} disableToggle={isLogin} />
         <main id="main" tabIndex={-1} ref={mainRef}>
           <Outlet />
-          <SubPages />
+          {location.pathname !== '/admin' && <SubPages />}
         </main>
       </div>
     </>
