@@ -1,4 +1,5 @@
 import AdminUiChartsPage from '../pages/adminUiChartsPage.jsx'
+import AdminUiHeadingsPage from '../pages/adminUiHeadingsPage.jsx'
 import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
 import AdminLogoutPage from '../pages/adminLogoutPage.jsx'
@@ -21,6 +22,7 @@ const adminRoutes = [
     element: <AdminUiPage />,
     label: 'UI',
     children: [
+      { path: 'headings', element: <AdminUiHeadingsPage />, label: 'Headings' },
       { path: 'charts', element: <AdminUiChartsPage />, label: 'Charts' }
     ]
   },
