@@ -6,7 +6,7 @@ import { loadMetrics } from '../app/metrics.js'
 import './adminDashboardPage.css'
 
 export default function AdminDashboardPage() {
-  const title = 'Charts Dashboard'
+  const title = 'Dashboard'
   const fullTitle = `${title} | Admin Control Panel | ACPC`
   const outlet = useOutlet()
   const [data, setData] = useState(null)
@@ -39,19 +39,19 @@ export default function AdminDashboardPage() {
     <section className="dashboard-page">
       <h1>{fullTitle}</h1>
       <section className="dashboard-grid">
-        <Link to="/admin/charts/growth" className="dashboard-card">
+        <Link to="/admin/growth" className="dashboard-card">
           <Line data={dauData} options={commonLineOpts} />
           <p>Goal: growth | Source: events | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/engagement" className="dashboard-card">
+        <Link to="/admin/engagement" className="dashboard-card">
           <Line data={convData} options={commonLineOpts} />
           <p>Goal: conversion | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/reliability" className="dashboard-card">
+        <Link to="/admin/reliability" className="dashboard-card">
           <Line data={errData} options={commonLineOpts} />
           <p>Goal: stability | Source: activity | Period: {period}</p>
         </Link>
-        <Link to="/admin/charts/revenue" className="dashboard-card">
+        <Link to="/admin/revenue" className="dashboard-card">
           <Bar data={subsData} options={commonBarOpts} />
           <p>Goal: revenue | Source: events | Period: {period}</p>
         </Link>

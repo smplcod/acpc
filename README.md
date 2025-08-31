@@ -1,11 +1,11 @@
 # ACP+Charts now
-Current version: 0.0.63
+Current version: 0.0.64
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
 - Authenticated admins visiting `/admin/login` are redirected back to the previous page
-- Admin access to charts dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
+- Admin access to dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -14,8 +14,8 @@ Current version: 0.0.63
 - Admin pages display "Subpages:" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
-- Charts dashboard at `/admin/charts` with mini charts for growth, engagement, reliability, and revenue
-- Detailed analytics pages at `/admin/charts/*` for growth, engagement, reliability, and revenue
+- Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
+- Detailed analytics pages at `/admin/*` for growth, engagement, reliability, and revenue
 - Chart.js users charts at `/admin/ui/charts`
 
 # ACP+Charts сomming soon
@@ -45,8 +45,8 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
   - [x] 3.4 Пронумеровать варианты графиков в заголовках на /admin/charts/users/recharts.
   - [x] 3.5 Создать страницу /admin/charts/users/explain и описать ключи из users.json.
-  - [x] 3.6 Добавить страницу /admin/charts с мини-графиками.
-  - [x] 3.7 Реализовать страницы /admin/charts/growth, /admin/charts/engagement, /admin/charts/reliability, /admin/charts/revenue с реальными графиками и подписями.
+  - [x] 3.6 Добавить страницу /admin с мини-графиками.
+  - [x] 3.7 Реализовать страницы /admin/growth, /admin/engagement, /admin/reliability, /admin/revenue с реальными графиками и подписями.
 
 6. Удобства
  - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
@@ -108,6 +108,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 # 15. Маршруты
  - [x] 15.1 Удалить страницу /admin/charts и убрать сегмент dev из всех адресов админки.
+ - [x] 15.2 Перенести панель графиков на /admin и сократить адреса метрик до /admin/growth, /admin/engagement, /admin/reliability, /admin/revenue.
 
 16. Collapsible headings
  - [x] 16.1 Enable collapsible headings in admin pages

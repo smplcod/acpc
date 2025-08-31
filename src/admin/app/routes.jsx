@@ -1,4 +1,3 @@
-import AdminPage from '../pages/adminPage.jsx'
 import AdminUiChartsPage from '../pages/adminUiChartsPage.jsx'
 import AdminUiPage from '../pages/adminUiPage.jsx'
 import AdminLoginPage from '../pages/adminLoginPage.jsx'
@@ -12,18 +11,11 @@ import AdminGraphRevenuePage from '../pages/adminGraphRevenuePage.jsx'
 const adminRoutes = [
   { path: 'login', element: <AdminLoginPage />, label: 'Login' },
   { path: 'logout', element: <AdminLogoutPage />, label: 'Logout' },
-  { index: true, element: <AdminPage />, label: 'Home' },
-  {
-    path: 'charts',
-    element: <AdminDashboardPage />,
-    label: 'Charts Dashboard',
-    children: [
-      { path: 'growth', element: <AdminGraphGrowthPage />, label: 'Growth' },
-      { path: 'engagement', element: <AdminGraphEngagementPage />, label: 'Engagement' },
-      { path: 'reliability', element: <AdminGraphReliabilityPage />, label: 'Reliability' },
-      { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' }
-    ]
-  },
+  { index: true, element: <AdminDashboardPage />, label: 'Dashboard' },
+  { path: 'growth', element: <AdminGraphGrowthPage />, label: 'Growth' },
+  { path: 'engagement', element: <AdminGraphEngagementPage />, label: 'Engagement' },
+  { path: 'reliability', element: <AdminGraphReliabilityPage />, label: 'Reliability' },
+  { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' },
   {
     path: 'ui',
     element: <AdminUiPage />,
