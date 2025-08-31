@@ -36,7 +36,7 @@ export default function AdminDashboardPage() {
   const period = `${labels[0]} to ${labels[labels.length - 1]}`
 
   return (
-    <main className="dashboard-page">
+    <section className="dashboard-page">
       <h1>{fullTitle}</h1>
       <section className="dashboard-grid">
         <Link to="/admin/charts/growth" className="dashboard-card">
@@ -56,6 +56,6 @@ export default function AdminDashboardPage() {
           <p>Goal: revenue | Source: events | Period: {period}</p>
         </Link>
       </section>
-    </main>
+    </section>
   )
 }

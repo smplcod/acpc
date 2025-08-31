@@ -57,7 +57,7 @@ export default function AdminGraphReliabilityPage() {
   }
 
   return (
-  <main className="reliability-page">
+  <section className="reliability-page">
       <h1>{fullTitle}</h1>
       <section className="reliability-page__content">
         <Line data={errRateData} />
@@ -69,6 +69,6 @@ export default function AdminGraphReliabilityPage() {
         <Bar data={pagesData} options={{ indexAxis: 'y' }} />
         <p>Goal: problematic pages | Source: events | Formula: type=error aggregated | Period: all dates</p>
       </section>
-    </main>
+    </section>
   )
 }

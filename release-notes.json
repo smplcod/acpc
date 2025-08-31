@@ -1481,6 +1481,28 @@
           "scope": "release-notes"
         }
       ]
+    },
+    {
+      "version": "0.0.59",
+      "date": "2025-08-31",
+      "time": "06:16:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Replaced nested main elements with sections for valid HTML structure",
+          "weight": 20,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заменены вложенные теги main на section для корректной структуры HTML",
+          "weight": 20,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2835,26 +2857,48 @@
         ]
       },
       {
-        "version": "0.0.58",
-        "date": "2025-08-31",
-        "time": "06:15:00",
-        "timezone": "Asia/Bishkek",
-        "changes": [
-          {
-            "description": "Simplified release notes tags by replacing nested divs with spans",
-            "weight": 20,
-            "type": "refactor",
-            "scope": "release-notes"
-          }
-        ],
-        "changes-ru": [
-          {
-            "description": "Упрощены теги заметок релизов, заменены вложенные div на span",
-            "weight": 20,
-            "type": "refactor",
-            "scope": "release-notes"
-          }
-        ]
-      }
-    ]
-  }
+      "version": "0.0.58",
+      "date": "2025-08-31",
+      "time": "06:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Simplified release notes tags by replacing nested divs with spans",
+          "weight": 20,
+          "type": "refactor",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Упрощены теги заметок релизов, заменены вложенные div на span",
+          "weight": 20,
+          "type": "refactor",
+          "scope": "release-notes"
+        }
+      ]
+    },
+    {
+      "version": "0.0.59",
+      "date": "2025-08-31",
+      "time": "06:16:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Replaced nested main elements with sections for valid HTML structure",
+          "weight": 20,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заменены вложенные теги main на section для корректной структуры HTML",
+          "weight": 20,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ]
+    }
+  ]
+}

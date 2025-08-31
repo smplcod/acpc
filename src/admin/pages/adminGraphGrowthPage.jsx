@@ -102,7 +102,7 @@ export default function AdminGraphGrowthPage() {
   }
 
   return (
-    <main className="growth-page">
+    <section className="growth-page">
       <h1>{fullTitle}</h1>
       <section className="growth-page__content">
         <Line data={areaData} options={{ stacked: true }} />
@@ -114,6 +114,6 @@ export default function AdminGraphGrowthPage() {
         <Bar data={weekdayData} />
         <p>Goal: seasonality | Source: events | Formula: aggregate by weekday | Period: all dates</p>
       </section>
-    </main>
+    </section>
   )
 }
