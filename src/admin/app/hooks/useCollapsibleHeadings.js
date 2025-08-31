@@ -39,9 +39,8 @@ export default function useCollapsibleHeadings() {
 
     const build = () => {
       cleanup()
-      const headings = Array.from(main.querySelectorAll('h2, h3, h4'))
+      const headings = Array.from(main.querySelectorAll('h2, h3'))
       headings.forEach((heading, index) => {
-        const level = Number(heading.tagName.slice(1))
         const button = document.createElement('button')
         button.type = 'button'
         button.className = 'acph-toggle'
@@ -50,10 +49,7 @@ export default function useCollapsibleHeadings() {
         button.textContent = collapsed ? '▶' : '▼'
         const targets = []
         let next = heading.nextElementSibling
-        while (
-          next &&
-          !(/H[2-4]/.test(next.tagName) && Number(next.tagName.slice(1)) <= level)
-        ) {
+        while (next && !/^H[1-6]$/.test(next.tagName)) {
           targets.push(next)
           next = next.nextElementSibling
         }
@@ -83,18 +79,10 @@ export default function useCollapsibleHeadings() {
 
     let observer
     if (window.MutationObserver) {
-      observer = new MutationObserver((mutations) => {
-        if (
-          mutations.some((m) =>
-            Array.from(m.addedNodes).some(
-              (n) => n.querySelector && n.querySelector('h2, h3, h4')
-            )
-          )
-        ) {
-          observer.disconnect()
-          build()
-          observer.observe(main, { childList: true, subtree: true })
-        }
+      observer = new MutationObserver(() => {
+        observer.disconnect()
+        build()
+        observer.observe(main, { childList: true, subtree: true })
       })
       observer.observe(main, { childList: true, subtree: true })
     }
