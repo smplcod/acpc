@@ -20,7 +20,7 @@ export default function AdminUiPage() {
   const tags = ['#alpha', '#beta', '#gamma']
 
   return (
-    <div>
+    <>
       <h1>{fullTitle}</h1>
       <AuthMessage />
 
@@ -55,6 +55,6 @@ export default function AdminUiPage() {
           {idx < tagVariants.length - 1 && <hr />}
         </div>
       ))}
-    </div>
+    </>
   )
 }

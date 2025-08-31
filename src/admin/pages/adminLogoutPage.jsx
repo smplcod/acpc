@@ -13,9 +13,9 @@ export default function AdminLogoutPage() {
   }, [navigate])
 
   return (
-    <div>
+    <>
       <h1>Logout</h1>
       <AuthMessage />
-    </div>
+    </>
   )
 }

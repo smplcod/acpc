@@ -119,6 +119,9 @@ _Only this section of the readme can be maintained using Russian language_
 18. Семантическая разметка
  - [x] 18.1 Добавить классы контейнерам и вынести стили в CSS
 
+19. Контейнеры
+ - [x] 19.1 Удалить лишние контейнеры div на страницах
+
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
 2. Maintain a hierarchical task list with consistent numbering.

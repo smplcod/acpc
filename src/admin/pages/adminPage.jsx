@@ -8,9 +8,9 @@ export default function AdminPage() {
     document.title = fullTitle
   }, [fullTitle])
   return (
-    <div>
+    <>
       <h1>{fullTitle}</h1>
       <AuthMessage />
-    </div>
+    </>
   )
 }
