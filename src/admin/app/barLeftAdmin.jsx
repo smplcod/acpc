@@ -1,6 +1,13 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
+import {
+  Sidebar,
+  Home,
+  TrendingUp,
+  Users,
+  Shield,
+  DollarSign
+} from 'react-feather'
 import pkg from '../../../package.json'
 import urlTree from '../../urlTree.json'
 import './barLeftAdmin.css'
@@ -57,7 +64,6 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   const flatNodes = useMemo(() => flattenTree(urlTree), [])
   const hidden = new Set([
     '/',
-    '/admin',
     '/admin/login',
     '/admin/ui',
     '/admin/ui/charts'
@@ -91,18 +97,26 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
             <Link to="/" className="icon-button" title="Home">
               <Home size={16} />
             </Link>
-            <div className="icon-button" title="Columns">
-              <Columns size={16} />
-            </div>
-            <div className="icon-button" title="Calendar">
-              <Calendar size={16} />
-            </div>
-            <div className="icon-button" title="Check circle">
-              <CheckCircle size={16} />
-            </div>
-            <div className="icon-button" title="Cloud">
-              <Cloud size={16} />
-            </div>
+            <Link to="/admin/growth" className="icon-button" title="Growth">
+              <TrendingUp size={16} />
+            </Link>
+            <Link
+              to="/admin/engagement"
+              className="icon-button"
+              title="Engagement"
+            >
+              <Users size={16} />
+            </Link>
+            <Link
+              to="/admin/reliability"
+              className="icon-button"
+              title="Reliability"
+            >
+              <Shield size={16} />
+            </Link>
+            <Link to="/admin/revenue" className="icon-button" title="Revenue">
+              <DollarSign size={16} />
+            </Link>
           </>
         )}
       </div>

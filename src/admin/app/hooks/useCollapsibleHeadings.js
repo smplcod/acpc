@@ -40,11 +40,12 @@ export default function useCollapsibleHeadings() {
     const build = () => {
       cleanup()
       const headings = Array.from(main.querySelectorAll('h2, h3'))
-      headings.forEach((heading, index) => {
+      headings.forEach(heading => {
+        const key = heading.textContent.trim()
         const button = document.createElement('button')
         button.type = 'button'
         button.className = 'acph-toggle'
-        let collapsed = state[index] === '1'
+        let collapsed = state[key] === '1'
         button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
         button.textContent = collapsed ? '▶' : '▼'
         const targets = []
@@ -59,7 +60,7 @@ export default function useCollapsibleHeadings() {
           button.textContent = collapsed ? '▶' : '▼'
           button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
           targets.forEach(t => t.classList.toggle('acph-collapsed', collapsed))
-          state[index] = collapsed ? '1' : '0'
+          state[key] = collapsed ? '1' : '0'
           saveState()
         }
         const keyHandler = (e) => {
