@@ -1779,6 +1779,28 @@
           "scope": "navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.72",
+      "date": "2025-08-31",
+      "time": "15:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added collapsible headings to growth analytics page",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены сворачиваемые заголовки на странице роста",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3449,6 +3471,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "navigation"
+        }
+      ]
+    },
+    {
+      "version": "0.0.72",
+      "date": "2025-08-31",
+      "time": "15:30:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added collapsible headings to growth analytics page",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлены сворачиваемые заголовки на странице роста",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
         }
       ]
     }
