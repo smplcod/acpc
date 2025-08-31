@@ -48,6 +48,10 @@
   transition: filter 0.2s;
 }
 
+.acph-heading {
+  cursor: pointer;
+}
+
 h3 > .acph-toggle {
   font-size: 14px;
 }

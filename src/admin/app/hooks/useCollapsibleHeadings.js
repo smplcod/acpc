@@ -34,10 +34,12 @@ export default function useCollapsibleHeadings() {
     }
 
     const cleanup = () => {
-      sections.forEach(({ button, targets, handler, keyHandler }) => {
+      sections.forEach(({ button, heading, targets, handler, keyHandler, headingHandler }) => {
         button.removeEventListener('click', handler)
         button.removeEventListener('keydown', keyHandler)
+        heading.removeEventListener('click', headingHandler)
         button.remove()
+        heading.classList.remove('acph-heading')
         targets.forEach(t => t.classList.remove('acph-collapsed'))
       })
       sections = []
@@ -82,10 +84,16 @@ export default function useCollapsibleHeadings() {
             handler()
           }
         }
+        const headingHandler = (e) => {
+          if (e.target === button) return
+          handler()
+        }
         button.addEventListener('click', handler)
         button.addEventListener('keydown', keyHandler)
+        heading.addEventListener('click', headingHandler)
+        heading.classList.add('acph-heading')
         heading.insertBefore(button, heading.firstChild)
-        sections.push({ button, targets, handler, keyHandler })
+        sections.push({ button, heading, targets, handler, keyHandler, headingHandler })
       })
     }
 

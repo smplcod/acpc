@@ -2023,6 +2023,28 @@
           "scope": "navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.82",
+      "date": "2025-09-01",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enabled metric sections to toggle by clicking their headings",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлено переключение секций метрик по клику на их заголовки",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3937,6 +3959,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "navigation"
+        }
+      ]
+    }
+    ,{
+      "version": "0.0.82",
+      "date": "2025-09-01",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enabled metric sections to toggle by clicking their headings",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Добавлено переключение секций метрик по клику на их заголовки",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
         }
       ]
     }
