@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.66
+Current version: 0.0.67
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -11,11 +11,12 @@ Current version: 0.0.66
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
-- Admin pages display "Subpages" with a full URL tree when subpages exist
+- Admin pages (except the dashboard) display "Subpages" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
 - Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
 - Detailed analytics pages at `/admin/*` for growth, engagement, reliability, and revenue
+- Analytics charts use collapsible h3 headings for easier browsing
 - Chart.js users charts at `/admin/ui/charts`
 
 # ACP+Charts сomming soon
@@ -134,6 +135,9 @@ _Only this section of the readme can be maintained using Russian language_
 22. Заголовки
  - [x] 22.1 Удалить сегмент " | ACPC" из h1 всех страниц
 
+23. Admin subpages
+ - [x] 23.1 Hide Subpages on the dashboard
+
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
 2. Maintain a hierarchical task list with consistent numbering.
@@ -153,11 +157,11 @@ _Only this section of the readme can be maintained using Russian language_
 12. If there is no indication what language the page should be in, use English.
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
-15. The admin layout automatically renders the `SubPages` component at the end of every `/admin` route; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages" heading only when subpages exist.
+15. The admin layout automatically renders the `SubPages` component at the end of `/admin/*` routes except the dashboard root `/admin`; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages" heading only when subpages exist.
 16. After each task, re-check navigation (see Verification steps).
 
 # Verification steps
-1. Open several pages: /admin, /admin/section, /admin/section/subsection — confirm each shows "Subpages" at the bottom with the full tree.
+1. Open /admin, /admin/section, /admin/section/subsection — confirm only nested routes show "Subpages" at the bottom with the full tree.
 2. Check the admin left sidebar — all URLs present and shown flat (no nested lists).
 3. Check the public site left sidebar — all URLs present except /admin and its descendants.
 4. After any page structure change, repeat steps 1–3.
