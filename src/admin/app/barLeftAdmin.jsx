@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   Sidebar,
@@ -22,6 +22,8 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   const [collapsed, setCollapsed] = useState(true)
   const [hovered, setHovered] = useState(false)
   const [showNames, setShowNames] = useState(false)
+  const sidebarRef = useRef(null)
+  const toggleRef = useRef(null)
 
   useEffect(() => {
     if (forceCollapsed) {
@@ -49,11 +51,22 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
 
   const isCollapsed = collapsed && !hovered
 
+  useEffect(() => {
+    const root = document.documentElement
+    root.classList.toggle('sidebar--open', !isCollapsed)
+    root.classList.toggle('sidebar--closed', isCollapsed)
+    return () => {
+      root.classList.remove('sidebar--open', 'sidebar--closed')
+    }
+  }, [isCollapsed])
+
   const toggle = () => {
     if (disableToggle || forceCollapsed) return
-    const next = !collapsed
-    setCollapsed(next)
-    localStorage.setItem('barLeftAdminCollapsed', String(next))
+    setCollapsed(prev => {
+      const next = !prev
+      localStorage.setItem('barLeftAdminCollapsed', String(next))
+      return next
+    })
   }
 
   const onIconEnter = () => {
@@ -63,6 +76,47 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   const onMouseLeave = () => {
     if (collapsed) setHovered(false)
   }
+
+  useEffect(() => {
+    if (!isCollapsed) {
+      const handleClick = e => {
+        if (
+          sidebarRef.current &&
+          !sidebarRef.current.contains(e.target) &&
+          toggleRef.current &&
+          !toggleRef.current.contains(e.target)
+        ) {
+          setCollapsed(true)
+          setHovered(false)
+          localStorage.setItem('barLeftAdminCollapsed', 'true')
+        }
+      }
+      const handleKey = e => {
+        if (e.key === 'Escape') {
+          setCollapsed(true)
+          setHovered(false)
+          localStorage.setItem('barLeftAdminCollapsed', 'true')
+        }
+      }
+      document.addEventListener('click', handleClick)
+      document.addEventListener('keydown', handleKey)
+      return () => {
+        document.removeEventListener('click', handleClick)
+        document.removeEventListener('keydown', handleKey)
+      }
+    }
+  }, [isCollapsed])
+
+  useEffect(() => {
+    if (!collapsed) {
+      const first = sidebarRef.current?.querySelector(
+        'a, button, input, select, textarea'
+      )
+      first?.focus()
+    } else {
+      toggleRef.current?.focus()
+    }
+  }, [collapsed])
 
   const flatNodes = useMemo(() => flattenTree(urlTree), [])
   const hidden = new Set([
@@ -90,15 +144,25 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   }, [isCollapsed])
 
   return (
-    <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
+    <aside
+      ref={sidebarRef}
+      className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`}
+      onMouseLeave={onMouseLeave}
+      onClick={e => e.stopPropagation()}
+    >
       <div className="sidebar-header">
         <button
           type="button"
           className={`icon-button${disableToggle ? ' disabled' : ''}`}
           onMouseEnter={disableToggle ? undefined : onIconEnter}
-          onClick={disableToggle ? undefined : toggle}
+          onClick={e => {
+            e.stopPropagation()
+            if (!disableToggle) toggle()
+          }}
           aria-label="Toggle sidebar"
+          aria-expanded={!isCollapsed}
           disabled={disableToggle}
+          ref={toggleRef}
         >
           <Sidebar size={16} />
         </button>
