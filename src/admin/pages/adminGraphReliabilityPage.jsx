@@ -6,7 +6,8 @@ import './adminGraphReliabilityPage.css'
 
 export default function AdminGraphReliabilityPage() {
   const title = 'Reliability Metrics'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const [data, setData] = useState(null)
 
   useEffect(() => { document.title = fullTitle }, [fullTitle])
@@ -58,7 +59,7 @@ export default function AdminGraphReliabilityPage() {
 
   return (
   <section className="reliability-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <section className="reliability-page__content">
         <Line data={errRateData} />
         <p>Goal: stability per session | Source: activity | Formula: errors/sessions | Period: all dates</p>

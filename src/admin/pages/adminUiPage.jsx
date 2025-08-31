@@ -5,7 +5,8 @@ import './adminUiPage.css'
 
 export default function AdminUiPage() {
   const title = 'Admin UI'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const outlet = useOutlet()
   useEffect(() => {
     document.title = fullTitle
@@ -21,7 +22,7 @@ export default function AdminUiPage() {
 
   return (
     <>
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <AuthMessage />
 
       <h2>Login form variants</h2>

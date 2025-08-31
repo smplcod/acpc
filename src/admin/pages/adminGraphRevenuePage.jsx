@@ -6,7 +6,8 @@ import './adminGraphRevenuePage.css'
 
 export default function AdminGraphRevenuePage() {
   const title = 'Revenue Metrics'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const [data, setData] = useState(null)
 
   useEffect(() => { document.title = fullTitle }, [fullTitle])
@@ -52,7 +53,7 @@ export default function AdminGraphRevenuePage() {
 
   return (
     <section className="revenue-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <section className="revenue-page__content">
         <Bar data={funnelData} />
         <p>Goal: step drop-off | Source: events | Formula: funnel totals | Period: all dates</p>

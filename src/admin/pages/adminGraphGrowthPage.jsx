@@ -6,7 +6,8 @@ import './adminGraphGrowthPage.css'
 
 export default function AdminGraphGrowthPage() {
   const title = 'Growth Metrics'
-  const fullTitle = `${title} | Admin Control Panel | ACPC`
+  const heading = `${title} | Admin Control Panel`
+  const fullTitle = `${heading} | ACPC`
   const [data, setData] = useState(null)
 
   useEffect(() => {
@@ -103,7 +104,7 @@ export default function AdminGraphGrowthPage() {
 
   return (
     <section className="growth-page">
-      <h1>{fullTitle}</h1>
+      <h1>{heading}</h1>
       <section className="growth-page__content">
         <Line data={areaData} options={{ stacked: true }} />
         <p>Goal: compare active audiences | Source: events | Formula: DAU/WAU/MAU/SMA7 | Period: all dates</p>
