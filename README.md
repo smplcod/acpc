@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.78
+Current version: 0.0.79
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -162,6 +162,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 29. Admin sidebar overflow
  - [x] 29.1 Fix layout width after collapsing and expanding sidebar
+ - [x] 29.2 Prevent horizontal scroll after collapsing and expanding sidebar again
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.

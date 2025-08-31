@@ -1957,6 +1957,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.79",
+      "date": "2025-09-01",
+      "time": "13:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin page overflow after sidebar toggle",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено переполнение админской страницы после переключения сайдбара",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3805,6 +3827,28 @@
           "weight": 20,
           "type": "fix",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.79",
+      "date": "2025-09-01",
+      "time": "13:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin page overflow after sidebar toggle",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено переполнение админской страницы после переключения сайдбара",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
         }
       ]
     }
