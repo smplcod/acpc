@@ -1713,6 +1713,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.69",
+      "date": "2025-08-31",
+      "time": "14:38:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin login redirect and authentication",
+          "weight": 40,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлена авторизация и редирект администратора",
+          "weight": 40,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3317,6 +3339,28 @@
           "weight": 30,
           "type": "style",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.69",
+      "date": "2025-08-31",
+      "time": "14:38:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin login redirect and authentication",
+          "weight": 40,
+          "type": "fix",
+          "scope": "auth"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлена авторизация и редирект администратора",
+          "weight": 40,
+          "type": "fix",
+          "scope": "auth"
         }
       ]
     }
