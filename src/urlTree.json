@@ -15,7 +15,6 @@
         "path": "/admin/ui",
         "name": "UI",
         "children": [
-          { "path": "/admin/ui/headings", "name": "Headings", "children": [] },
           { "path": "/admin/ui/charts", "name": "Charts", "children": [] }
         ]
       }

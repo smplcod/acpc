@@ -1,11 +1,11 @@
 # ACP+Charts now
-Current version: 0.0.68
+Current version: 0.0.67
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
 - Authenticated admins visiting `/admin/login` are redirected back to the previous page
-- Admin access to dashboard, analytics graphs, and UI demos of 30 forms, 30 hashtags, and 20 collapsible heading designs
+- Admin access to dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -137,9 +137,6 @@ _Only this section of the readme can be maintained using Russian language_
 
 23. Admin subpages
  - [x] 23.1 Hide Subpages on the dashboard
-
-24. Collapsible heading variants
- - [x] 24.1 Create 20 button style options for collapsible h2 and h3 headings
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
