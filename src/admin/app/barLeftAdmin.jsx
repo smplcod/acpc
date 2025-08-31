@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from 'react'
+import { useEffect, useState, useMemo, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   Sidebar,
@@ -82,15 +82,24 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     localStorage.setItem('barLeftAdminShowNames', String(next))
   }
 
+  const asideRef = useRef(null)
+
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const el = asideRef.current
+    if (!el) return
+    const observer = new ResizeObserver(() => {
       window.dispatchEvent(new Event('resize'))
-    }, 310)
-    return () => clearTimeout(timer)
-  }, [isCollapsed])
+    })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
+    <aside
+      ref={asideRef}
+      className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`}
+      onMouseLeave={onMouseLeave}
+    >
       <div className="sidebar-header">
         <button
           type="button"
