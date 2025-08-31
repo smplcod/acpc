@@ -2023,6 +2023,28 @@
           "scope": "navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.82",
+      "date": "2025-09-02",
+      "time": "09:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Allowed clicking on h2 and h3 titles to toggle collapsible sections",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Разрешено сворачивать секции кликом по заголовкам h2 и h3",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3937,6 +3959,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "navigation"
+        }
+      ]
+    },
+    {
+      "version": "0.0.82",
+      "date": "2025-09-02",
+      "time": "09:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Allowed clicking on h2 and h3 titles to toggle collapsible sections",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui",
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Разрешено сворачивать секции кликом по заголовкам h2 и h3",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui",
         }
       ]
     }
