@@ -1691,6 +1691,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.68",
+      "date": "2025-08-31",
+      "time": "14:04:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enlarged and raised h2/h3 collapse triangles",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Увеличены и приподняты треугольники сворачивания h2/h3",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3272,6 +3294,28 @@
           "description": "Перед графиками аналитики добавлены сворачиваемые заголовки",
           "weight": 40,
           "type": "feat",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.68",
+      "date": "2025-08-31",
+      "time": "14:04:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Enlarged and raised h2/h3 collapse triangles",
+          "weight": 30,
+          "type": "style",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Увеличены и приподняты треугольники сворачивания h2/h3",
+          "weight": 30,
+          "type": "style",
           "scope": "ui"
         }
       ]
