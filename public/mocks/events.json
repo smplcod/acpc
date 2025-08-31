@@ -1,352 +1,67 @@
 [
-  {
-    "ts": "2026-01-11T16:15:23.000Z",
-    "userId": 25,
-    "sessionId": "r511",
-    "type": "subscribe",
-    "page": "/billing",
-    "ok": true,
-    "plan": "pro"
-  },
-  {
-    "ts": "2026-01-25T02:33:06.000Z",
-    "userId": 49,
-    "sessionId": "r761",
-    "type": "visit",
-    "page": "/billing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-03T10:39:01.000Z",
-    "userId": 36,
-    "sessionId": "r525",
-    "type": "first_action",
-    "page": "/billing",
-    "ok": true,
-    "value": 2,
-    "latencyMs": 184
-  },
-  {
-    "ts": "2026-01-23T14:28:00.000Z",
-    "userId": 90,
-    "sessionId": "r354",
-    "type": "visit",
-    "page": "/dashboard",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-27T21:24:40.000Z",
-    "userId": 25,
-    "sessionId": "r103",
-    "type": "error",
-    "page": "/files",
-    "ok": false,
-    "code": "408"
-  },
-  {
-    "ts": "2026-01-21T22:11:18.000Z",
-    "userId": 20,
-    "sessionId": "r694",
-    "type": "visit",
-    "page": "/pricing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-12T07:52:51.000Z",
-    "userId": 89,
-    "sessionId": "r039",
-    "type": "visit",
-    "page": "/files",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-12T20:23:35.000Z",
-    "userId": 54,
-    "sessionId": "r264",
-    "type": "login",
-    "page": "/dashboard",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-02T21:15:36.000Z",
-    "userId": 64,
-    "sessionId": "r139",
-    "type": "visit",
-    "page": "/",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-25T18:13:55.000Z",
-    "userId": 96,
-    "sessionId": "r123",
-    "type": "visit",
-    "page": "/billing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-14T23:33:57.000Z",
-    "userId": 19,
-    "sessionId": "r308",
-    "type": "visit",
-    "page": "/dashboard",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-11T15:37:10.000Z",
-    "userId": 95,
-    "sessionId": "r232",
-    "type": "first_action",
-    "page": "/files",
-    "ok": true,
-    "value": 4,
-    "latencyMs": 214
-  },
-  {
-    "ts": "2026-01-23T14:31:52.000Z",
-    "userId": 35,
-    "sessionId": "r636",
-    "type": "subscribe",
-    "page": "/files",
-    "ok": true,
-    "plan": "free"
-  },
-  {
-    "ts": "2026-01-04T15:46:10.000Z",
-    "userId": 82,
-    "sessionId": "r675",
-    "type": "first_action",
-    "page": "/",
-    "ok": true,
-    "value": 2,
-    "latencyMs": 193
-  },
-  {
-    "ts": "2026-01-28T23:29:20.000Z",
-    "userId": 6,
-    "sessionId": "r638",
-    "type": "first_action",
-    "page": "/",
-    "ok": true,
-    "value": 3,
-    "latencyMs": 308
-  },
-  {
-    "ts": "2026-01-16T00:15:45.000Z",
-    "userId": 59,
-    "sessionId": "r159",
-    "type": "subscribe",
-    "page": "/files",
-    "ok": true,
-    "plan": "biz"
-  },
-  {
-    "ts": "2026-01-20T22:50:40.000Z",
-    "userId": 57,
-    "sessionId": "r292",
-    "type": "subscribe",
-    "page": "/signup",
-    "ok": true,
-    "plan": "biz"
-  },
-  {
-    "ts": "2026-01-08T06:36:14.000Z",
-    "userId": 22,
-    "sessionId": "r603",
-    "type": "login",
-    "page": "/pricing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-05T02:26:57.000Z",
-    "userId": 57,
-    "sessionId": "r367",
-    "type": "login",
-    "page": "/",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-20T17:53:44.000Z",
-    "userId": 70,
-    "sessionId": "r101",
-    "type": "error",
-    "page": "/signup",
-    "ok": false,
-    "code": "408"
-  },
-  {
-    "ts": "2026-01-02T13:20:58.000Z",
-    "userId": 54,
-    "sessionId": "r524",
-    "type": "login",
-    "page": "/search",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-04T12:53:15.000Z",
-    "userId": 80,
-    "sessionId": "r031",
-    "type": "visit",
-    "page": "/",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-25T03:55:33.000Z",
-    "userId": 19,
-    "sessionId": "r754",
-    "type": "first_action",
-    "page": "/signup",
-    "ok": true,
-    "value": 5,
-    "latencyMs": 77
-  },
-  {
-    "ts": "2026-01-09T18:13:49.000Z",
-    "userId": 41,
-    "sessionId": "r201",
-    "type": "visit",
-    "page": "/files",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-02T21:26:44.000Z",
-    "userId": 72,
-    "sessionId": "r090",
-    "type": "visit",
-    "page": "/signup",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-04T13:34:29.000Z",
-    "userId": 25,
-    "sessionId": "r327",
-    "type": "visit",
-    "page": "/pricing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-23T07:16:45.000Z",
-    "userId": 95,
-    "sessionId": "r100",
-    "type": "subscribe",
-    "page": "/files",
-    "ok": true,
-    "plan": "biz"
-  },
-  {
-    "ts": "2026-01-10T20:48:58.000Z",
-    "userId": 60,
-    "sessionId": "r114",
-    "type": "first_action",
-    "page": "/",
-    "ok": true,
-    "value": 5,
-    "latencyMs": 284
-  },
-  {
-    "ts": "2026-01-02T15:09:20.000Z",
-    "userId": 5,
-    "sessionId": "r215",
-    "type": "first_action",
-    "page": "/billing",
-    "ok": true,
-    "value": 2,
-    "latencyMs": 440
-  },
-  {
-    "ts": "2026-01-06T16:07:32.000Z",
-    "userId": 75,
-    "sessionId": "r683",
-    "type": "first_action",
-    "page": "/dashboard",
-    "ok": true,
-    "value": 3,
-    "latencyMs": 432
-  },
-  {
-    "ts": "2026-01-18T02:37:51.000Z",
-    "userId": 59,
-    "sessionId": "r963",
-    "type": "signup",
-    "page": "/billing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-09T19:57:57.000Z",
-    "userId": 95,
-    "sessionId": "r465",
-    "type": "signup",
-    "page": "/billing",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-13T14:34:42.000Z",
-    "userId": 77,
-    "sessionId": "r091",
-    "type": "login",
-    "page": "/login",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-12T18:18:21.000Z",
-    "userId": 20,
-    "sessionId": "r339",
-    "type": "login",
-    "page": "/dashboard",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-11T07:09:50.000Z",
-    "userId": 34,
-    "sessionId": "r714",
-    "type": "subscribe",
-    "page": "/",
-    "ok": true,
-    "plan": "pro"
-  },
-  {
-    "ts": "2026-01-03T08:54:36.000Z",
-    "userId": 58,
-    "sessionId": "r734",
-    "type": "signup",
-    "page": "/login",
-    "ok": true
-  },
-  {
-    "ts": "2026-01-02T21:55:12.000Z",
-    "userId": 88,
-    "sessionId": "r023",
-    "type": "error",
-    "page": "/search",
-    "ok": false,
-    "code": "408"
-  },
-  {
-    "ts": "2026-01-03T02:10:06.000Z",
-    "userId": 22,
-    "sessionId": "r756",
-    "type": "first_action",
-    "page": "/search",
-    "ok": true,
-    "value": 2,
-    "latencyMs": 61
-  },
-  {
-    "ts": "2026-01-24T12:58:55.000Z",
-    "userId": 76,
-    "sessionId": "r159",
-    "type": "subscribe",
-    "page": "/pricing",
-    "ok": true,
-    "plan": "biz"
-  },
-  {
-    "ts": "2026-01-10T21:09:17.000Z",
-    "userId": 83,
-    "sessionId": "r499",
-    "type": "first_action",
-    "page": "/files",
-    "ok": true,
-    "value": 2,
-    "latencyMs": 358
-  }
+  {"ts":"2025-08-01T08:12:03Z","userId":12,"sessionId":"s001","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-01T08:12:22Z","userId":12,"sessionId":"s001","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-01T08:13:02Z","userId":12,"sessionId":"s001","type":"verify","page":"/verify","ok":true},
+  {"ts":"2025-08-01T08:14:11Z","userId":12,"sessionId":"s001","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-01T08:16:44Z","userId":12,"sessionId":"s001","type":"first_action","page":"/files","value":1,"latencyMs":230,"ok":true},
+
+  {"ts":"2025-08-01T09:05:10Z","userId":38,"sessionId":"s002","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-01T09:05:41Z","userId":38,"sessionId":"s002","type":"error","page":"/login","code":"401","ok":false},
+
+  {"ts":"2025-08-01T09:20:00Z","userId":5,"sessionId":"s003","type":"visit","page":"/pricing","ok":true},
+
+  {"ts":"2025-08-01T10:00:05Z","userId":23,"sessionId":"s004","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-01T10:00:40Z","userId":23,"sessionId":"s004","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-01T10:01:30Z","userId":23,"sessionId":"s004","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-01T10:03:12Z","userId":23,"sessionId":"s004","type":"first_action","page":"/dashboard","value":2,"latencyMs":180,"ok":true},
+
+  {"ts":"2025-08-01T11:10:00Z","userId":19,"sessionId":"s005","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-01T11:11:15Z","userId":19,"sessionId":"s005","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-01T11:15:30Z","userId":19,"sessionId":"s005","type":"subscribe","page":"/billing","plan":"pro","ok":true},
+
+  {"ts":"2025-08-02T08:05:00Z","userId":7,"sessionId":"s006","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-02T08:05:30Z","userId":7,"sessionId":"s006","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-02T08:06:10Z","userId":7,"sessionId":"s006","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-02T08:07:00Z","userId":7,"sessionId":"s006","type":"first_action","page":"/search","value":1,"latencyMs":210,"ok":true},
+
+  {"ts":"2025-08-02T09:00:00Z","userId":30,"sessionId":"s007","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-02T09:02:10Z","userId":30,"sessionId":"s007","type":"error","page":"/files","code":"500","ok":false},
+  {"ts":"2025-08-02T09:02:45Z","userId":30,"sessionId":"s007","type":"error","page":"/files","code":"JS:TypeError","ok":false},
+
+  {"ts":"2025-08-02T09:20:00Z","userId":45,"sessionId":"s008","type":"visit","page":"/pricing","ok":true},
+  {"ts":"2025-08-02T09:21:10Z","userId":45,"sessionId":"s008","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-02T09:23:00Z","userId":45,"sessionId":"s008","type":"first_action","page":"/files","value":3,"latencyMs":260,"ok":true},
+
+  {"ts":"2025-08-02T10:10:00Z","userId":1,"sessionId":"s009","type":"visit","page":"/landing","ok":true},
+  {"ts":"2025-08-02T10:11:00Z","userId":1,"sessionId":"s009","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-02T10:12:00Z","userId":1,"sessionId":"s009","type":"verify","page":"/verify","ok":true},
+  {"ts":"2025-08-02T10:13:00Z","userId":1,"sessionId":"s009","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-02T10:15:00Z","userId":1,"sessionId":"s009","type":"first_action","page":"/onboarding","value":1,"latencyMs":300,"ok":true},
+  {"ts":"2025-08-02T10:16:30Z","userId":1,"sessionId":"s009","type":"subscribe","page":"/billing","plan":"biz","ok":true},
+
+  {"ts":"2025-08-02T11:00:00Z","userId":22,"sessionId":"s010","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-02T11:04:00Z","userId":22,"sessionId":"s010","type":"error","page":"/api","code":"408","ok":false},
+
+  {"ts":"2025-08-03T08:03:00Z","userId":10,"sessionId":"s011","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-03T08:05:00Z","userId":10,"sessionId":"s011","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-03T08:06:20Z","userId":10,"sessionId":"s011","type":"first_action","page":"/dashboard","value":1,"latencyMs":190,"ok":true},
+
+  {"ts":"2025-08-03T09:10:00Z","userId":28,"sessionId":"s012","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-03T09:11:00Z","userId":28,"sessionId":"s012","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-03T09:12:10Z","userId":28,"sessionId":"s012","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-03T09:14:00Z","userId":28,"sessionId":"s012","type":"first_action","page":"/search","value":2,"latencyMs":220,"ok":true},
+  {"ts":"2025-08-03T09:20:00Z","userId":28,"sessionId":"s012","type":"subscribe","page":"/billing","plan":"pro","ok":true},
+
+  {"ts":"2025-08-03T10:00:00Z","userId":34,"sessionId":"s013","type":"visit","page":"/pricing","ok":true},
+  {"ts":"2025-08-03T10:02:00Z","userId":34,"sessionId":"s013","type":"error","page":"/pricing","code":"500","ok":false},
+
+  {"ts":"2025-08-03T10:30:00Z","userId":34,"sessionId":"s014","type":"visit","page":"/docs","ok":true},
+
+  {"ts":"2025-08-03T11:00:00Z","userId":16,"sessionId":"s015","type":"visit","page":"/","ok":true},
+  {"ts":"2025-08-03T11:01:00Z","userId":16,"sessionId":"s015","type":"signup","page":"/signup","ok":true},
+  {"ts":"2025-08-03T11:02:00Z","userId":16,"sessionId":"s015","type":"verify","page":"/verify","ok":true},
+  {"ts":"2025-08-03T11:03:00Z","userId":16,"sessionId":"s015","type":"login","page":"/login","ok":true},
+  {"ts":"2025-08-03T11:05:00Z","userId":16,"sessionId":"s015","type":"first_action","page":"/files","value":1,"latencyMs":200,"ok":true},
+
+  {"ts":"2025-08-03T12:00:00Z","userId":49,"sessionId":"s016","type":"visit","page":"/","ok":true}
 ]
