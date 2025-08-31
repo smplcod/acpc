@@ -34,12 +34,10 @@ export default function useCollapsibleHeadings() {
     }
 
     const cleanup = () => {
-      sections.forEach(({ button, heading, targets, handler, keyHandler }) => {
+      sections.forEach(({ button, targets, handler, keyHandler }) => {
         button.removeEventListener('click', handler)
         button.removeEventListener('keydown', keyHandler)
-        heading.removeEventListener('click', handler)
         button.remove()
-        heading.classList.remove('acph-heading')
         targets.forEach(t => t.classList.remove('acph-collapsed'))
       })
       sections = []
@@ -70,8 +68,7 @@ export default function useCollapsibleHeadings() {
           next = next.nextElementSibling
         }
         if (collapsed) targets.forEach(t => t.classList.add('acph-collapsed'))
-        const handler = (e) => {
-          e?.stopPropagation()
+        const handler = () => {
           collapsed = !collapsed
           button.textContent = collapsed ? '▶' : '▼'
           button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
@@ -87,10 +84,8 @@ export default function useCollapsibleHeadings() {
         }
         button.addEventListener('click', handler)
         button.addEventListener('keydown', keyHandler)
-        heading.addEventListener('click', handler)
-        heading.classList.add('acph-heading')
         heading.insertBefore(button, heading.firstChild)
-        sections.push({ button, heading, targets, handler, keyHandler })
+        sections.push({ button, targets, handler, keyHandler })
       })
     }
 
