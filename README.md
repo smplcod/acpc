@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.68
+Current version: 0.0.69
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -39,6 +39,7 @@ _Only this section of the readme can be maintained using Russian language_
   - [x] 2.6 Возвращать на запрошенную страницу /admin/* после успешной авторизации.
   - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
   - [x] 2.8 Перенаправлять авторизованного админа со страницы /admin/login на предыдущую страницу
+  - [x] 2.9 Исправить авторизацию и редирект администратора
 
 3. Графики
   - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.

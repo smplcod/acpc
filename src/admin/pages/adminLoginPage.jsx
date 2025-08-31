@@ -28,16 +28,20 @@ export default function AdminLoginPage() {
   const handleSubmit = e => {
     e.preventDefault()
     if (!username || !password) return
-    const envLogin = import.meta.env.VITE_ADMIN_LOGIN
-    const envPassword = import.meta.env.VITE_ADMIN_PASSWORD
-    if (username === envLogin && password === envPassword) {
-      localStorage.setItem('adminAuth', 'true')
-      localStorage.setItem('adminLogin', username)
-      const redirect = localStorage.getItem('adminPostLoginRedirect') || '/admin'
-      localStorage.removeItem('adminPostLoginRedirect')
-      navigate(redirect)
-    } else {
-      setError('Invalid username or password')
+    try {
+      const envLogin = import.meta.env.VITE_ADMIN_LOGIN
+      const envPassword = import.meta.env.VITE_ADMIN_PASSWORD
+      if (username === envLogin && password === envPassword) {
+        localStorage.setItem('adminAuth', 'true')
+        localStorage.setItem('adminLogin', username)
+        const redirect = localStorage.getItem('adminPostLoginRedirect') || '/admin'
+        localStorage.removeItem('adminPostLoginRedirect')
+        setTimeout(() => navigate(redirect, { replace: true }), 0)
+      } else {
+        setError('Invalid username or password')
+      }
+    } catch {
+      setError('Login failed')
     }
   }
 
