@@ -56,11 +56,9 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
 
   const flatNodes = useMemo(() => flattenTree(urlTree), [])
   const hidden = new Set([
+    '/',
     '/admin',
-    '/admin/growth',
-    '/admin/engagement',
-    '/admin/reliability',
-    '/admin/revenue',
+    '/admin/login',
     '/admin/ui',
     '/admin/ui/charts'
   ])

@@ -1757,6 +1757,28 @@
           "scope": "navigation"
         }
       ]
+    },
+    {
+      "version": "0.0.71",
+      "date": "2025-08-31",
+      "time": "15:11:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Restored analytics links and removed root and login from admin sidebar",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Вернули ссылки аналитики и убрали root и login из админского сайдбара",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3403,6 +3425,28 @@
         {
           "description": "Удалены ссылки метрик из сайдбара админа и закреплён logout над версией",
           "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ]
+    },
+    {
+      "version": "0.0.71",
+      "date": "2025-08-31",
+      "time": "15:11:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Restored analytics links and removed root and login from admin sidebar",
+          "weight": 40,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Вернули ссылки аналитики и убрали root и login из админского сайдбара",
+          "weight": 40,
           "type": "fix",
           "scope": "navigation"
         }

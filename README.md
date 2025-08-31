@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.70
+Current version: 0.0.71
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -141,6 +141,10 @@ _Only this section of the readme can be maintained using Russian language_
 
 23. Admin subpages
  - [x] 23.1 Hide Subpages on the dashboard
+
+24. Admin sidebar links
+ - [x] 24.1 Restore metric links in the admin sidebar
+ - [x] 24.2 Remove root and login links from the admin sidebar
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
