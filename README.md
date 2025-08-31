@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.79
+Current version: 0.0.80
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -159,6 +159,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 28. Metrics pages
  - [x] 28.1 Persist collapsible state in localStorage
+ - [x] 28.2 Start metric headings collapsed by default
 
 29. Admin sidebar overflow
  - [x] 29.1 Fix layout width after collapsing and expanding sidebar

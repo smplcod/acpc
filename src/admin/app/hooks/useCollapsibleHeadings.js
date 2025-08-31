@@ -3,6 +3,13 @@ import { useLocation } from 'react-router-dom'
 
 export default function useCollapsibleHeadings() {
   const { pathname, search } = useLocation()
+  const collapseByDefaultPaths = [
+    '/admin/growth',
+    '/admin/engagement',
+    '/admin/reliability',
+    '/admin/revenue'
+  ]
+  const collapseByDefault = collapseByDefaultPaths.includes(pathname)
 
   useLayoutEffect(() => {
     const main = document.querySelector('main')
@@ -50,7 +57,8 @@ export default function useCollapsibleHeadings() {
         const button = document.createElement('button')
         button.type = 'button'
         button.className = 'acph-toggle'
-        let collapsed = state[key] === '1'
+        const saved = state[key]
+        let collapsed = saved === '1' || (saved === undefined && collapseByDefault)
         button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
         button.textContent = collapsed ? '▶' : '▼'
         const targets = []
@@ -97,6 +105,6 @@ export default function useCollapsibleHeadings() {
       if (observer) observer.disconnect()
       cleanup()
     }
-  }, [pathname, search])
+  }, [pathname, search, collapseByDefault])
 }
 

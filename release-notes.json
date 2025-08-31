@@ -1979,6 +1979,28 @@
           "scope": "layout"
         }
       ]
+    },
+    {
+      "version": "0.0.80",
+      "date": "2025-09-01",
+      "time": "14:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Collapsed metric headings by default and preserved their state",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заголовки метрик по умолчанию свернуты и сохраняют состояние",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3849,6 +3871,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "layout"
+        }
+      ]
+    },
+    {
+      "version": "0.0.80",
+      "date": "2025-09-01",
+      "time": "14:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Collapsed metric headings by default and preserved their state",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заголовки метрик по умолчанию свернуты и сохраняют состояние",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
         }
       ]
     }
