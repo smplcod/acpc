@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.60
+Current version: 0.0.61
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -115,6 +115,7 @@ _Only this section of the readme can be maintained using Russian language_
 17. Сайдбар админа
  - [x] 17.1 Вести названия страниц в json-файле
  - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
+ - [x] 17.3 Вывести версию приложения в сайдбаре админа
 
 18. Семантическая разметка
  - [x] 18.1 Добавить классы контейнерам и вынести стили в CSS

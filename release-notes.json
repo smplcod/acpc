@@ -1525,6 +1525,28 @@
           "scope": "a11y"
         }
       ]
+    },
+    {
+      "version": "0.0.61",
+      "date": "2025-08-31",
+      "time": "06:18:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added application version above toggle in admin sidebar",
+          "weight": 20,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Выведена версия приложения над переключателем в сайдбаре админа",
+          "weight": 20,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2941,6 +2963,28 @@
           "weight": 30,
           "type": "feat",
           "scope": "a11y"
+        }
+      ]
+    },
+    {
+      "version": "0.0.61",
+      "date": "2025-08-31",
+      "time": "06:18:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Added application version above toggle in admin sidebar",
+          "weight": 20,
+          "type": "feat",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Выведена версия приложения над переключателем в сайдбаре админа",
+          "weight": 20,
+          "type": "feat",
+          "scope": "admin-ui"
         }
       ]
     }

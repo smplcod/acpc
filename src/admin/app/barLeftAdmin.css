@@ -85,3 +85,7 @@
   gap: 4px;
   cursor: pointer;
 }
+
+.sidebar-version {
+  text-align: right;
+}

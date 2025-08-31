@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
+import pkg from '../../../package.json'
 import urlTree from '../../urlTree.json'
 import './barLeftAdmin.css'
 
@@ -111,6 +112,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
               ))}
             </ul>
           </nav>
+          <div className="sidebar-footer sidebar-version">v{pkg.version}</div>
           <div className="sidebar-footer">
             <label>
               <input type="checkbox" checked={showNames} onChange={toggleNames} />
