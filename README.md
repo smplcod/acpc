@@ -3,6 +3,7 @@ Current version: 0.0.88
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
+- 404 page for non-existent routes
 - Admin login at `/admin/login` using env credentials
 - Authenticated admins visiting `/admin/login` are redirected back to the previous page
 - Admin access to dashboard and analytics graphs

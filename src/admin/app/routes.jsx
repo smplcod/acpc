@@ -5,6 +5,7 @@ import AdminGraphGrowthPage from '../pages/adminGraphGrowthPage.jsx'
 import AdminGraphEngagementPage from '../pages/adminGraphEngagementPage.jsx'
 import AdminGraphReliabilityPage from '../pages/adminGraphReliabilityPage.jsx'
 import AdminGraphRevenuePage from '../pages/adminGraphRevenuePage.jsx'
+import NotFoundPage from '../../notFoundPage.jsx'
 
 const adminRoutes = [
   { path: 'login', element: <AdminLoginPage />, label: 'Login' },
@@ -13,7 +14,8 @@ const adminRoutes = [
   { path: 'growth', element: <AdminGraphGrowthPage />, label: 'Growth' },
   { path: 'engagement', element: <AdminGraphEngagementPage />, label: 'Engagement' },
   { path: 'reliability', element: <AdminGraphReliabilityPage />, label: 'Reliability' },
-  { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' }
+  { path: 'revenue', element: <AdminGraphRevenuePage />, label: 'Revenue' },
+  { path: "*", element: <NotFoundPage /> },
 ]
 
 export default adminRoutes
