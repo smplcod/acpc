@@ -1913,6 +1913,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.77",
+      "date": "2025-09-01",
+      "time": "11:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin layout overflowing after sidebar toggle",
+          "weight": 40,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено переполнение макета после переключения сайдбара админа",
+          "weight": 40,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3717,6 +3739,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.77",
+      "date": "2025-09-01",
+      "time": "11:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed admin layout overflowing after sidebar toggle",
+          "weight": 40,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено переполнение макета после переключения сайдбара админа",
+          "weight": 40,
+          "type": "fix",
+          "scope": "layout"
         }
       ]
     }
