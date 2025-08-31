@@ -79,6 +79,13 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     localStorage.setItem('barLeftAdminShowNames', String(next))
   }
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'))
+    }, 310)
+    return () => clearTimeout(timer)
+  }, [isCollapsed])
+
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
