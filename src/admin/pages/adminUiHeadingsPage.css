@@ -1,0 +1,312 @@
+.heading-demo {
+  margin-bottom: 16px;
+}
+
+.heading-demo .acph-toggle {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 6px;
+  font-size: 0;
+  line-height: 1.2em;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.heading-demo .acph-toggle::before,
+.heading-demo .acph-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-demo .acph-toggle::after {
+  display: none;
+}
+
+/* Variant 1: square plus/minus */
+.variant-1 .acph-toggle {
+  border: 1px solid currentColor;
+}
+.variant-1 .acph-toggle::before {
+  content: '+';
+  font-size: 0.8em;
+}
+.variant-1 .acph-toggle[aria-expanded="true"]::before {
+  content: '−';
+}
+
+/* Variant 2: circle plus/minus */
+.variant-2 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-2 .acph-toggle::before {
+  content: '+';
+  font-size: 0.8em;
+}
+.variant-2 .acph-toggle[aria-expanded="true"]::before {
+  content: '−';
+}
+
+/* Variant 3: filled square plus/minus */
+.variant-3 .acph-toggle {
+  background: currentColor;
+  color: var(--color-bg);
+}
+.variant-3 .acph-toggle::before {
+  content: '+';
+  font-size: 0.8em;
+  color: var(--color-bg);
+}
+.variant-3 .acph-toggle[aria-expanded="true"]::before {
+  content: '−';
+}
+
+/* Variant 4: filled circle plus/minus */
+.variant-4 .acph-toggle {
+  background: currentColor;
+  color: var(--color-bg);
+  border-radius: 50%;
+}
+.variant-4 .acph-toggle::before {
+  content: '+';
+  font-size: 0.8em;
+  color: var(--color-bg);
+}
+.variant-4 .acph-toggle[aria-expanded="true"]::before {
+  content: '−';
+}
+
+/* Variant 5: bare plus/minus */
+.variant-5 .acph-toggle::before {
+  content: '+';
+  font-size: 0.8em;
+}
+.variant-5 .acph-toggle[aria-expanded="true"]::before {
+  content: '−';
+}
+
+/* Variant 6: bare arrow */
+.variant-6 .acph-toggle::before {
+  content: '▶';
+  font-size: 0.8em;
+}
+.variant-6 .acph-toggle[aria-expanded="true"]::before {
+  content: '▼';
+}
+
+/* Variant 7: square arrow */
+.variant-7 .acph-toggle {
+  border: 1px solid currentColor;
+}
+.variant-7 .acph-toggle::before {
+  content: '▶';
+  font-size: 0.8em;
+}
+.variant-7 .acph-toggle[aria-expanded="true"]::before {
+  content: '▼';
+}
+
+/* Variant 8: circle arrow */
+.variant-8 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-8 .acph-toggle::before {
+  content: '▶';
+  font-size: 0.8em;
+}
+.variant-8 .acph-toggle[aria-expanded="true"]::before {
+  content: '▼';
+}
+
+/* Variant 9: bare chevron */
+.variant-9 .acph-toggle::before {
+  content: '>'; 
+  font-size: 0.8em;
+}
+.variant-9 .acph-toggle[aria-expanded="true"]::before {
+  content: 'v';
+}
+
+/* Variant 10: square chevron */
+.variant-10 .acph-toggle {
+  border: 1px solid currentColor;
+}
+.variant-10 .acph-toggle::before {
+  content: '>';
+  font-size: 0.8em;
+}
+.variant-10 .acph-toggle[aria-expanded="true"]::before {
+  content: 'v';
+}
+
+/* Variant 11: circle chevron */
+.variant-11 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-11 .acph-toggle::before {
+  content: '>';
+  font-size: 0.8em;
+}
+.variant-11 .acph-toggle[aria-expanded="true"]::before {
+  content: 'v';
+}
+
+/* Variant 12: bare triangle */
+.variant-12 .acph-toggle::before {
+  width: 0;
+  height: 0;
+  border-left: 6px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.variant-12 .acph-toggle[aria-expanded="true"]::before {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid currentColor;
+  border-bottom: 0;
+}
+
+/* Variant 13: square triangle */
+.variant-13 .acph-toggle {
+  border: 1px solid currentColor;
+}
+.variant-13 .acph-toggle::before {
+  width: 0;
+  height: 0;
+  border-left: 6px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.variant-13 .acph-toggle[aria-expanded="true"]::before {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid currentColor;
+  border-bottom: 0;
+}
+
+/* Variant 14: circle triangle */
+.variant-14 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-14 .acph-toggle::before {
+  width: 0;
+  height: 0;
+  border-left: 6px solid currentColor;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.variant-14 .acph-toggle[aria-expanded="true"]::before {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid currentColor;
+  border-bottom: 0;
+}
+
+/* Variant 15: plus to cross */
+.variant-15 .acph-toggle::before,
+.variant-15 .acph-toggle::after {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: currentColor;
+}
+.variant-15 .acph-toggle::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.variant-15 .acph-toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.variant-15 .acph-toggle[aria-expanded="true"]::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.variant-15 .acph-toggle[aria-expanded="true"]::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Variant 16: square plus to minus */
+.variant-16 .acph-toggle {
+  border: 1px solid currentColor;
+}
+.variant-16 .acph-toggle::before,
+.variant-16 .acph-toggle::after {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: currentColor;
+}
+.variant-16 .acph-toggle::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.variant-16 .acph-toggle::after {
+  transform: translate(-50%, -50%);
+}
+.variant-16 .acph-toggle[aria-expanded="true"]::before {
+  display: none;
+}
+
+/* Variant 17: circle plus to minus */
+.variant-17 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-17 .acph-toggle::before,
+.variant-17 .acph-toggle::after {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: currentColor;
+}
+.variant-17 .acph-toggle::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.variant-17 .acph-toggle::after {
+  transform: translate(-50%, -50%);
+}
+.variant-17 .acph-toggle[aria-expanded="true"]::before {
+  display: none;
+}
+
+/* Variant 18: rotating line */
+.variant-18 .acph-toggle::before {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: currentColor;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.variant-18 .acph-toggle[aria-expanded="false"]::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Variant 19: bracket plus/minus */
+.variant-19 .acph-toggle::before {
+  content: '[+]';
+  font-size: 0.8em;
+}
+.variant-19 .acph-toggle[aria-expanded="true"]::before {
+  content: '[-]';
+}
+
+/* Variant 20: circle dot to line */
+.variant-20 .acph-toggle {
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.variant-20 .acph-toggle::before {
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 50%;
+}
+.variant-20 .acph-toggle[aria-expanded="true"]::before {
+  width: 8px;
+  height: 2px;
+  border-radius: 0;
+}
