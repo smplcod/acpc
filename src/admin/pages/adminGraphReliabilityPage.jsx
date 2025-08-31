@@ -61,22 +61,22 @@ export default function AdminGraphReliabilityPage() {
   <section className="reliability-page">
       <h1>{heading}</h1>
       <section className="reliability-page__content">
-        <h3>Error rate</h3>
+        <h2>Error rate</h2>
         <div>
           <Line data={errRateData} />
           <p>Goal: stability per session | Source: activity | Formula: errors/sessions | Period: all dates</p>
         </div>
-        <h3>Error codes stack</h3>
+        <h2>Error codes stack</h2>
         <div>
           <Line data={stackedErrorsData} options={{ stacked: true }} />
           <p>Goal: incident structure | Source: activity | Formula: errors by code | Period: all dates</p>
         </div>
-        <h3>Pareto of errors</h3>
+        <h2>Pareto of errors</h2>
         <div>
           <Bar data={paretoData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
           <p>Goal: 80/20 principle | Source: activity | Period: all dates</p>
         </div>
-        <h3>Top error pages</h3>
+        <h2>Top error pages</h2>
         <div>
           <Bar data={pagesData} options={{ indexAxis: 'y' }} />
           <p>Goal: problematic pages | Source: events | Formula: type=error aggregated | Period: all dates</p>
