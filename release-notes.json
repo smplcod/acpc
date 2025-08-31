@@ -2167,6 +2167,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.88",
+      "date": "2025-09-02",
+      "time": "10:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Restricted sidebar outside-click collapse to mobile devices",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Ограничено сворачивание сайдбара по клику вне только мобильными устройствами",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ]
     }
   ],
   "releases": [
@@ -4225,6 +4247,28 @@
           "weight": 30,
           "type": "fix",
           "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.88",
+      "date": "2025-09-02",
+      "time": "10:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Restricted sidebar outside-click collapse to mobile devices",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Ограничено сворачивание сайдбара по клику вне только мобильными устройствами",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
         }
       ]
     }
