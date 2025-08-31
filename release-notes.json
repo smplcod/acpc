@@ -2046,6 +2046,28 @@
         }
       ]
     }
+    ,{
+      "version": "0.0.83",
+      "date": "2025-09-01",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Handled sidebar width changes to prevent admin layout overflow",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Обработаны изменения ширины сайдбара, чтобы предотвратить переполнение макета админа",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ]
+    }
   ],
   "releases": [
     {
@@ -3981,6 +4003,28 @@
           "weight": 20,
           "type": "fix",
           "scope": "ui"
+        }
+      ]
+    }
+    ,{
+      "version": "0.0.83",
+      "date": "2025-09-01",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Handled sidebar width changes to prevent admin layout overflow",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Обработаны изменения ширины сайдбара, чтобы предотвратить переполнение макета админа",
+          "weight": 30,
+          "type": "fix",
+          "scope": "layout"
         }
       ]
     }
