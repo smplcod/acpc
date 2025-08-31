@@ -1,0 +1,322 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 240px;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 32px);
+}
+
+.login-page__content {
+}
+
+.login-error {
+  color: red;
+}
+
+.login-form input,
+.login-form button {
+  padding: 4px 8px;
+}
+
+.variant-2 {
+  align-items: center;
+}
+
+.variant-3 {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.variant-4 {
+  background: #f0f0f0;
+  padding: 8px;
+}
+
+.variant-5 {
+  gap: 16px;
+}
+
+.variant-6 {
+  flex-direction: row;
+  align-items: center;
+}
+
+.variant-6 input {
+  flex: 1;
+}
+
+.variant-7 {
+  background: #222;
+  padding: 8px;
+}
+
+.variant-7 input,
+.variant-7 button {
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+.variant-8 input {
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.variant-9 input,
+.variant-9 button {
+  border-radius: 8px;
+}
+
+.variant-10 {
+  border: 1px dashed #666;
+  padding: 8px;
+  background: #fafafa;
+}
+
+.variant-11 {
+  border-left: 4px solid #000;
+  padding-left: 8px;
+}
+
+.variant-12 {
+  background: #fff0f0;
+  padding: 8px;
+}
+
+.variant-13 {
+  text-align: right;
+}
+
+.variant-14 {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+}
+
+.variant-15 {
+  gap: 4px;
+}
+
+.variant-15 input,
+.variant-15 button {
+  width: 100%;
+}
+
+.variant-16 {
+  flex-direction: row-reverse;
+}
+
+.variant-17 input {
+  text-transform: uppercase;
+}
+
+.variant-18 {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.variant-19 {
+  border: 2px solid #007bff;
+  padding: 8px;
+}
+
+.variant-20 {
+  background: #333;
+  color: #fff;
+  padding: 8px;
+}
+
+.variant-20 input,
+.variant-20 button {
+  background: #444;
+  color: #fff;
+  border: none;
+}
+
+.variant-21 {
+  align-items: flex-end;
+}
+
+.variant-22 input {
+  border: 2px solid red;
+}
+
+.variant-23 {
+  background: linear-gradient(#eef, #cce);
+  padding: 8px;
+}
+
+.variant-24 button {
+  width: 100%;
+}
+
+.variant-25 {
+  gap: 20px;
+}
+
+.variant-26 input {
+  font-style: italic;
+}
+
+.variant-27 {
+  border-top: 4px solid #000;
+  padding-top: 8px;
+}
+
+.variant-28 {
+  display: grid;
+  gap: 8px;
+}
+
+.variant-29 input {
+  background: #f9f9f9;
+}
+
+.variant-30 button {
+  border-radius: 9999px;
+}
+
+.tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.tags-variant-2 {
+  justify-content: center;
+}
+
+.tags-variant-3 span {
+  font-weight: bold;
+}
+
+.tags-variant-4 span {
+  color: #007bff;
+}
+
+.tags-variant-5 span {
+  text-decoration: underline;
+}
+
+.tags-variant-6 span {
+  background: #eee;
+  padding: 2px 6px;
+}
+
+.tags-variant-7 span {
+  background: #222;
+  color: #fff;
+  padding: 2px 6px;
+}
+
+.tags-variant-8 span {
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.tags-variant-9 {
+  flex-direction: column;
+}
+
+.tags-variant-10 span {
+  font-size: 1.2em;
+}
+
+.tags-variant-11 span {
+  text-transform: uppercase;
+}
+
+.tags-variant-12 span {
+  border-bottom: 1px dotted #333;
+}
+
+.tags-variant-13 span {
+  background: #fffbdd;
+  padding: 4px 10px;
+}
+
+.tags-variant-14 span {
+  background: linear-gradient(#eee, #ccc);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.tags-variant-15 span {
+  letter-spacing: 2px;
+}
+
+.tags-variant-16 {
+  justify-content: space-between;
+}
+
+.tags-variant-17 span {
+  color: #e63946;
+}
+
+.tags-variant-18 span {
+  background: #ddd;
+  border-radius: 9999px;
+  padding: 2px 8px;
+}
+
+.tags-variant-19 span {
+  font-style: italic;
+}
+
+.tags-variant-20 span {
+  background: #000;
+  color: #fff;
+  text-shadow: 1px 1px 0 #333;
+  padding: 2px 6px;
+}
+
+.tags-variant-21 span {
+  border: 1px solid #000;
+  padding: 2px 6px;
+}
+
+.tags-variant-22 {
+  gap: 8px;
+}
+
+.tags-variant-23 span {
+  background: #eef;
+}
+
+.tags-variant-24 span {
+  background: #cfc;
+  color: #000;
+}
+
+.tags-variant-25 span {
+  border: 1px solid #666;
+  border-radius: 9999px;
+  padding: 2px 8px;
+}
+
+.tags-variant-26 {
+  flex-direction: row-reverse;
+}
+
+.tags-variant-27 span {
+  font-variant: small-caps;
+}
+
+.tags-variant-28 span {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.tags-variant-29 span {
+  background: #007bff;
+  color: #fff;
+}
+
+.tags-variant-30 {
+  justify-content: flex-end;
+}

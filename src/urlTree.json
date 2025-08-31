@@ -10,7 +10,14 @@
       { "path": "/admin/growth", "name": "Growth", "children": [] },
       { "path": "/admin/engagement", "name": "Engagement", "children": [] },
       { "path": "/admin/reliability", "name": "Reliability", "children": [] },
-      { "path": "/admin/revenue", "name": "Revenue", "children": [] }
+      { "path": "/admin/revenue", "name": "Revenue", "children": [] },
+      {
+        "path": "/admin/ui",
+        "name": "UI",
+        "children": [
+          { "path": "/admin/ui/charts", "name": "Charts", "children": [] }
+        ]
+      }
     ]
   }
 ]

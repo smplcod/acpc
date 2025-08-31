@@ -102,7 +102,7 @@ export default function BarLeftUser() {
             end
             className={({ isActive }) => (isActive ? 'active' : undefined)}
           >
-            {n.name}
+            {n.path}
           </NavLink>
           {n.children.length > 0 && renderTree(n.children)}
         </li>

@@ -1,11 +1,11 @@
 # ACP+Charts now
-Current version: 0.0.86
+Current version: 0.0.85
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
 - Authenticated admins visiting `/admin/login` are redirected back to the previous page
-- Admin access to dashboard and analytics graphs
+- Admin access to dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -15,10 +15,10 @@ Current version: 0.0.86
 - Admin pages (except the dashboard) display "Subpages" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
-- Navigation sidebars display link names instead of raw URLs
 - Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
 - Detailed analytics pages at `/admin/*` for growth, engagement, reliability, and revenue
 - Analytics charts use collapsible h2 headings for easier browsing
+- Chart.js users charts at `/admin/ui/charts`
 
 # ACP+Charts сomming soon
 ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
@@ -179,12 +179,6 @@ _Only this section of the readme can be maintained using Russian language_
 
 34. Sidebar height
  - [x] 34.1 Expand sidebar height to match main content
-
-35. Remove UI demo pages
- - [x] 35.1 Delete /admin/ui and /admin/ui/charts pages and references
-
-36. Sidebar names
- - [x] 36.1 Always show names in sidebars and remove admin sidebar toggle
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
