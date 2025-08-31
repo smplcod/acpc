@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.77
+Current version: 0.0.78
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -17,7 +17,7 @@ Current version: 0.0.77
 - User and admin sidebars highlight the active link
 - Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
 - Detailed analytics pages at `/admin/*` for growth, engagement, reliability, and revenue
-- Analytics charts use collapsible h3 headings for easier browsing
+- Analytics charts use collapsible h2 headings for easier browsing
 - Chart.js users charts at `/admin/ui/charts`
 
 # ACP+Charts сomming soon

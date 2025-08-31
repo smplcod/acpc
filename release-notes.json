@@ -1935,6 +1935,28 @@
           "scope": "layout"
         }
       ]
+    },
+    {
+      "version": "0.0.78",
+      "date": "2025-09-01",
+      "time": "12:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Promoted metric headings from h3 to h2 on admin pages",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Повышены заголовки метрик с h3 до h2 на админских страницах",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3761,6 +3783,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "layout"
+        }
+      ]
+    },
+    {
+      "version": "0.0.78",
+      "date": "2025-09-01",
+      "time": "12:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Promoted metric headings from h3 to h2 on admin pages",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Повышены заголовки метрик с h3 до h2 на админских страницах",
+          "weight": 20,
+          "type": "fix",
+          "scope": "ui"
         }
       ]
     }
