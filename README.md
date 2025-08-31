@@ -1,11 +1,11 @@
 # ACP+Charts now
-Current version: 0.0.68
+Current version: 0.0.67
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
 - Admin login at `/admin/login` using env credentials
 - Authenticated admins visiting `/admin/login` are redirected back to the previous page
-- Admin access to dashboard, analytics graphs, and UI demos of 30 forms, 30 hashtags, and 20 spoiler styles
+- Admin access to dashboard, analytics graphs, and UI demos of 30 forms and 30 hashtags
 - Logout at `/admin/logout` with redirect for unauthenticated routes
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
@@ -92,7 +92,6 @@ _Only this section of the readme can be maintained using Russian language_
  - [x] 11.7 Добавить ещё 10 вариантов отображения хэштегов.
 
  - [x] 11.8 Сделать текущим вариантом формы №30.
- - [x] 11.9 Добавить 20 вариантов дизайна спойлеров.
 
 12. Code organization
  - [x] 12.1 Разделить код на /src/user и /src/admin с отдельными app и pages.
