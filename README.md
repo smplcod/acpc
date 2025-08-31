@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.89
+Current version: 0.0.88
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -19,3 +19,253 @@ Current version: 0.0.89
 - Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
 - Detailed analytics pages at `/admin/*` for growth, engagement, reliability, and revenue
 - Analytics charts use collapsible h2 headings for easier browsing
+
+# ACP+Charts сomming soon
+ACP+Charts will grow into an admin dashboard that visualizes application metrics with interactive charts. Administrators will be able to monitor key indicators, manage data, and explore analytics through a responsive web interface built with React and Vite. The repository currently includes placeholder pages while chart components are under active development.
+
+# Features ToDo
+_Only this section of the readme can be maintained using Russian language_
+1. Mock-данные
+  - [x] 1.1 Узнать, что такое мок-данные
+  - [ ] 1.2 Создать мок-данные (пользователи, роли, активность)
+  - [ ] 1.3 Определить схему: user{id, name, role, email, active}, activity{date, logins, sessions, errors, conversion}
+  - [x] 1.4 Расширить мок-данные активности посещениями, регистрациями и кодами ошибок
+ 
+2. Авторизация
+  - [x] 2.1 Создать страницу /admin/login .
+ - [x] 2.2 Использовать переменные окружения для хранения данных авторизации администратора.
+  - [x] 2.3 Перенаправление на страницу /admin при успешном вводе логина и пароля на /admin/login .
+  - [x] 2.4 Проверять авторизацию на всех страницах /admin/*. Если нет авторизации, то редирект на /admin/login .
+  - [x] 2.5 Добавить страницу /admin/logout, сообщение об успешной авторизации и ссылку на выход.
+  - [x] 2.6 Возвращать на запрошенную страницу /admin/* после успешной авторизации.
+  - [x] 2.7 Обновить сообщение об успешной авторизации на "User admin is authenticated. You can log out."
+  - [x] 2.8 Перенаправлять авторизованного админа со страницы /admin/login на предыдущую страницу
+  - [x] 2.9 Исправить авторизацию и редирект администратора
+
+3. Графики
+  - [x] 3.1 Создать страницы /admin/charts/users и /admin/charts/users/recharts с 20 вариантами графиков на Recharts. После каждого графика добавить описание и пример кода в textarea. Данные автоматически берутся из public/mocks/users.json.
+  - [x] 3.2 Создать страницу /admin/charts/users/chartjs2 и вывести там 10 вариантов графиков bar/line/area и остальные при помощи Chart.js (react-chartjs-2). После каждого из них привести внутри просторной textarea пример кода для этого графика. Данные для графиков должны автоматически использоваться из public/mocks/users.json.
+  - [x] 3.3 Исправить невидимые графики на /admin/charts/users/recharts.
+  - [x] 3.4 Пронумеровать варианты графиков в заголовках на /admin/charts/users/recharts.
+  - [x] 3.5 Создать страницу /admin/charts/users/explain и описать ключи из users.json.
+  - [x] 3.6 Добавить страницу /admin с мини-графиками.
+  - [x] 3.7 Реализовать страницы /admin/growth, /admin/engagement, /admin/reliability, /admin/revenue с реальными графиками и подписями.
+
+6. Удобства
+ - [x] 6.1 Изучить release-notes-howto.md. Создать файл release-notes.json и начать его вести. Указать в readme правила по ведению release-notes.json для каждого раза.
+  - [ ] 6.2 Создать страницу /release-notes где задействовать release-notes.json вверху страницы расположить sticky компонент для управления отображением релизов(HMR). В компоненте распложить:
+  - - [x] 6.2.0 Реализовать базовый вывод релизов по времени.
+  - - [ ] 6.2.1 Переключатель: релизы только по времени или релизы только по дням или кратчайшие релизы. Состояние переключателя при переключение сохранять в localstorage. (Создать /servises/localstorageHelper.jsx для лаконичного взаимодействия с localstorage.)
+  - - [x] 6.2.2 Исправить отображение содержимого на /release-notes.
+  - - [x] 6.2.3 Настроить вывод даты в h2, версии и времени в h3 и добавить заметку о часовом поясе.
+  - - [x] 6.2.4 Упростить вывод времени и часового пояса на /release-notes.
+  - [x] 6.3 Добавить type и scope к записям release notes и вывести их на странице /release-notes.
+  - [x] 6.4 Добавить правило для ботов в readme, что если есть вложенные страницы, то использовать специальный компонент для вывода подстраниц согласно схеме роутинга. Хранить этот компонент в отдельном файле.
+
+7. Recommendations from bot
+  - 7.15 Принципы
+    - Асинхронность
+    - Try-catch
+8. Меню
+ - [x] 8.1 Создать компонент barLeftUser со ссылками на все страницы.
+  - [x] 8.2 Создать компонент barLeftAdmin (пустой).
+ - [x] 8.3 Подключить barLeftUser на всех страницах кроме /admin/*, barLeftAdmin на /admin/*.
+    - [x] 8.4 Уточнить порядок и расстояния иконок в сайдбаре пользователя.
+ - [x] 8.5 Реализовать функциональность barLeftAdmin.
+ - [x] 8.6 Добавить подсказки к иконкам и ссылку-домик в сайдбары.
+ - [x] 8.7 Подсветить активные ссылки в сайдбарах пользователя и админа.
+
+9. Документация
+ - [x] 9.1 Перечислить все используемые библиотеки в readme.
+ - [x] 9.2 Добавить .env.example с переменными авторизации администратора.
+
+10. Тёмная тема
+ - [x] 10.1 Распознавать prefers-color-scheme для автоматического переключения темы.
+ - [x] 10.2 Применить тёмную палитру для сайдбара и интерфейса.
+
+11. UI каталог
+ - [x] 11.1 Создать страницу /admin/ui с 10 вариантами форм авторизации.
+ - [x] 11.2 Добавить 10 вариантов отображения хэштегов.
+ - [x] 11.3 Добавить ещё 10 вариантов форм авторизации.
+ - [x] 11.4 Добавить ещё 10 вариантов отображения хэштегов.
+
+ - [x] 11.5 Добавить пометку "current choice" для выбранных вариантов.
+ - [x] 11.6 Добавить ещё 10 вариантов форм авторизации.
+ - [x] 11.7 Добавить ещё 10 вариантов отображения хэштегов.
+
+ - [x] 11.8 Сделать текущим вариантом формы №30.
+
+12. Code organization
+ - [x] 12.1 Разделить код на /src/user и /src/admin с отдельными app и pages.
+
+13. Главная страница
+ - [x] 13.1 Добавить иконку перед названием
+ - [x] 13.2 Заменить текст приветствия
+ - [x] 13.3 Обновить ссылку /admin
+
+# 14. Правки оформления
+ - [x] 14.1 Изменить заголовок админских страниц на "| Admin Control Panel |"
+- [x] 14.2 Уменьшить глобальный размер h1 до 2.4em
+- [x] 14.3 Добавить префикс "Subpages" перед списком подстраниц в /admin/*
+- [x] 14.4 Скрывать заголовок Subpages при отсутствии подстраниц.
+
+# 15. Маршруты
+ - [x] 15.1 Удалить страницу /admin/charts и убрать сегмент dev из всех адресов админки.
+ - [x] 15.2 Перенести панель графиков на /admin и сократить адреса метрик до /admin/growth, /admin/engagement, /admin/reliability, /admin/revenue.
+
+16. Collapsible headings
+ - [x] 16.1 Enable collapsible headings in admin pages
+ - [x] 16.2 Adjust toggle size for h3 and remove hover border
+ - [x] 16.3 Увеличить и приподнять треугольники сворачивания для h2 и h3
+
+17. Сайдбар админа
+ - [x] 17.1 Вести названия страниц в json-файле
+ - [x] 17.2 Добавить переключатель URL/Name в админском сайдбаре
+ - [x] 17.3 Вывести версию приложения в сайдбаре админа
+ - [x] 17.4 Убрать ссылки /admin, /admin/growth, /admin/engagement, /admin/reliability, /admin/revenue, /admin/ui, /admin/ui/charts из сайдбара
+ - [x] 17.5 Разместить /admin/logout над версией внизу сайдбара
+
+18. Семантическая разметка
+ - [x] 18.1 Добавить классы контейнерам и вынести стили в CSS
+
+19. Контейнеры
+ - [x] 19.1 Удалить лишние контейнеры div на страницах
+
+20. Семантика main
+ - [x] 20.1 Удалить вложенные контейнеры main из страниц
+
+21. Фокус
+  - [x] 21.1 Отключить обводку при фокусе
+
+22. Заголовки
+ - [x] 22.1 Удалить сегмент " | ACPC" из h1 всех страниц
+
+23. Admin subpages
+ - [x] 23.1 Hide Subpages on the dashboard
+
+24. Admin sidebar links
+ - [x] 24.1 Restore metric links in the admin sidebar
+ - [x] 24.2 Remove root and login links from the admin sidebar
+
+25. Growth page
+ - [x] 25.1 Add collapsible headings to /admin/growth
+
+26. Admin sidebar icons
+ - [x] 26.1 Add dashboard link to admin sidebar
+ - [x] 26.2 Replace header icons with links to growth, engagement, reliability, and revenue
+
+27. User sidebar
+ - [x] 27.1 Remove extra header icons from user sidebar
+
+28. Metrics pages
+ - [x] 28.1 Persist collapsible state in localStorage
+ - [x] 28.2 Start metric headings collapsed by default
+
+29. Admin sidebar overflow
+ - [x] 29.1 Fix layout width after collapsing and expanding sidebar
+ - [x] 29.2 Prevent horizontal scroll after collapsing and expanding sidebar again
+
+30. Admin sidebar indentation
+ - [x] 30.1 Indent nested links relative to parent regardless of URL or name mode
+
+31. Collapsible headings
+ - [x] 31.1 Toggle sections by clicking heading
+ - [x] 31.2 Fix toggle button for collapsible headings
+
+32. Responsive dashboard
+ - [x] 32.1 Stack dashboard charts vertically on small screens
+
+33. Sidebar toggle logic
+ - [x] 33.1 Fix sidebar toggle logic
+
+34. Sidebar height
+ - [x] 34.1 Expand sidebar height to match main content
+
+35. UI catalog removal
+ - [x] 35.1 Delete /admin/ui and /admin/ui/charts pages
+
+36. Sidebar names
+ - [x] 36.1 Display names instead of URLs in user and admin sidebars
+ - [x] 36.2 Remove admin sidebar name/URL toggle
+
+# Bot instructions
+1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
+2. Maintain a hierarchical task list with consistent numbering.
+   - Checkboxes are only for sub-tasks (not for top-level tasks).
+   - Top-level tasks must be numbered without checkboxes.
+3. Always add nested sub-tasks under “Recommendations from Codex” when future steps are discovered during work.
+4. Add new tasks for any user-requested changes.
+5. Mark completed tasks with a checked box; leave incomplete ones unchecked.
+6. Keep "Features ToDo" up to date whenever task statuses change.
+7. Keep the "ACP+Charts now" and "ACP+Charts сomming soon" sections up to date.
+8. Maintain the "Принципы" subsection under "Recommendations from bot":
+   - List each principle as a bullet item.
+   - Nest sub-tasks with checkboxes under the relevant principle when a specific implementation is required.
+9. Place components and their state close to where they’re used; permit only one level of props drilling (parent→child); if data is needed deeper or across branches, use Context or reduser or both.
+10. After completing a task, suggest the next task to complete (don't add this to readme).
+11. Keep the "ACP+Charts now" section up to date by showing only what is already available in the project from the user's perspective. Display the current version: {release_number}.
+12. If there is no indication what language the page should be in, use English.
+13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
+14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
+15. The admin layout automatically renders the `SubPages` component at the end of `/admin/*` routes except the dashboard root `/admin`; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages" heading only when subpages exist.
+16. After each task, re-check navigation (see Verification steps).
+
+# Verification steps
+1. Open /admin, /admin/section, /admin/section/subsection — confirm only nested routes show "Subpages" at the bottom with the full tree.
+2. Check the admin left sidebar — all URLs present and shown flat (no nested lists).
+3. Check the public site left sidebar — all URLs present except /admin and its descendants.
+4. After any page structure change, repeat steps 1–3.
+
+# Project details
+
+## Constraints
+- JavaScript only (no TypeScript).
+- No remote databases and no custom backend.
+- Demo data must come from local sources (in-memory, JSON, or localStorage).
+- Every page uses a single `<h1>` mirrored in the document title; document titles append " | ACPC".
+
+## Tech and infrastructure
+- React + Vite (fast HMR).
+- Railway is our hosting.
+
+## Libraries
+
+**Dependencies**
+
+- react 19.1.1
+- react-dom 19.1.1
+- react-feather 2.0.10
+- react-router-dom 7.8.2
+- recharts 2.15.4
+- chart.js 4.5.0
+- react-chartjs-2 5.3.0
+- chartjs-plugin-zoom 2.2.0
+- chartjs-chart-treemap 3.1.0
+
+**Dev dependencies**
+
+- @eslint/js 9.33.0
+- @types/react 19.1.10
+- @types/react-dom 19.1.7
+- @vitejs/plugin-react 5.0.0
+- eslint 9.33.0
+- eslint-plugin-react-hooks 5.2.0
+- eslint-plugin-react-refresh 0.4.20
+- globals 16.3.0
+- vite 7.1.2
+
+## Code duplication log (because admin is an "another site")
+- `src/user/app/layout.jsx` duplicated in `src/admin/app/layout.jsx`
+- `src/user/app/layout.css` duplicated in `src/admin/app/layout.css`
+- `src/user/app/barLeftUser.jsx` duplicated in `src/admin/app/barLeftAdmin.jsx`
+- `src/user/app/barLeftUser.css` duplicated in `src/admin/app/barLeftAdmin.css`
+
+## Release notes
+- File `release-notes.json` stores two arrays: `releaseNotes` and `releases`.
+- `releaseNotes` is a chronological list that includes both release entries and daily summary entries.
+- Release entries contain `version` (semantic MAJOR.MINOR.PATCH, bump PATCH only), `date` (YYYY-MM-DD), `time` (HH:MM:SS), `timezone` (always `Asia/Bishkek`), and bilingual `changes` with weights from 10 to 90.
+- Each change item also includes `type` (feat, fix, docs, etc.) and `scope` (area affected).
+- Descriptions use past tense and appear in both English (`changes`) and Russian (`changes-ru`).
+- After all releases for a day, add a summary entry with `time` set to `summary` and provide `summary`, `summary-ru`, `ultrashort-summary`, and `ultrashort-summary-ru` arrays.
+- Keep all entries ordered by date and time.
+- `releases` mirrors only the release entries and must stay in sync with `releaseNotes`.

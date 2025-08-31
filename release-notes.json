@@ -2189,28 +2189,6 @@
           "scope": "sidebar"
         }
       ]
-    },
-    {
-      "version": "0.0.89",
-      "date": "2025-09-02",
-      "time": "10:30:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Trimmed README to current features",
-          "weight": 20,
-          "type": "docs",
-          "scope": "readme"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Сокращён README до текущих возможностей",
-          "weight": 20,
-          "type": "docs",
-          "scope": "readme"
-        }
-      ]
     }
   ],
   "releases": [
@@ -4291,28 +4269,6 @@
           "weight": 30,
           "type": "fix",
           "scope": "sidebar"
-        }
-      ]
-    },
-    {
-      "version": "0.0.89",
-      "date": "2025-09-02",
-      "time": "10:30:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Trimmed README to current features",
-          "weight": 20,
-          "type": "docs",
-          "scope": "readme"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Сокращён README до текущих возможностей",
-          "weight": 20,
-          "type": "docs",
-          "scope": "readme"
         }
       ]
     }
