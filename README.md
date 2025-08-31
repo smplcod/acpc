@@ -254,7 +254,7 @@ _Only this section of the readme can be maintained using Russian language_
 - globals 16.3.0
 - vite 7.1.2
 
-## Code duplication log
+## Code duplication log (because admin is an "another site")
 - `src/user/app/layout.jsx` duplicated in `src/admin/app/layout.jsx`
 - `src/user/app/layout.css` duplicated in `src/admin/app/layout.css`
 - `src/user/app/barLeftUser.jsx` duplicated in `src/admin/app/barLeftAdmin.jsx`
