@@ -557,7 +557,7 @@ export default function AdminUiChartsPage() {
   }
 
   return (
-    <main className="admin-ui-charts-page">
+    <section className="admin-ui-charts-page">
       <h1>{fullTitle}</h1>
       <AuthMessage />
       {chartExamples.map(({ title, description, render, code }) => (
@@ -565,7 +565,7 @@ export default function AdminUiChartsPage() {
           {render()}
         </ChartExample>
       ))}
-    </main>
+    </section>
   )
 }
 

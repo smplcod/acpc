@@ -51,7 +51,7 @@ export default function AdminGraphRevenuePage() {
   }
 
   return (
-    <main className="revenue-page">
+    <section className="revenue-page">
       <h1>{fullTitle}</h1>
       <section className="revenue-page__content">
         <Bar data={funnelData} />
@@ -63,6 +63,6 @@ export default function AdminGraphRevenuePage() {
         <Line data={cumulativeData} />
         <p>Goal: user base growth | Source: users | Period: all dates</p>
       </section>
-    </main>
+    </section>
   )
 }

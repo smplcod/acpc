@@ -7,7 +7,7 @@ export default function MainPage() {
     document.title = 'ACPC'
   }, [])
   return (
-    <main className="main-page">
+    <section className="main-page">
       <h1>
         <img src="/icon.svg" alt="ACPC icon" className="main-page__icon" />
         ACPC
@@ -16,6 +16,6 @@ export default function MainPage() {
       <p>
         Go to <Link to="/admin">/admin</Link> to see.
       </p>
-    </main>
+    </section>
   )
 }

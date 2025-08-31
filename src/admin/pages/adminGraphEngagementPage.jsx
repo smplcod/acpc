@@ -54,7 +54,7 @@ export default function AdminGraphEngagementPage() {
   })()
 
   return (
-    <main className="engagement-page">
+    <section className="engagement-page">
       <h1>{fullTitle}</h1>
       <section className="engagement-page__content">
         <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
@@ -78,6 +78,6 @@ export default function AdminGraphEngagementPage() {
         <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
         <p>Goal: platform profile | Source: users | Period: last 30 days</p>
       </section>
-    </main>
+    </section>
   )
 }

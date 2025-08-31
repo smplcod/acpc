@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.58
+Current version: 0.0.59
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -121,6 +121,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 19. Контейнеры
  - [x] 19.1 Удалить лишние контейнеры div на страницах
+
+20. Семантика main
+ - [x] 20.1 Удалить вложенные контейнеры main из страниц
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
