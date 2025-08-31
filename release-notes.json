@@ -1801,28 +1801,6 @@
           "scope": "ui"
         }
       ]
-    },
-    {
-      "version": "0.0.73",
-      "date": "2025-08-31",
-      "time": "16:30:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Replaced h2 with h3 on analytics pages and fixed collapse range",
-          "weight": 30,
-          "type": "fix",
-          "scope": "ui"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Заменены заголовки h2 на h3 на страницах аналитики и исправлено сворачивание",
-          "weight": 30,
-          "type": "fix",
-          "scope": "ui"
-        }
-      ]
     }
   ],
   "releases": [
@@ -3512,28 +3490,6 @@
       "changes-ru": [
         {
           "description": "Добавлены сворачиваемые заголовки на странице роста",
-          "weight": 30,
-          "type": "fix",
-          "scope": "ui"
-        }
-      ]
-    },
-    {
-      "version": "0.0.73",
-      "date": "2025-08-31",
-      "time": "16:30:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Replaced h2 with h3 on analytics pages and fixed collapse range",
-          "weight": 30,
-          "type": "fix",
-          "scope": "ui"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Заменены заголовки h2 на h3 на страницах аналитики и исправлено сворачивание",
           "weight": 30,
           "type": "fix",
           "scope": "ui"

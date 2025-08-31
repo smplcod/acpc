@@ -39,9 +39,9 @@ export default function useCollapsibleHeadings() {
 
     const build = () => {
       cleanup()
-      const headings = Array.from(main.querySelectorAll('h2, h3'))
+      const headings = Array.from(main.querySelectorAll('h2, h3, h4'))
       headings.forEach((heading, index) => {
-        const tag = heading.tagName
+        const level = Number(heading.tagName.slice(1))
         const button = document.createElement('button')
         button.type = 'button'
         button.className = 'acph-toggle'
@@ -50,7 +50,10 @@ export default function useCollapsibleHeadings() {
         button.textContent = collapsed ? '▶' : '▼'
         const targets = []
         let next = heading.nextElementSibling
-        while (next && next.tagName !== tag) {
+        while (
+          next &&
+          !(/H[2-4]/.test(next.tagName) && Number(next.tagName.slice(1)) <= level)
+        ) {
           targets.push(next)
           next = next.nextElementSibling
         }
@@ -84,7 +87,7 @@ export default function useCollapsibleHeadings() {
         if (
           mutations.some((m) =>
             Array.from(m.addedNodes).some(
-              (n) => n.querySelector && n.querySelector('h2, h3')
+              (n) => n.querySelector && n.querySelector('h2, h3, h4')
             )
           )
         ) {

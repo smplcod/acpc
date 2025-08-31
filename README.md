@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.73
+Current version: 0.0.72
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -148,10 +148,6 @@ _Only this section of the readme can be maintained using Russian language_
 
 25. Growth page
  - [x] 25.1 Add collapsible headings to /admin/growth
-
-26. Analytics headings
- - [x] 26.1 Replace h2 with h3 on growth, engagement, reliability and revenue pages
- - [x] 26.2 Fix collapse range for h2/h3 on analytics pages
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
