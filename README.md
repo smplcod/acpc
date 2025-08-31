@@ -24,8 +24,7 @@ Current version: 0.0.88
 # Project details
 
 ## Tech and infrastructure
-- React + Vite (fast HMR).
-- Railway is our hosting.
+- React + Vite (fast HMR)
 
 ## Local development
 1. Ensure you have Node.js version 20.19.0 or newer.
