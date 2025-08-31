@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.61
+Current version: 0.0.62
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes

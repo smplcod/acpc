@@ -27,14 +27,11 @@ export default function useCollapsibleHeadings() {
     }
 
     const cleanup = () => {
-      sections.forEach(({ button, section, handler, keyHandler }) => {
+      sections.forEach(({ button, targets, handler, keyHandler }) => {
         button.removeEventListener('click', handler)
         button.removeEventListener('keydown', keyHandler)
         button.remove()
-        while (section.firstChild) {
-          section.parentNode.insertBefore(section.firstChild, section)
-        }
-        section.remove()
+        targets.forEach(t => t.classList.remove('acph-collapsed'))
       })
       sections = []
       clearTimeout(saveTimer)
@@ -45,47 +42,28 @@ export default function useCollapsibleHeadings() {
       const headings = Array.from(main.querySelectorAll('h2, h3, h4'))
       headings.forEach((heading, index) => {
         const level = Number(heading.tagName.slice(1))
-        const sectionId = `acph-sec-${index}`
+        const button = document.createElement('button')
+        button.type = 'button'
+        button.className = 'acph-toggle'
+        let collapsed = state[index] === '1'
+        button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
+        button.textContent = collapsed ? '▶' : '▼'
+        const targets = []
         let next = heading.nextElementSibling
-        const collected = []
         while (
           next &&
           !(/H[2-4]/.test(next.tagName) && Number(next.tagName.slice(1)) <= level)
         ) {
-          const temp = next.nextElementSibling
-          collected.push(next)
-          next = temp
+          targets.push(next)
+          next = next.nextElementSibling
         }
-        const section = document.createElement('div')
-        section.id = sectionId
-        section.className = 'acph-section'
-        collected.forEach((el) => section.appendChild(el))
-        heading.after(section)
-
-        const button = document.createElement('button')
-        button.type = 'button'
-        button.className = 'acph-toggle'
-        button.setAttribute('role', 'button')
-        button.setAttribute('aria-controls', sectionId)
-        let collapsed = state[index] === '1'
-        button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
-        button.textContent = collapsed ? '▶' : '▼'
-        if (collapsed) section.classList.add('is-collapsed')
-        heading.insertBefore(button, heading.firstChild)
-
+        if (collapsed) targets.forEach(t => t.classList.add('acph-collapsed'))
         const handler = () => {
           collapsed = !collapsed
-          if (collapsed) {
-            section.classList.add('is-collapsed')
-            button.textContent = '▶'
-            button.setAttribute('aria-expanded', 'false')
-            state[index] = '1'
-          } else {
-            section.classList.remove('is-collapsed')
-            button.textContent = '▼'
-            button.setAttribute('aria-expanded', 'true')
-            state[index] = '0'
-          }
+          button.textContent = collapsed ? '▶' : '▼'
+          button.setAttribute('aria-expanded', collapsed ? 'false' : 'true')
+          targets.forEach(t => t.classList.toggle('acph-collapsed', collapsed))
+          state[index] = collapsed ? '1' : '0'
           saveState()
         }
         const keyHandler = (e) => {
@@ -96,8 +74,8 @@ export default function useCollapsibleHeadings() {
         }
         button.addEventListener('click', handler)
         button.addEventListener('keydown', keyHandler)
-
-        sections.push({ button, section, handler, keyHandler })
+        heading.insertBefore(button, heading.firstChild)
+        sections.push({ button, targets, handler, keyHandler })
       })
     }
 

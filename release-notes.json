@@ -1547,6 +1547,28 @@
           "scope": "admin-ui"
         }
       ]
+    },
+    {
+      "version": "0.0.62",
+      "date": "2025-08-31",
+      "time": "06:27:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Reworked admin heading collapse to use class toggles and prevent navigation errors",
+          "weight": 40,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переработано скрытие заголовков админа с использованием классов, что исправило ошибки навигации",
+          "weight": 40,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2984,6 +3006,28 @@
           "description": "Выведена версия приложения над переключателем в сайдбаре админа",
           "weight": 20,
           "type": "feat",
+          "scope": "admin-ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.62",
+      "date": "2025-08-31",
+      "time": "06:27:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Reworked admin heading collapse to use class toggles and prevent navigation errors",
+          "weight": 40,
+          "type": "fix",
+          "scope": "admin-ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Переработано скрытие заголовков админа с использованием классов, что исправило ошибки навигации",
+          "weight": 40,
+          "type": "fix",
           "scope": "admin-ui"
         }
       ]
