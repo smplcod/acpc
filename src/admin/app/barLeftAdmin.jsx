@@ -64,14 +64,16 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   return (
     <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
-        <div
+        <button
+          type="button"
           className={`icon-button${disableToggle ? ' disabled' : ''}`}
           onMouseEnter={disableToggle ? undefined : onIconEnter}
           onClick={disableToggle ? undefined : toggle}
-          title="Toggle sidebar"
+          aria-label="Toggle sidebar"
+          disabled={disableToggle}
         >
           <Sidebar size={16} />
-        </div>
+        </button>
         {!isCollapsed && (
           <>
             <Link to="/" className="icon-button" title="Home">
@@ -94,7 +96,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
       </div>
       {!isCollapsed && (
         <>
-          <nav className="sidebar-content">
+          <nav className="sidebar-content" aria-label="Main navigation">
             <ul>
               {flatNodes.map(node => (
                 <li key={node.path}>

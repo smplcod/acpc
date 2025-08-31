@@ -1,5 +1,5 @@
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import useCollapsibleHeadings from './hooks/useCollapsibleHeadings.js'
 import BarLeftAdmin from './barLeftAdmin.jsx'
 import { isAdminAuth } from './auth.js'
@@ -10,6 +10,7 @@ export default function Layout() {
   const location = useLocation()
   const navigate = useNavigate()
   const isLogin = location.pathname === '/admin/login'
+  const mainRef = useRef(null)
 
   useEffect(() => {
     if (!isLogin && !isAdminAuth()) {
@@ -18,15 +19,22 @@ export default function Layout() {
     }
   }, [isLogin, navigate, location])
 
+  useEffect(() => {
+    mainRef.current?.focus()
+  }, [location])
+
   useCollapsibleHeadings()
 
   return (
-    <div className="layout">
-      <BarLeftAdmin forceCollapsed={isLogin} disableToggle={isLogin} />
-      <main>
-        <Outlet />
-        <SubPages />
-      </main>
-    </div>
+    <>
+      <a href="#main" className="skip-link">Skip to main content</a>
+      <div className="layout">
+        <BarLeftAdmin forceCollapsed={isLogin} disableToggle={isLogin} />
+        <main id="main" tabIndex={-1} ref={mainRef}>
+          <Outlet />
+          <SubPages />
+        </main>
+      </div>
+    </>
   )
 }
