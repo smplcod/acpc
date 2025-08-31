@@ -2045,6 +2045,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.83",
+      "date": "2025-09-01",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Stacked dashboard charts vertically on small screens",
+          "weight": 30,
+          "type": "feat",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Графики дашборда на мобильных выстраиваются вертикально",
+          "weight": 30,
+          "type": "feat",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3980,6 +4002,28 @@
           "description": "Добавлено переключение секций метрик по клику на их заголовки",
           "weight": 20,
           "type": "fix",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.83",
+      "date": "2025-09-01",
+      "time": "17:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Stacked dashboard charts vertically on small screens",
+          "weight": 30,
+          "type": "feat",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Графики дашборда на мобильных выстраиваются вертикально",
+          "weight": 30,
+          "type": "feat",
           "scope": "ui"
         }
       ]

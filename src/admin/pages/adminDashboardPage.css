@@ -11,3 +11,14 @@
   border: 1px solid #ccc;
   padding: 0.5rem;
 }
+
+.dashboard-card canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
