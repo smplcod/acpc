@@ -2145,6 +2145,28 @@
           "scope": "sidebar"
         }
       ]
+    },
+    {
+      "version": "0.0.87",
+      "date": "2025-09-02",
+      "time": "10:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed collapsible heading buttons responding to clicks",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлены кнопки сворачивания заголовков, теперь реагируют на клики",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -4181,6 +4203,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "sidebar"
+        }
+      ]
+    },
+    {
+      "version": "0.0.87",
+      "date": "2025-09-02",
+      "time": "10:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed collapsible heading buttons responding to clicks",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлены кнопки сворачивания заголовков, теперь реагируют на клики",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
         }
       ]
     }

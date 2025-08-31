@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.86
+Current version: 0.0.87
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -170,6 +170,7 @@ _Only this section of the readme can be maintained using Russian language_
 
 31. Collapsible headings
  - [x] 31.1 Toggle sections by clicking heading
+ - [x] 31.2 Fix toggle button for collapsible headings
 
 32. Responsive dashboard
  - [x] 32.1 Stack dashboard charts vertically on small screens
