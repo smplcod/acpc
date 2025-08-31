@@ -31,7 +31,7 @@ export default function SubPages() {
   if (children.length === 0) return null
   return (
     <div className="subpages">
-      <h2>Subpages:</h2>
+      <h2>Subpages</h2>
       {renderTree(children)}
     </div>
   )
