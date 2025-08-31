@@ -35,6 +35,11 @@ export default function useCollapsibleHeadings() {
       })
       sections = []
       clearTimeout(saveTimer)
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(state))
+      } catch {
+        /* ignore */
+      }
     }
 
     const build = () => {

@@ -1891,6 +1891,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.76",
+      "date": "2025-09-01",
+      "time": "10:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed metric page collapse state not persisting after reload",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено несохранение состояния свёрнутых секций метрик после перезагрузки",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3671,6 +3693,28 @@
         {
           "description": "Состояние свёрнутых секций метрик сохраняется в localStorage",
           "weight": 40,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.76",
+      "date": "2025-09-01",
+      "time": "10:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Fixed metric page collapse state not persisting after reload",
+          "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Исправлено несохранение состояния свёрнутых секций метрик после перезагрузки",
+          "weight": 30,
           "type": "fix",
           "scope": "ui"
         }
