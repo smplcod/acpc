@@ -2089,6 +2089,28 @@
           "scope": "sidebar"
         }
       ]
+    },
+    {
+      "version": "0.0.85",
+      "date": "2025-09-01",
+      "time": "19:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Sidebar now grows to match taller main content",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сайдбар растягивается по высоте основного контента",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3983,8 +4005,8 @@
           "scope": "ui"
         }
       ]
-    }
-    ,{
+    },
+    {
       "version": "0.0.81",
       "date": "2025-09-01",
       "time": "15:00:00",
@@ -4005,8 +4027,8 @@
           "scope": "navigation"
         }
       ]
-    }
-    ,{
+    },
+    {
       "version": "0.0.82",
       "date": "2025-09-01",
       "time": "16:00:00",
@@ -4067,6 +4089,28 @@
         {
           "description": "Исправлено переключение сайдбара с учётом кликов вне, Escape и фокуса",
           "weight": 40,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ]
+    },
+    {
+      "version": "0.0.85",
+      "date": "2025-09-01",
+      "time": "19:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Sidebar now grows to match taller main content",
+          "weight": 30,
+          "type": "fix",
+          "scope": "sidebar"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Сайдбар растягивается по высоте основного контента",
+          "weight": 30,
           "type": "fix",
           "scope": "sidebar"
         }

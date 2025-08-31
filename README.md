@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.84
+Current version: 0.0.85
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -176,6 +176,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 33. Sidebar toggle logic
  - [x] 33.1 Fix sidebar toggle logic
+
+34. Sidebar height
+ - [x] 34.1 Expand sidebar height to match main content
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
