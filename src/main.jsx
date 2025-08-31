@@ -6,6 +6,7 @@ import UserLayout from './user/app/layout.jsx'
 import AdminLayout from './admin/app/layout.jsx'
 import MainPage from './user/pages/mainPage.jsx'
 import ReleaseNotesPage from './user/pages/releaseNotesPage.jsx'
+import NotFoundPage from './notFoundPage.jsx'
 import adminRoutes from './admin/app/routes.jsx'
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     element: <AdminLayout />,
     children: adminRoutes,
   },
+  { path: "*", element: <NotFoundPage /> },
 ])
 
 createRoot(document.getElementById('root')).render(
