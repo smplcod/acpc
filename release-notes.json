@@ -1735,6 +1735,28 @@
           "scope": "auth"
         }
       ]
+    },
+    {
+      "version": "0.0.70",
+      "date": "2025-08-31",
+      "time": "14:55:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed metrics links from admin sidebar and pinned logout above version",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены ссылки метрик из сайдбара админа и закреплён logout над версией",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3361,6 +3383,28 @@
           "weight": 40,
           "type": "fix",
           "scope": "auth"
+        }
+      ]
+    },
+    {
+      "version": "0.0.70",
+      "date": "2025-08-31",
+      "time": "14:55:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Removed metrics links from admin sidebar and pinned logout above version",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Удалены ссылки метрик из сайдбара админа и закреплён logout над версией",
+          "weight": 30,
+          "type": "fix",
+          "scope": "navigation"
         }
       ]
     }

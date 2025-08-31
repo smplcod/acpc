@@ -55,6 +55,19 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
   }
 
   const flatNodes = useMemo(() => flattenTree(urlTree), [])
+  const hidden = new Set([
+    '/admin',
+    '/admin/growth',
+    '/admin/engagement',
+    '/admin/reliability',
+    '/admin/revenue',
+    '/admin/ui',
+    '/admin/ui/charts'
+  ])
+  const navNodes = flatNodes.filter(
+    node => !hidden.has(node.path) && node.path !== '/admin/logout'
+  )
+  const logoutNode = flatNodes.find(node => node.path === '/admin/logout')
 
   const toggleNames = () => {
     const next = !showNames
@@ -99,7 +112,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
         <>
           <nav className="sidebar-content" aria-label="Main navigation">
             <ul>
-              {flatNodes.map(node => (
+              {navNodes.map(node => (
                 <li key={node.path}>
                   <NavLink
                     to={node.path}
@@ -112,13 +125,24 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
               ))}
             </ul>
           </nav>
-          <div className="sidebar-footer sidebar-version">v{pkg.version}</div>
           <div className="sidebar-footer">
             <label>
               <input type="checkbox" checked={showNames} onChange={toggleNames} />
               {showNames ? 'Name' : 'URL'}
             </label>
           </div>
+          {logoutNode && (
+            <div className="sidebar-footer">
+              <NavLink
+                to={logoutNode.path}
+                end
+                className={({ isActive }) => (isActive ? 'active' : undefined)}
+              >
+                {showNames ? logoutNode.name : logoutNode.path}
+              </NavLink>
+            </div>
+          )}
+          <div className="sidebar-footer sidebar-version">v{pkg.version}</div>
         </>
       )}
     </aside>

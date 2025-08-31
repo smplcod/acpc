@@ -79,6 +79,11 @@
   font-size: 0.9em;
 }
 
+.sidebar-footer a {
+  display: block;
+  padding: 2px 0;
+}
+
 .sidebar-footer label {
   display: flex;
   align-items: center;
