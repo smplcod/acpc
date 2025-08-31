@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.82
+Current version: 0.0.83
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -170,6 +170,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 31. Collapsible headings
  - [x] 31.1 Toggle sections by clicking heading
+
+32. Sidebar toggle layout
+ - [x] 32.1 Resize charts after sidebar collapse/expand
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.
