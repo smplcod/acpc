@@ -36,7 +36,7 @@
   cursor: pointer;
   user-select: none;
   font-size: 16px;
-  vertical-align: -0.2em;
+  vertical-align: -0.35em;
   margin-right: 8px;
   border: none;
   border-radius: 0;
@@ -48,6 +48,7 @@
 
 h3 > .acph-toggle {
   font-size: 14px;
+  vertical-align: -0.25em;
 }
 
 .acph-toggle:hover {

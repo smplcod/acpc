@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.68
+Current version: 0.0.69
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -115,6 +115,7 @@ _Only this section of the readme can be maintained using Russian language_
  - [x] 16.1 Enable collapsible headings in admin pages
  - [x] 16.2 Adjust toggle size for h3 and remove hover border
  - [x] 16.3 Увеличить и приподнять треугольники сворачивания для h2 и h3
+ - [x] 16.4 Raise collapse triangles for h2 and h3 for better alignment
 
 17. Сайдбар админа
  - [x] 17.1 Вести названия страниц в json-файле
