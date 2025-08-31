@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.62
+Current version: 0.0.63
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -125,6 +125,9 @@ _Only this section of the readme can be maintained using Russian language_
 
 20. Семантика main
  - [x] 20.1 Удалить вложенные контейнеры main из страниц
+
+21. Фокус
+  - [x] 21.1 Отключить обводку при фокусе
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.

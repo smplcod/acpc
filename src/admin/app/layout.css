@@ -24,7 +24,6 @@
   height: auto;
   padding: 8px;
   background: var(--color-surface);
-  outline: 2px solid var(--color-text);
   z-index: 1000;
 }
 
@@ -42,6 +41,3 @@
     margin-right: 5px;  
 }
 
-.acph-toggle:focus {
-  outline: 2px solid currentColor;
-}
