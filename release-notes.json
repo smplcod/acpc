@@ -1801,6 +1801,28 @@
           "scope": "ui"
         }
       ]
+    },
+    {
+      "version": "0.0.73",
+      "date": "2025-08-31",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Ensured analytics headings collapse entire sections and standardized on h3",
+          "weight": 40,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заголовки аналитики сворачивают целые блоки и переведены на h3",
+          "weight": 40,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
     }
   ],
   "releases": [
@@ -3491,6 +3513,28 @@
         {
           "description": "Добавлены сворачиваемые заголовки на странице роста",
           "weight": 30,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ]
+    },
+    {
+      "version": "0.0.73",
+      "date": "2025-08-31",
+      "time": "16:00:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Ensured analytics headings collapse entire sections and standardized on h3",
+          "weight": 40,
+          "type": "fix",
+          "scope": "ui"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Заголовки аналитики сворачивают целые блоки и переведены на h3",
+          "weight": 40,
           "type": "fix",
           "scope": "ui"
         }
