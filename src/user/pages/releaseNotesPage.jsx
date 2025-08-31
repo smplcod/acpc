@@ -45,12 +45,8 @@ export default function ReleaseNotesPage() {
                     <li key={i}>
                       {ch.description}
                       <div className="tags">
-                        <div className="tags-variant-21">
-                          <span>{ch.type}</span>
-                        </div>
-                        <div className="tags-variant-20">
-                          <span>{ch.scope}</span>
-                        </div>
+                        <span className="tags-variant-21">{ch.type}</span>
+                        <span className="tags-variant-20">{ch.scope}</span>
                       </div>
                     </li>
                   ))}

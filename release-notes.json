@@ -1459,6 +1459,28 @@
           "scope": "layout"
         }
       ]
+    },
+    {
+      "version": "0.0.58",
+      "date": "2025-08-31",
+      "time": "06:15:00",
+      "timezone": "Asia/Bishkek",
+      "changes": [
+        {
+          "description": "Simplified release notes tags by replacing nested divs with spans",
+          "weight": 20,
+          "type": "refactor",
+          "scope": "release-notes"
+        }
+      ],
+      "changes-ru": [
+        {
+          "description": "Упрощены теги заметок релизов, заменены вложенные div на span",
+          "weight": 20,
+          "type": "refactor",
+          "scope": "release-notes"
+        }
+      ]
     }
   ],
   "releases": [
@@ -2790,27 +2812,49 @@
         }
       ]
     },
-    {
-      "version": "0.0.57",
-      "date": "2025-08-29",
-      "time": "17:05:00",
-      "timezone": "Asia/Bishkek",
-      "changes": [
-        {
-          "description": "Moved inline styles into CSS files and added semantic classes to containers",
-          "weight": 30,
-          "type": "style",
-          "scope": "layout"
-        }
-      ],
-      "changes-ru": [
-        {
-          "description": "Перенесены встроенные стили в CSS и добавлены семантические классы контейнерам",
-          "weight": 30,
-          "type": "style",
-          "scope": "layout"
-        }
-      ]
-    }
-  ]
-}
+      {
+        "version": "0.0.57",
+        "date": "2025-08-29",
+        "time": "17:05:00",
+        "timezone": "Asia/Bishkek",
+        "changes": [
+          {
+            "description": "Moved inline styles into CSS files and added semantic classes to containers",
+            "weight": 30,
+            "type": "style",
+            "scope": "layout"
+          }
+        ],
+        "changes-ru": [
+          {
+            "description": "Перенесены встроенные стили в CSS и добавлены семантические классы контейнерам",
+            "weight": 30,
+            "type": "style",
+            "scope": "layout"
+          }
+        ]
+      },
+      {
+        "version": "0.0.58",
+        "date": "2025-08-31",
+        "time": "06:15:00",
+        "timezone": "Asia/Bishkek",
+        "changes": [
+          {
+            "description": "Simplified release notes tags by replacing nested divs with spans",
+            "weight": 20,
+            "type": "refactor",
+            "scope": "release-notes"
+          }
+        ],
+        "changes-ru": [
+          {
+            "description": "Упрощены теги заметок релизов, заменены вложенные div на span",
+            "weight": 20,
+            "type": "refactor",
+            "scope": "release-notes"
+          }
+        ]
+      }
+    ]
+  }
