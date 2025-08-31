@@ -1,5 +1,5 @@
 # ACP+Charts now
-Current version: 0.0.74
+Current version: 0.0.75
 
 - Minimal React + Vite app with basic routing
 - Public pages: home and English release notes
@@ -10,6 +10,7 @@ Current version: 0.0.74
 - Return to originally requested admin page after login
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
+- Admin sidebar includes dashboard link and metric shortcut icons
 - Code split between `src/user` and `src/admin`
 - Admin pages (except the dashboard) display "Subpages" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
@@ -148,6 +149,16 @@ _Only this section of the readme can be maintained using Russian language_
 
 25. Growth page
  - [x] 25.1 Add collapsible headings to /admin/growth
+
+26. Admin sidebar icons
+ - [x] 26.1 Add dashboard link to admin sidebar
+ - [x] 26.2 Replace header icons with links to growth, engagement, reliability, and revenue
+
+27. User sidebar
+ - [x] 27.1 Remove extra header icons from user sidebar
+
+28. Metrics pages
+ - [x] 28.1 Persist collapsible state in localStorage
 
 # Bot instructions
 1. Always start by reading this file and the "Features ToDo" section here. Do not do anything from "Features ToDo" unless you have direct instructions.

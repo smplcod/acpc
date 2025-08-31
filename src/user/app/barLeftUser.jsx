@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { Sidebar, Home, Columns, Calendar, CheckCircle, Cloud } from 'react-feather'
+import { Sidebar, Home } from 'react-feather'
 import urlTree from '../../urlTree.json'
 import './barLeftUser.css'
 
@@ -71,23 +71,9 @@ export default function BarLeftUser() {
           <Sidebar size={16} />
         </button>
         {!isCollapsed && (
-          <>
-            <Link to="/" className="icon-button" title="Home">
-              <Home size={16} />
-            </Link>
-            <div className="icon-button" title="Columns">
-              <Columns size={16} />
-            </div>
-            <div className="icon-button" title="Calendar">
-              <Calendar size={16} />
-            </div>
-            <div className="icon-button" title="Check circle">
-              <CheckCircle size={16} />
-            </div>
-            <div className="icon-button" title="Cloud">
-              <Cloud size={16} />
-            </div>
-          </>
+          <Link to="/" className="icon-button" title="Home">
+            <Home size={16} />
+          </Link>
         )}
       </div>
       {!isCollapsed && (
