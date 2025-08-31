@@ -11,7 +11,7 @@ Current version: 0.0.66
 - Public pages use a collapsible sidebar with icon tooltips and home link
 - Admin pages have a separate collapsible menu
 - Code split between `src/user` and `src/admin`
-- Admin pages display "Subpages:" with a full URL tree when subpages exist
+- Admin pages display "Subpages" with a full URL tree when subpages exist
 - Navigation sidebars derive from the same tree; admin lists all URLs flat (no nested lists), public lists non-admin URLs
 - User and admin sidebars highlight the active link
 - Dashboard at `/admin` with mini charts for growth, engagement, reliability, and revenue
@@ -103,7 +103,7 @@ _Only this section of the readme can be maintained using Russian language_
 # 14. Правки оформления
  - [x] 14.1 Изменить заголовок админских страниц на "| Admin Control Panel |"
 - [x] 14.2 Уменьшить глобальный размер h1 до 2.4em
-- [x] 14.3 Добавить префикс "Subpages:" перед списком подстраниц в /admin/*
+- [x] 14.3 Добавить префикс "Subpages" перед списком подстраниц в /admin/*
 - [x] 14.4 Скрывать заголовок Subpages при отсутствии подстраниц.
 
 # 15. Маршруты
@@ -153,7 +153,7 @@ _Only this section of the readme can be maintained using Russian language_
 12. If there is no indication what language the page should be in, use English.
 13. Update `release-notes.json` for every user-facing change according to `release-notes-howto.md`. Assign a weight between 20 and 80 and bump the PATCH version when cutting a release.
 14. Keep user and admin code separated in `/src/user` and `/src/admin`, each containing its own `app` and `pages` directories. Allow duplication between them but record every instance in the "Code duplication log" section.
-15. The admin layout automatically renders the `SubPages` component at the end of every `/admin` route; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages:" heading only when subpages exist.
+15. The admin layout automatically renders the `SubPages` component at the end of every `/admin` route; admin pages should not render `SubPages` themselves to avoid duplication, and the component shows the "Subpages" heading only when subpages exist.
 16. After each task, re-check navigation (see Verification steps).
 
 # Verification steps
