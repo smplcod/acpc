@@ -59,29 +59,37 @@ export default function AdminGraphEngagementPage() {
       <h1>{heading}</h1>
       <section className="engagement-page__content">
         <h3>Sessions vs conversion</h3>
-        <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
-        <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>
+        <div>
+          <Bar data={sessionsConvData} options={{ scales: { y: { position: 'left' }, y1: { position: 'right', ticks: { callback: v => v + '%' } } } }} />
+          <p>Goal: load vs conversion | Source: activity | Formula: signups/visits Δ to conversion | Period: all dates</p>
+        </div>
         <h3>Stickiness</h3>
-        <Line data={stickinessData} />
-        <p>Goal: product stickiness | Source: events | Formula: DAU/MAU | Period: all dates</p>
+        <div>
+          <Line data={stickinessData} />
+          <p>Goal: product stickiness | Source: events | Formula: DAU/MAU | Period: all dates</p>
+        </div>
         <h3>Cohort retention</h3>
-        <table className="engagement-page__table">
-          <thead><tr><th>Week</th><th>d+7</th><th>d+14</th><th>d+28</th></tr></thead>
-          <tbody>
-            {retention.map(r => (
-              <tr key={r.cohort}>
-                <td>{r.cohort}</td>
-                <td style={{ background: color(r.d7) }}>{(r.d7 * 100).toFixed(0)}%</td>
-                <td style={{ background: color(r.d14) }}>{(r.d14 * 100).toFixed(0)}%</td>
-                <td style={{ background: color(r.d28) }}>{(r.d28 * 100).toFixed(0)}%</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-        <p>Goal: cohort retention | Source: users | Formula: activity at d+N | Period: all cohorts</p>
+        <div>
+          <table className="engagement-page__table">
+            <thead><tr><th>Week</th><th>d+7</th><th>d+14</th><th>d+28</th></tr></thead>
+            <tbody>
+              {retention.map(r => (
+                <tr key={r.cohort}>
+                  <td>{r.cohort}</td>
+                  <td style={{ background: color(r.d7) }}>{(r.d7 * 100).toFixed(0)}%</td>
+                  <td style={{ background: color(r.d14) }}>{(r.d14 * 100).toFixed(0)}%</td>
+                  <td style={{ background: color(r.d28) }}>{(r.d28 * 100).toFixed(0)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p>Goal: cohort retention | Source: users | Formula: activity at d+N | Period: all cohorts</p>
+        </div>
         <h3>Platform profile</h3>
-        <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
-        <p>Goal: platform profile | Source: users | Period: last 30 days</p>
+        <div>
+          <Bar data={profileData} options={{ scales: { x: { stacked: true, max: 100 }, y: { stacked: true } } }} />
+          <p>Goal: platform profile | Source: users | Period: last 30 days</p>
+        </div>
       </section>
     </section>
   )

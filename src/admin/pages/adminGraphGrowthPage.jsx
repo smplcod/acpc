@@ -107,17 +107,25 @@ export default function AdminGraphGrowthPage() {
       <h1>{heading}</h1>
       <section className="growth-page__content">
         <h3>Active audience</h3>
-        <Line data={areaData} options={{ stacked: true }} />
-        <p>Goal: compare active audiences | Source: events | Formula: DAU/WAU/MAU/SMA7 | Period: all dates</p>
+        <div>
+          <Line data={areaData} options={{ stacked: true }} />
+          <p>Goal: compare active audiences | Source: events | Formula: DAU/WAU/MAU/SMA7 | Period: all dates</p>
+        </div>
         <h3>New vs returning</h3>
-        <Line data={newReturningData} options={{ stacked: true }} />
-        <p>Goal: share of new vs returning | Source: events | Formula: rule "new" | Period: all dates</p>
+        <div>
+          <Line data={newReturningData} options={{ stacked: true }} />
+          <p>Goal: share of new vs returning | Source: events | Formula: rule "new" | Period: all dates</p>
+        </div>
         <h3>Top of funnel</h3>
-        <Line data={funnelTopData} />
-        <p>Goal: upper funnel dynamics | Source: activity | Period: all dates</p>
+        <div>
+          <Line data={funnelTopData} />
+          <p>Goal: upper funnel dynamics | Source: activity | Period: all dates</p>
+        </div>
         <h3>Logins by weekday</h3>
-        <Bar data={weekdayData} />
-        <p>Goal: seasonality | Source: events | Formula: aggregate by weekday | Period: all dates</p>
+        <div>
+          <Bar data={weekdayData} />
+          <p>Goal: seasonality | Source: events | Formula: aggregate by weekday | Period: all dates</p>
+        </div>
       </section>
     </section>
   )
