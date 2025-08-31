@@ -12,8 +12,11 @@ import pkg from '../../../package.json'
 import urlTree from '../../urlTree.json'
 import './barLeftAdmin.css'
 
-const flattenTree = nodes =>
-  nodes.flatMap(n => [{ path: n.path, name: n.name }, ...flattenTree(n.children)])
+const flattenTree = (nodes, depth = 0) =>
+  nodes.flatMap(n => [
+    { path: n.path, name: n.name, depth },
+    ...flattenTree(n.children, depth + 1)
+  ])
 
 export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = false }) {
   const [collapsed, setCollapsed] = useState(true)
@@ -132,7 +135,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
           <nav className="sidebar-content" aria-label="Main navigation">
             <ul>
               {navNodes.map(node => (
-                <li key={node.path}>
+                <li key={node.path} style={{ marginLeft: `${node.depth * 12}px` }}>
                   <NavLink
                     to={node.path}
                     end
@@ -156,6 +159,7 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
                 to={logoutNode.path}
                 end
                 className={({ isActive }) => (isActive ? 'active' : undefined)}
+                style={{ marginLeft: `${logoutNode.depth * 12}px` }}
               >
                 {showNames ? logoutNode.name : logoutNode.path}
               </NavLink>
