@@ -27,6 +27,19 @@ Current version: 0.0.88
 - React + Vite (fast HMR).
 - Railway is our hosting.
 
+## Local development
+1. Ensure you have Node.js version 20.19.0 or newer.
+2. Copy `.env.example` to `.env` and set `VITE_ADMIN_LOGIN` and `VITE_ADMIN_PASSWORD`.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
 ## Libraries
 
 **Dependencies**
