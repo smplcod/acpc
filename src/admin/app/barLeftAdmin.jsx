@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useRef } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   Sidebar,
@@ -10,7 +10,6 @@ import {
 } from 'react-feather'
 import pkg from '../../../package.json'
 import urlTree from '../../urlTree.json'
-import { ChartJS } from './chartSetup.js'
 import './barLeftAdmin.css'
 
 const flattenTree = (nodes, depth = 0) =>
@@ -83,27 +82,15 @@ export default function BarLeftAdmin({ forceCollapsed = false, disableToggle = f
     localStorage.setItem('barLeftAdminShowNames', String(next))
   }
 
-  const asideRef = useRef(null)
-
   useEffect(() => {
-    const el = asideRef.current
-    if (!el) return
-    const handle = e => {
-      if (e.propertyName === 'width') {
-        Object.values(ChartJS.instances).forEach(chart => chart.resize())
-        window.dispatchEvent(new Event('resize'))
-      }
-    }
-    el.addEventListener('transitionend', handle)
-    return () => el.removeEventListener('transitionend', handle)
-  }, [])
+    const timer = setTimeout(() => {
+      window.dispatchEvent(new Event('resize'))
+    }, 310)
+    return () => clearTimeout(timer)
+  }, [isCollapsed])
 
   return (
-    <aside
-      ref={asideRef}
-      className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`}
-      onMouseLeave={onMouseLeave}
-    >
+    <aside className={`sidebar-left ${isCollapsed ? 'collapsed' : ''}`} onMouseLeave={onMouseLeave}>
       <div className="sidebar-header">
         <button
           type="button"
